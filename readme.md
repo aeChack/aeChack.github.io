@@ -6,7 +6,9 @@ Entry for the AEC Hackathon 2013 held at Facebook HQ, Menlo Park CA
 [aechack.github.io/]( http://aechack.github.io/ )
 
 ## Live demos
-[Warm-Up #3 ~ Extruded Polyline with vertex shading]( http://aeChack.github.io/warm-up-02/index.html )
+[Warm-Up #3 ~ Extruded Polyline with vertex shading]( http://aeChack.github.io/warm-up-03/index.html )
+
+* Each vertex has a color
 
 [Warm-Up #2 ~ Extruded Polyline with sub-divisions]( http://aeChack.github.io/warm-up-02/index.html )
 
