@@ -1,0 +1,2564 @@
+  Processing Data Dictionary (Energy+.idd) File -- Complete
+  Maximum number of Alpha Args=        4500
+  Maximum number of Numeric Args=       21040
+  Number of Object Definitions=         689
+  Number of Section Definitions=           2
+  Total Number of Alpha Fields=       16712
+  Total Number of Numeric Fields=       38446
+  Total Number of Fields=       55158
+  Processing Input Data File (in.idf) -- Start
+      1 
+      2 Version,
+      3   8.0;                                    !- Version Identifier
+      4 
+      5 Building,
+      6   Medium Office,                          !- Name
+      7   -0,                                     !- North Axis {deg}
+      8   ,                                       !- Terrain
+      9   0.04,                                   !- Loads Convergence Tolerance Value
+     10   0.4,                                    !- Temperature Convergence Tolerance Value {deltaC}
+     11   FullExterior,                           !- Solar Distribution
+     12   25,                                     !- Maximum Number of Warmup Days
+     13   ;                                       !- Minimum Number of Warmup Days
+     14 
+     15 Zone,
+     16   ThermalZone01,                          !- Name
+     17   -0,                                     !- Direction of Relative North {deg}
+     18   0,                                      !- X Origin {m}
+     19   0,                                      !- Y Origin {m}
+     20   0,                                      !- Z Origin {m}
+     21   ,                                       !- Type
+     22   ,                                       !- Multiplier
+     23   ,                                       !- Ceiling Height {m}
+     24   ,                                       !- Volume {m3}
+     25   ,                                       !- Floor Area {m2}
+     26   ,                                       !- Zone Inside Convection Algorithm
+     27   ;                                       !- Zone Outside Convection Algorithm
+     28 
+     29 BuildingSurface:Detailed,
+     30   Surface 1,                              !- Name
+     31   Floor,                                  !- Surface Type
+     32   000 ExtSlabCarpet 4in ClimateZone 1-8,  !- Construction Name
+     33   ThermalZone01,                          !- Zone Name
+     34   Ground,                                 !- Outside Boundary Condition
+     35   ,                                       !- Outside Boundary Condition Object
+     36   NoSun,                                  !- Sun Exposure
+     37   NoWind,                                 !- Wind Exposure
+     38   ,                                       !- View Factor to Ground
+     39   ,                                       !- Number of Vertices
+     40   3, 4, 0,                                !- X,Y,Z Vertex 1 {m}
+     41   3, -7.21911419532262e-16, 0,            !- X,Y,Z Vertex 2 {m}
+     42   0, 0, 0,                                !- X,Y,Z Vertex 3 {m}
+     43   0, 4, 0;                                !- X,Y,Z Vertex 4 {m}
+     44 
+     45 BuildingSurface:Detailed,
+     46   Surface 2,                              !- Name
+     47   Wall,                                   !- Surface Type
+     48   ASHRAE 189.1-2009 ExtWall SteelFrame ClimateZone 4-8, !- Construction Name
+     49   ThermalZone01,                          !- Zone Name
+     50   Outdoors,                               !- Outside Boundary Condition
+     51   ,                                       !- Outside Boundary Condition Object
+     52   SunExposed,                             !- Sun Exposure
+     53   WindExposed,                            !- Wind Exposure
+     54   ,                                       !- View Factor to Ground
+     55   ,                                       !- Number of Vertices
+     56   0, 0, 3,                                !- X,Y,Z Vertex 1 {m}
+     57   0, 0, 0,                                !- X,Y,Z Vertex 2 {m}
+     58   3, -7.21911419532262e-16, 0,            !- X,Y,Z Vertex 3 {m}
+     59   3, -7.21911419532262e-16, 3;            !- X,Y,Z Vertex 4 {m}
+     60 
+     61 FenestrationSurface:Detailed,
+     62   Sub Surface 1,                          !- Name
+     63   Window,                                 !- Surface Type
+     64   ASHRAE 189.1-2009 ExtWindow ClimateZone 4-5, !- Construction Name
+     65   Surface 2,                              !- Building Surface Name
+     66   ,                                       !- Outside Boundary Condition Object
+     67   ,                                       !- View Factor to Ground
+     68   ,                                       !- Shading Control Name
+     69   ,                                       !- Frame and Divider Name
+     70   ,                                       !- Multiplier
+     71   ,                                       !- Number of Vertices
+     72   1, 0, 2,                                !- X,Y,Z Vertex 1 {m}
+     73   1, 0, 1,                                !- X,Y,Z Vertex 2 {m}
+     74   2, 0, 1,                                !- X,Y,Z Vertex 3 {m}
+     75   2, 0, 2;                                !- X,Y,Z Vertex 4 {m}
+     76 
+     77 BuildingSurface:Detailed,
+     78   Surface 3,                              !- Name
+     79   Wall,                                   !- Surface Type
+     80   ASHRAE 189.1-2009 ExtWall SteelFrame ClimateZone 4-8, !- Construction Name
+     81   ThermalZone01,                          !- Zone Name
+     82   Outdoors,                               !- Outside Boundary Condition
+     83   ,                                       !- Outside Boundary Condition Object
+     84   SunExposed,                             !- Sun Exposure
+     85   WindExposed,                            !- Wind Exposure
+     86   ,                                       !- View Factor to Ground
+     87   ,                                       !- Number of Vertices
+     88   0, 4, 3,                                !- X,Y,Z Vertex 1 {m}
+     89   0, 4, 0,                                !- X,Y,Z Vertex 2 {m}
+     90   0, 0, 0,                                !- X,Y,Z Vertex 3 {m}
+     91   0, 0, 3;                                !- X,Y,Z Vertex 4 {m}
+     92 
+     93 BuildingSurface:Detailed,
+     94   Surface 4,                              !- Name
+     95   Roof,                                   !- Surface Type
+     96   ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 2-5, !- Construction Name
+     97   ThermalZone01,                          !- Zone Name
+     98   Outdoors,                               !- Outside Boundary Condition
+     99   ,                                       !- Outside Boundary Condition Object
+    100   SunExposed,                             !- Sun Exposure
+    101   WindExposed,                            !- Wind Exposure
+    102   ,                                       !- View Factor to Ground
+    103   ,                                       !- Number of Vertices
+    104   3, -7.21911419532262e-16, 3,            !- X,Y,Z Vertex 1 {m}
+    105   3, 4, 3,                                !- X,Y,Z Vertex 2 {m}
+    106   0, 4, 3,                                !- X,Y,Z Vertex 3 {m}
+    107   0, 0, 3;                                !- X,Y,Z Vertex 4 {m}
+    108 
+    109 BuildingSurface:Detailed,
+    110   Surface 5,                              !- Name
+    111   Wall,                                   !- Surface Type
+    112   ASHRAE 189.1-2009 ExtWall SteelFrame ClimateZone 4-8, !- Construction Name
+    113   ThermalZone01,                          !- Zone Name
+    114   Outdoors,                               !- Outside Boundary Condition
+    115   ,                                       !- Outside Boundary Condition Object
+    116   SunExposed,                             !- Sun Exposure
+    117   WindExposed,                            !- Wind Exposure
+    118   ,                                       !- View Factor to Ground
+    119   ,                                       !- Number of Vertices
+    120   3, 4, 3,                                !- X,Y,Z Vertex 1 {m}
+    121   3, 4, 0,                                !- X,Y,Z Vertex 2 {m}
+    122   0, 4, 0,                                !- X,Y,Z Vertex 3 {m}
+    123   0, 4, 3;                                !- X,Y,Z Vertex 4 {m}
+    124 
+    125 BuildingSurface:Detailed,
+    126   Surface 6,                              !- Name
+    127   Wall,                                   !- Surface Type
+    128   ASHRAE 189.1-2009 ExtWall SteelFrame ClimateZone 4-8, !- Construction Name
+    129   ThermalZone01,                          !- Zone Name
+    130   Outdoors,                               !- Outside Boundary Condition
+    131   ,                                       !- Outside Boundary Condition Object
+    132   SunExposed,                             !- Sun Exposure
+    133   WindExposed,                            !- Wind Exposure
+    134   ,                                       !- View Factor to Ground
+    135   ,                                       !- Number of Vertices
+    136   3, -7.21911419532262e-16, 3,            !- X,Y,Z Vertex 1 {m}
+    137   3, -7.21911419532262e-16, 0,            !- X,Y,Z Vertex 2 {m}
+    138   3, 4, 0,                                !- X,Y,Z Vertex 3 {m}
+    139   3, 4, 3;                                !- X,Y,Z Vertex 4 {m}
+    140 
+    141 ZoneControl:Thermostat,
+    142   ThermalZone01 Thermostat,               !- Name
+    143   ThermalZone01,                          !- Zone or ZoneList Name
+    144   ThermalZone01 Thermostat Schedule,      !- Control Type Schedule Name
+    145   ThermostatSetpoint:DualSetpoint,        !- Control Object Type 1
+    146   Thermostat Setpoint Dual Setpoint 1;    !- Control Name 1
+    147 
+    148 Schedule:Compact,
+    149   ThermalZone01 Thermostat Schedule,      !- Name
+    150   ThermalZone01 Thermostat Schedule Type Limits, !- Schedule Type Limits Name
+    151   Through: 12/31,                         !- Field 1
+    152   For: AllDays,                           !- Field 2
+    153   Until: 24:00,                           !- Field 3
+    154   4;                                      !- Field 4
+    155 
+    156 ScheduleTypeLimits,
+    157   ThermalZone01 Thermostat Schedule Type Limits, !- Name
+    158   0,                                      !- Lower Limit Value {BasedOnField A3}
+    159   4,                                      !- Upper Limit Value {BasedOnField A3}
+    160   DISCRETE;                               !- Numeric Type
+    161 
+    162 ThermostatSetpoint:DualSetpoint,
+    163   Thermostat Setpoint Dual Setpoint 1,    !- Name
+    164   Medium Office HtgSetp 1,                !- Heating Setpoint Temperature Schedule Name
+    165   Medium Office ClgSetp 1;                !- Cooling Setpoint Temperature Schedule Name
+    166 
+    167 ScheduleTypeLimits,
+    168   Temperature 1,                          !- Name
+    169   ,                                       !- Lower Limit Value {BasedOnField A3}
+    170   ,                                       !- Upper Limit Value {BasedOnField A3}
+    171   Continuous,                             !- Numeric Type
+    172   temperature;                            !- Unit Type
+    173 
+    174 Schedule:Day:Interval,
+    175   Medium Office HtgSetp Rule 1 Day Schedule 1, !- Name
+    176   Temperature 1,                          !- Schedule Type Limits Name
+    177   No,                                     !- Interpolate to Timestep
+    178   24:00,                                  !- Time 1 {hh:mm}
+    179   15.6;                                   !- Value Until Time 1
+    180 
+    181 Schedule:Day:Interval,
+    182   Medium Office HtgSetp Default Schedule 1, !- Name
+    183   Temperature 1,                          !- Schedule Type Limits Name
+    184   No,                                     !- Interpolate to Timestep
+    185   06:00,                                  !- Time 1 {hh:mm}
+    186   15.6,                                   !- Value Until Time 1
+    187   22:00,                                  !- Time 2 {hh:mm}
+    188   21,                                     !- Value Until Time 2
+    189   24:00,                                  !- Time 3 {hh:mm}
+    190   15.6;                                   !- Value Until Time 3
+    191 
+    192 Schedule:Day:Interval,
+    193   Medium Office HtgSetp Rule 2 Day Schedule 1, !- Name
+    194   Temperature 1,                          !- Schedule Type Limits Name
+    195   No,                                     !- Interpolate to Timestep
+    196   06:00,                                  !- Time 1 {hh:mm}
+    197   15.6,                                   !- Value Until Time 1
+    198   18:00,                                  !- Time 2 {hh:mm}
+    199   21,                                     !- Value Until Time 2
+    200   24:00,                                  !- Time 3 {hh:mm}
+    201   15.6;                                   !- Value Until Time 3
+    202 
+    203 Schedule:Week:Daily,
+    204   Schedule:Week:Daily {69bf77fc-b4cd-41d8-9cbd-2b4a6a3a0cbc}, !- Name
+    205   Medium Office HtgSetp Rule 1 Day Schedule 1, !- Sunday Schedule:Day Name
+    206   Medium Office HtgSetp Default Schedule 1, !- Monday Schedule:Day Name
+    207   Medium Office HtgSetp Default Schedule 1, !- Tuesday Schedule:Day Name
+    208   Medium Office HtgSetp Default Schedule 1, !- Wednesday Schedule:Day Name
+    209   Medium Office HtgSetp Default Schedule 1, !- Thursday Schedule:Day Name
+    210   Medium Office HtgSetp Default Schedule 1, !- Friday Schedule:Day Name
+    211   Medium Office HtgSetp Rule 2 Day Schedule 1, !- Saturday Schedule:Day Name
+    212   Medium Office HtgSetp Default Schedule 1, !- Holiday Schedule:Day Name
+    213   Medium Office HtgSetp Summer Design Day 1, !- SummerDesignDay Schedule:Day Name
+    214   Medium Office HtgSetp Winter Design Day 1, !- WinterDesignDay Schedule:Day Name
+    215   Medium Office HtgSetp Default Schedule 1, !- CustomDay1 Schedule:Day Name
+    216   Medium Office HtgSetp Default Schedule 1; !- CustomDay2 Schedule:Day Name
+    217 
+    218 Schedule:Year,
+    219   Medium Office HtgSetp 1,                !- Name
+    220   Temperature 1,                          !- Schedule Type Limits Name
+    221   Schedule:Week:Daily {69bf77fc-b4cd-41d8-9cbd-2b4a6a3a0cbc}, !- Schedule:Week Name 1
+    222   1,                                      !- Start Month 1
+    223   1,                                      !- Start Day 1
+    224   12,                                     !- End Month 1
+    225   31;                                     !- End Day 1
+    226 
+    227 Schedule:Day:Interval,
+    228   Medium Office HtgSetp Summer Design Day 1, !- Name
+    229   Temperature 1,                          !- Schedule Type Limits Name
+    230   No,                                     !- Interpolate to Timestep
+    231   24:00,                                  !- Time 1 {hh:mm}
+    232   15.6;                                   !- Value Until Time 1
+    233 
+    234 Schedule:Day:Interval,
+    235   Medium Office HtgSetp Winter Design Day 1, !- Name
+    236   Temperature 1,                          !- Schedule Type Limits Name
+    237   No,                                     !- Interpolate to Timestep
+    238   24:00,                                  !- Time 1 {hh:mm}
+    239   21;                                     !- Value Until Time 1
+    240 
+    241 ScheduleTypeLimits,
+    242   Temperature 2,                          !- Name
+    243   ,                                       !- Lower Limit Value {BasedOnField A3}
+    244   ,                                       !- Upper Limit Value {BasedOnField A3}
+    245   Continuous,                             !- Numeric Type
+    246   temperature;                            !- Unit Type
+    247 
+    248 Schedule:Day:Interval,
+    249   Medium Office ClgSetp Rule 1 Day Schedule 1, !- Name
+    250   Temperature 2,                          !- Schedule Type Limits Name
+    251   No,                                     !- Interpolate to Timestep
+    252   24:00,                                  !- Time 1 {hh:mm}
+    253   26.7;                                   !- Value Until Time 1
+    254 
+    255 Schedule:Day:Interval,
+    256   Medium Office ClgSetp Default Schedule 1, !- Name
+    257   Temperature 2,                          !- Schedule Type Limits Name
+    258   No,                                     !- Interpolate to Timestep
+    259   06:00,                                  !- Time 1 {hh:mm}
+    260   26.7,                                   !- Value Until Time 1
+    261   22:00,                                  !- Time 2 {hh:mm}
+    262   24,                                     !- Value Until Time 2
+    263   24:00,                                  !- Time 3 {hh:mm}
+    264   26.7;                                   !- Value Until Time 3
+    265 
+    266 Schedule:Day:Interval,
+    267   Medium Office ClgSetp Rule 2 Day Schedule 1, !- Name
+    268   Temperature 2,                          !- Schedule Type Limits Name
+    269   No,                                     !- Interpolate to Timestep
+    270   06:00,                                  !- Time 1 {hh:mm}
+    271   26.7,                                   !- Value Until Time 1
+    272   18:00,                                  !- Time 2 {hh:mm}
+    273   24,                                     !- Value Until Time 2
+    274   24:00,                                  !- Time 3 {hh:mm}
+    275   26.7;                                   !- Value Until Time 3
+    276 
+    277 Schedule:Week:Daily,
+    278   Schedule:Week:Daily {ada04600-38d2-47bd-be55-3d606437a689}, !- Name
+    279   Medium Office ClgSetp Rule 1 Day Schedule 1, !- Sunday Schedule:Day Name
+    280   Medium Office ClgSetp Default Schedule 1, !- Monday Schedule:Day Name
+    281   Medium Office ClgSetp Default Schedule 1, !- Tuesday Schedule:Day Name
+    282   Medium Office ClgSetp Default Schedule 1, !- Wednesday Schedule:Day Name
+    283   Medium Office ClgSetp Default Schedule 1, !- Thursday Schedule:Day Name
+    284   Medium Office ClgSetp Default Schedule 1, !- Friday Schedule:Day Name
+    285   Medium Office ClgSetp Rule 2 Day Schedule 1, !- Saturday Schedule:Day Name
+    286   Medium Office ClgSetp Default Schedule 1, !- Holiday Schedule:Day Name
+    287   Medium Office ClgSetp Summer Design Day 1, !- SummerDesignDay Schedule:Day Name
+    288   Medium Office ClgSetp Winter Design Day 1, !- WinterDesignDay Schedule:Day Name
+    289   Medium Office ClgSetp Default Schedule 1, !- CustomDay1 Schedule:Day Name
+    290   Medium Office ClgSetp Default Schedule 1; !- CustomDay2 Schedule:Day Name
+    291 
+    292 Schedule:Year,
+    293   Medium Office ClgSetp 1,                !- Name
+    294   Temperature 2,                          !- Schedule Type Limits Name
+    295   Schedule:Week:Daily {ada04600-38d2-47bd-be55-3d606437a689}, !- Schedule:Week Name 1
+    296   1,                                      !- Start Month 1
+    297   1,                                      !- Start Day 1
+    298   12,                                     !- End Month 1
+    299   31;                                     !- End Day 1
+    300 
+    301 Schedule:Day:Interval,
+    302   Medium Office ClgSetp Summer Design Day 1, !- Name
+    303   Temperature 2,                          !- Schedule Type Limits Name
+    304   No,                                     !- Interpolate to Timestep
+    305   06:00,                                  !- Time 1 {hh:mm}
+    306   26.7,                                   !- Value Until Time 1
+    307   22:00,                                  !- Time 2 {hh:mm}
+    308   24,                                     !- Value Until Time 2
+    309   24:00,                                  !- Time 3 {hh:mm}
+    310   26.7;                                   !- Value Until Time 3
+    311 
+    312 Schedule:Day:Interval,
+    313   Medium Office ClgSetp Winter Design Day 1, !- Name
+    314   Temperature 2,                          !- Schedule Type Limits Name
+    315   No,                                     !- Interpolate to Timestep
+    316   24:00,                                  !- Time 1 {hh:mm}
+    317   26.7;                                   !- Value Until Time 1
+    318 !
+    319 ! HVACTemplate:Zone:IdealLoadsAirSystem,
+    320 !   ThermalZone01,                          !- Zone Name
+    321 !   ;                                       !- Template Thermostat Name
+    322 
+    323 DesignSpecification:OutdoorAir,
+    324   MediumOffice Outdoor Air,               !- Name
+    325   Sum,                                    !- Outdoor Air Method
+    326   0.0107645200000431,                     !- Outdoor Air Flow per Person {m3/s-person}
+    327   0,                                      !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    328   0,                                      !- Outdoor Air Flow per Zone {m3/s}
+    329   0;                                      !- Outdoor Air Flow Air Changes per Hour {1/hr}
+    330 
+    331 ZoneVentilation:DesignFlowRate,
+    332   ThermalZone01 Ventilation per Person,   !- Name
+    333   ThermalZone01,                          !- Zone or ZoneList Name
+    334   Medium Office Bldg Occ,                 !- Schedule Name
+    335   Flow/Person,                            !- Design Flow Rate Calculation Method
+    336   ,                                       !- Design Flow Rate {m3/s}
+    337   ,                                       !- Flow Rate per Zone Floor Area {m3/s-m2}
+    338   0.0107645200000431,                     !- Flow Rate per Person {m3/s-person}
+    339   ,                                       !- Air Changes per Hour {1/hr}
+    340   ,                                       !- Ventilation Type
+    341   ,                                       !- Fan Pressure Rise {Pa}
+    342   ,                                       !- Fan Total Efficiency
+    343   ,                                       !- Constant Term Coefficient
+    344   ,                                       !- Temperature Term Coefficient
+    345   ,                                       !- Velocity Term Coefficient
+    346   ;                                       !- Velocity Squared Term Coefficient
+    347 
+    348 SimulationControl,
+    349   No,                                     !- Do Zone Sizing Calculation
+    350   No,                                     !- Do System Sizing Calculation
+    351   No,                                     !- Do Plant Sizing Calculation
+    352   No,                                     !- Run Simulation for Sizing Periods
+    353   Yes;                                    !- Run Simulation for Weather File Run Periods
+    354 
+    355 ConvergenceLimits,
+    356   1;                                      !- Minimum System Timestep {minutes}
+    357 
+    358 HeatBalanceAlgorithm,
+    359   ConductionTransferFunction,             !- Algorithm
+    360   200;                                    !- Surface Temperature Upper Limit {C}
+    361 
+    362 RunPeriod,
+    363   Run Period 1,                           !- Name
+    364   1,                                      !- Begin Month
+    365   1,                                      !- Begin Day of Month
+    366   12,                                     !- End Month
+    367   31,                                     !- End Day of Month
+    368   Sunday,                                 !- Day of Week for Start Day
+    369   No,                                     !- Use Weather File Holidays and Special Days
+    370   No,                                     !- Use Weather File Daylight Saving Period
+    371   No,                                     !- Apply Weekend Holiday Rule
+    372   Yes,                                    !- Use Weather File Rain Indicators
+    373   Yes,                                    !- Use Weather File Snow Indicators
+    374   1;                                      !- Number of Times Runperiod to be Repeated
+    375 
+    376 ShadowCalculation,
+    377   AverageOverDaysInFrequency,             !- Calculation Method
+    378   7,                                      !- Calculation Frequency
+    379   15000;                                  !- Maximum Figures in Shadow Overlap Calculations
+    380 
+    381 SurfaceConvectionAlgorithm:Inside,
+    382   TARP;                                   !- Algorithm
+    383 
+    384 SurfaceConvectionAlgorithm:Outside,
+    385   DOE-2;                                  !- Algorithm
+    386 
+    387 Timestep,
+    388   4;                                      !- Number of Timesteps per Hour
+    389 
+    390 Sizing:Parameters,
+    391   1.25,                                   !- Heating Sizing Factor
+    392   1.15;                                   !- Cooling Sizing Factor
+    393 
+    394 ZoneAirHeatBalanceAlgorithm,
+    395   AnalyticalSolution;                     !- Algorithm
+    396 
+    397 ProgramControl,
+    398   1;                                      !- Number of Threads Allowed
+    399 
+    400 GlobalGeometryRules,
+    401   UpperLeftCorner,                        !- Starting Vertex Position
+    402   Counterclockwise,                       !- Vertex Entry Direction
+    403   Relative,                               !- Coordinate System
+    404   Relative,                               !- Daylighting Reference Point Coordinate System
+    405   Relative;                               !- Rectangular Surface Coordinate System
+    406 
+    407 LifeCycleCost:Parameters,
+    408   {6e49c689-0d28-46bf-b447-ea1096829f28}, !- Name
+    409   EndOfYear,                              !- Discounting Convention
+    410   ConstantDollar,                         !- Inflation Approach
+    411   0.03,                                   !- Real Discount Rate
+    412   ,                                       !- Nominal Discount Rate
+    413   ,                                       !- Inflation
+    414   ,                                       !- Base Date Month
+    415   2011,                                   !- Base Date Year
+    416   ,                                       !- Service Date Month
+    417   2011,                                   !- Service Date Year
+    418   25,                                     !- Length of Study Period in Years
+    419   ,                                       !- Tax rate
+    420   None;                                   !- Depreciation Method
+    421 
+    422 LifeCycleCost:UsePriceEscalation,
+    423   U.S. Avg  Commercial-Electricity,       !- Name
+    424   Electricity,                            !- Resource
+    425   2011,                                   !- Escalation Start Year
+    426   January,                                !- Escalation Start Month
+    427   0.9838,                                 !- Year Escalation 1
+    428   0.9730,                                 !- Year Escalation 2
+    429   0.9632,                                 !- Year Escalation 3
+    430   0.9611,                                 !- Year Escalation 4
+    431   0.9571,                                 !- Year Escalation 5
+    432   0.9553,                                 !- Year Escalation 6
+    433   0.9539,                                 !- Year Escalation 7
+    434   0.9521,                                 !- Year Escalation 8
+    435   0.9546,                                 !- Year Escalation 9
+    436   0.9550,                                 !- Year Escalation 10
+    437   0.9553,                                 !- Year Escalation 11
+    438   0.9564,                                 !- Year Escalation 12
+    439   0.9575,                                 !- Year Escalation 13
+    440   0.9596,                                 !- Year Escalation 14
+    441   0.9618,                                 !- Year Escalation 15
+    442   0.9614,                                 !- Year Escalation 16
+    443   0.9618,                                 !- Year Escalation 17
+    444   0.9618,                                 !- Year Escalation 18
+    445   0.9593,                                 !- Year Escalation 19
+    446   0.9589,                                 !- Year Escalation 20
+    447   0.9607,                                 !- Year Escalation 21
+    448   0.9625,                                 !- Year Escalation 22
+    449   0.9650,                                 !- Year Escalation 23
+    450   0.9708,                                 !- Year Escalation 24
+    451   0.9751,                                 !- Year Escalation 25
+    452   0.9762,                                 !- Year Escalation 26
+    453   0.9766,                                 !- Year Escalation 27
+    454   0.9766,                                 !- Year Escalation 28
+    455   0.9769,                                 !- Year Escalation 29
+    456   0.9773;                                 !- Year Escalation 30
+    457 
+    458 LifeCycleCost:UsePriceEscalation,
+    459   U.S. Avg  Commercial-Distillate Oil,    !- Name
+    460   FuelOil#1,                              !- Resource
+    461   2011,                                   !- Escalation Start Year
+    462   January,                                !- Escalation Start Month
+    463   0.9714,                                 !- Year Escalation 1
+    464   0.9730,                                 !- Year Escalation 2
+    465   0.9942,                                 !- Year Escalation 3
+    466   1.0164,                                 !- Year Escalation 4
+    467   1.0541,                                 !- Year Escalation 5
+    468   1.0928,                                 !- Year Escalation 6
+    469   1.1267,                                 !- Year Escalation 7
+    470   1.1580,                                 !- Year Escalation 8
+    471   1.1792,                                 !- Year Escalation 9
+    472   1.1967,                                 !- Year Escalation 10
+    473   1.2200,                                 !- Year Escalation 11
+    474   1.2333,                                 !- Year Escalation 12
+    475   1.2566,                                 !- Year Escalation 13
+    476   1.2709,                                 !- Year Escalation 14
+    477   1.2826,                                 !- Year Escalation 15
+    478   1.2985,                                 !- Year Escalation 16
+    479   1.3102,                                 !- Year Escalation 17
+    480   1.3250,                                 !- Year Escalation 18
+    481   1.3261,                                 !- Year Escalation 19
+    482   1.3282,                                 !- Year Escalation 20
+    483   1.3324,                                 !- Year Escalation 21
+    484   1.3356,                                 !- Year Escalation 22
+    485   1.3431,                                 !- Year Escalation 23
+    486   1.3510,                                 !- Year Escalation 24
+    487   1.3568,                                 !- Year Escalation 25
+    488   1.3606,                                 !- Year Escalation 26
+    489   1.3637,                                 !- Year Escalation 27
+    490   1.3674,                                 !- Year Escalation 28
+    491   1.3706,                                 !- Year Escalation 29
+    492   1.3743;                                 !- Year Escalation 30
+    493 
+    494 LifeCycleCost:UsePriceEscalation,
+    495   U.S. Avg  Commercial-Residual Oil,      !- Name
+    496   FuelOil#2,                              !- Resource
+    497   2011,                                   !- Escalation Start Year
+    498   January,                                !- Escalation Start Month
+    499   0.8469,                                 !- Year Escalation 1
+    500   0.8257,                                 !- Year Escalation 2
+    501   0.8681,                                 !- Year Escalation 3
+    502   0.8988,                                 !- Year Escalation 4
+    503   0.9289,                                 !- Year Escalation 5
+    504   0.9604,                                 !- Year Escalation 6
+    505   0.9897,                                 !- Year Escalation 7
+    506   1.0075,                                 !- Year Escalation 8
+    507   1.0314,                                 !- Year Escalation 9
+    508   1.0554,                                 !- Year Escalation 10
+    509   1.0861,                                 !- Year Escalation 11
+    510   1.1278,                                 !- Year Escalation 12
+    511   1.1497,                                 !- Year Escalation 13
+    512   1.1620,                                 !- Year Escalation 14
+    513   1.1743,                                 !- Year Escalation 15
+    514   1.1852,                                 !- Year Escalation 16
+    515   1.1948,                                 !- Year Escalation 17
+    516   1.2037,                                 !- Year Escalation 18
+    517   1.2071,                                 !- Year Escalation 19
+    518   1.2119,                                 !- Year Escalation 20
+    519   1.2139,                                 !- Year Escalation 21
+    520   1.2194,                                 !- Year Escalation 22
+    521   1.2276,                                 !- Year Escalation 23
+    522   1.2365,                                 !- Year Escalation 24
+    523   1.2420,                                 !- Year Escalation 25
+    524   1.2461,                                 !- Year Escalation 26
+    525   1.2509,                                 !- Year Escalation 27
+    526   1.2550,                                 !- Year Escalation 28
+    527   1.2591,                                 !- Year Escalation 29
+    528   1.2638;                                 !- Year Escalation 30
+    529 
+    530 LifeCycleCost:UsePriceEscalation,
+    531   U.S. Avg  Commercial-Natural gas,       !- Name
+    532   NaturalGas,                             !- Resource
+    533   2011,                                   !- Escalation Start Year
+    534   January,                                !- Escalation Start Month
+    535   0.9823,                                 !- Year Escalation 1
+    536   0.9557,                                 !- Year Escalation 2
+    537   0.9279,                                 !- Year Escalation 3
+    538   0.9257,                                 !- Year Escalation 4
+    539   0.9346,                                 !- Year Escalation 5
+    540   0.9412,                                 !- Year Escalation 6
+    541   0.9512,                                 !- Year Escalation 7
+    542   0.9645,                                 !- Year Escalation 8
+    543   0.9856,                                 !- Year Escalation 9
+    544   1.0067,                                 !- Year Escalation 10
+    545   1.0222,                                 !- Year Escalation 11
+    546   1.0410,                                 !- Year Escalation 12
+    547   1.0610,                                 !- Year Escalation 13
+    548   1.0787,                                 !- Year Escalation 14
+    549   1.0942,                                 !- Year Escalation 15
+    550   1.1098,                                 !- Year Escalation 16
+    551   1.1220,                                 !- Year Escalation 17
+    552   1.1308,                                 !- Year Escalation 18
+    553   1.1386,                                 !- Year Escalation 19
+    554   1.1486,                                 !- Year Escalation 20
+    555   1.1619,                                 !- Year Escalation 21
+    556   1.1763,                                 !- Year Escalation 22
+    557   1.1918,                                 !- Year Escalation 23
+    558   1.2118,                                 !- Year Escalation 24
+    559   1.2284,                                 !- Year Escalation 25
+    560   1.2439,                                 !- Year Escalation 26
+    561   1.2605,                                 !- Year Escalation 27
+    562   1.2772,                                 !- Year Escalation 28
+    563   1.2938,                                 !- Year Escalation 29
+    564   1.3115;                                 !- Year Escalation 30
+    565 
+    566 LifeCycleCost:UsePriceEscalation,
+    567   U.S. Avg  Commercial-Coal,              !- Name
+    568   Coal,                                   !- Resource
+    569   2011,                                   !- Escalation Start Year
+    570   January,                                !- Escalation Start Month
+    571   0.9970,                                 !- Year Escalation 1
+    572   1.0089,                                 !- Year Escalation 2
+    573   1.0089,                                 !- Year Escalation 3
+    574   0.9941,                                 !- Year Escalation 4
+    575   0.9941,                                 !- Year Escalation 5
+    576   1.0000,                                 !- Year Escalation 6
+    577   1.0030,                                 !- Year Escalation 7
+    578   1.0059,                                 !- Year Escalation 8
+    579   1.0089,                                 !- Year Escalation 9
+    580   1.0119,                                 !- Year Escalation 10
+    581   1.0148,                                 !- Year Escalation 11
+    582   1.0178,                                 !- Year Escalation 12
+    583   1.0208,                                 !- Year Escalation 13
+    584   1.0267,                                 !- Year Escalation 14
+    585   1.0297,                                 !- Year Escalation 15
+    586   1.0356,                                 !- Year Escalation 16
+    587   1.0415,                                 !- Year Escalation 17
+    588   1.0534,                                 !- Year Escalation 18
+    589   1.0564,                                 !- Year Escalation 19
+    590   1.0593,                                 !- Year Escalation 20
+    591   1.0653,                                 !- Year Escalation 21
+    592   1.0712,                                 !- Year Escalation 22
+    593   1.0742,                                 !- Year Escalation 23
+    594   1.0801,                                 !- Year Escalation 24
+    595   1.0831,                                 !- Year Escalation 25
+    596   1.0831,                                 !- Year Escalation 26
+    597   1.0861,                                 !- Year Escalation 27
+    598   1.0890,                                 !- Year Escalation 28
+    599   1.0920,                                 !- Year Escalation 29
+    600   1.0950;                                 !- Year Escalation 30
+    601 
+    602 Material,
+    603   000 F08 Metal surface,                  !- Name
+    604   Smooth,                                 !- Roughness
+    605   0.0008,                                 !- Thickness {m}
+    606   45.28,                                  !- Conductivity {W/m-K}
+    607   7824,                                   !- Density {kg/m3}
+    608   500,                                    !- Specific Heat {J/kg-K}
+    609   0.9,                                    !- Thermal Absorptance
+    610   0.7,                                    !- Solar Absorptance
+    611   0.7;                                    !- Visible Absorptance
+    612 
+    613 Material,
+    614   000 F16 Acoustic tile,                  !- Name
+    615   MediumSmooth,                           !- Roughness
+    616   0.0191,                                 !- Thickness {m}
+    617   0.06,                                   !- Conductivity {W/m-K}
+    618   368,                                    !- Density {kg/m3}
+    619   590,                                    !- Specific Heat {J/kg-K}
+    620   0.9,                                    !- Thermal Absorptance
+    621   0.7,                                    !- Solar Absorptance
+    622   0.7;                                    !- Visible Absorptance
+    623 
+    624 Material,
+    625   000 G01a 19mm gypsum board,             !- Name
+    626   MediumSmooth,                           !- Roughness
+    627   0.019,                                  !- Thickness {m}
+    628   0.16,                                   !- Conductivity {W/m-K}
+    629   800,                                    !- Density {kg/m3}
+    630   1090,                                   !- Specific Heat {J/kg-K}
+    631   0.9,                                    !- Thermal Absorptance
+    632   0.7,                                    !- Solar Absorptance
+    633   0.7;                                    !- Visible Absorptance
+    634 
+    635 Material,
+    636   000 G05 25mm wood,                      !- Name
+    637   MediumSmooth,                           !- Roughness
+    638   0.0254,                                 !- Thickness {m}
+    639   0.15,                                   !- Conductivity {W/m-K}
+    640   608,                                    !- Density {kg/m3}
+    641   1630,                                   !- Specific Heat {J/kg-K}
+    642   0.9,                                    !- Thermal Absorptance
+    643   0.7,                                    !- Solar Absorptance
+    644   0.7;                                    !- Visible Absorptance
+    645 
+    646 Material,
+    647   000 I01 25mm insulation board,          !- Name
+    648   MediumRough,                            !- Roughness
+    649   0.0254,                                 !- Thickness {m}
+    650   0.03,                                   !- Conductivity {W/m-K}
+    651   43,                                     !- Density {kg/m3}
+    652   1210,                                   !- Specific Heat {J/kg-K}
+    653   0.9,                                    !- Thermal Absorptance
+    654   0.7,                                    !- Solar Absorptance
+    655   0.7;                                    !- Visible Absorptance
+    656 
+    657 Material,
+    658   000 M11 100mm lightweight concrete,     !- Name
+    659   MediumRough,                            !- Roughness
+    660   0.1016,                                 !- Thickness {m}
+    661   0.53,                                   !- Conductivity {W/m-K}
+    662   1280,                                   !- Density {kg/m3}
+    663   840,                                    !- Specific Heat {J/kg-K}
+    664   0.9,                                    !- Thermal Absorptance
+    665   0.7,                                    !- Solar Absorptance
+    666   0.7;                                    !- Visible Absorptance
+    667 
+    668 Material,
+    669   1/2IN Gypsum,                           !- Name
+    670   Smooth,                                 !- Roughness
+    671   0.0127,                                 !- Thickness {m}
+    672   0.16,                                   !- Conductivity {W/m-K}
+    673   784.9,                                  !- Density {kg/m3}
+    674   830,                                    !- Specific Heat {J/kg-K}
+    675   0.9,                                    !- Thermal Absorptance
+    676   0.92,                                   !- Solar Absorptance
+    677   0.92;                                   !- Visible Absorptance
+    678 
+    679 Material,
+    680   MAT-CC05 4 HW CONCRETE,                 !- Name
+    681   Rough,                                  !- Roughness
+    682   0.1016,                                 !- Thickness {m}
+    683   1.311,                                  !- Conductivity {W/m-K}
+    684   2240,                                   !- Density {kg/m3}
+    685   836.8,                                  !- Specific Heat {J/kg-K}
+    686   0.9,                                    !- Thermal Absorptance
+    687   0.7,                                    !- Solar Absorptance
+    688   0.7;                                    !- Visible Absorptance
+    689 
+    690 Material,
+    691   Metal Decking,                          !- Name
+    692   MediumSmooth,                           !- Roughness
+    693   0.0015,                                 !- Thickness {m}
+    694   45.006,                                 !- Conductivity {W/m-K}
+    695   7680,                                   !- Density {kg/m3}
+    696   418.4,                                  !- Specific Heat {J/kg-K}
+    697   0.9,                                    !- Thermal Absorptance
+    698   0.7,                                    !- Solar Absorptance
+    699   0.3;                                    !- Visible Absorptance
+    700 
+    701 Material,
+    702   Roof Insulation [21],                   !- Name
+    703   MediumRough,                            !- Roughness
+    704   0.2105,                                 !- Thickness {m}
+    705   0.049,                                  !- Conductivity {W/m-K}
+    706   265,                                    !- Density {kg/m3}
+    707   836.8,                                  !- Specific Heat {J/kg-K}
+    708   0.9,                                    !- Thermal Absorptance
+    709   0.7,                                    !- Solar Absorptance
+    710   0.7;                                    !- Visible Absorptance
+    711 
+    712 Material,
+    713   Roof Membrane,                          !- Name
+    714   VeryRough,                              !- Roughness
+    715   0.0095,                                 !- Thickness {m}
+    716   0.16,                                   !- Conductivity {W/m-K}
+    717   1121.29,                                !- Density {kg/m3}
+    718   1460,                                   !- Specific Heat {J/kg-K}
+    719   0.9,                                    !- Thermal Absorptance
+    720   0.7,                                    !- Solar Absorptance
+    721   0.7;                                    !- Visible Absorptance
+    722 
+    723 Material,
+    724   Wall Insulation [39],                   !- Name
+    725   MediumRough,                            !- Roughness
+    726   0.1184,                                 !- Thickness {m}
+    727   0.045,                                  !- Conductivity {W/m-K}
+    728   265,                                    !- Density {kg/m3}
+    729   836.8,                                  !- Specific Heat {J/kg-K}
+    730   0.9,                                    !- Thermal Absorptance
+    731   0.7,                                    !- Solar Absorptance
+    732   0.7;                                    !- Visible Absorptance
+    733 
+    734 Material:AirGap,
+    735   000 F04 Wall air space resistance,      !- Name
+    736   0.15;                                   !- Thermal Resistance {m2-K/W}
+    737 
+    738 Material:AirGap,
+    739   000 F05 Ceiling air space resistance,   !- Name
+    740   0.18;                                   !- Thermal Resistance {m2-K/W}
+    741 
+    742 Material,
+    743   OS:Material:AirWall 1,                  !- Name
+    744   MediumSmooth,                           !- Roughness
+    745   0.01,                                   !- Thickness {m}
+    746   0.6,                                    !- Conductivity {W/m-K}
+    747   800,                                    !- Density {kg/m3}
+    748   1000,                                   !- Specific Heat {J/kg-K}
+    749   0.95,                                   !- Thermal Absorptance
+    750   0.7,                                    !- Solar Absorptance
+    751   0.7;                                    !- Visible Absorptance
+    752 
+    753 Material:NoMass,
+    754   CP02 CARPET PAD,                        !- Name
+    755   VeryRough,                              !- Roughness
+    756   0.2165,                                 !- Thermal Resistance {m2-K/W}
+    757   0.9,                                    !- Thermal Absorptance
+    758   0.7,                                    !- Solar Absorptance
+    759   0.8;                                    !- Visible Absorptance
+    760 
+    761 Material:NoMass,
+    762   MAT-SHEATH,                             !- Name
+    763   Rough,                                  !- Roughness
+    764   0.3626,                                 !- Thermal Resistance {m2-K/W}
+    765   0.9,                                    !- Thermal Absorptance
+    766   0.7,                                    !- Solar Absorptance
+    767   0.7;                                    !- Visible Absorptance
+    768 
+    769 WindowMaterial:Gas,
+    770   000 Air 13mm,                           !- Name
+    771   Air,                                    !- Gas Type
+    772   0.0127;                                 !- Thickness {m}
+    773 
+    774 WindowMaterial:Glazing,
+    775   000 Clear 3mm,                          !- Name
+    776   SpectralAverage,                        !- Optical Data Type
+    777   ,                                       !- Window Glass Spectral Data Set Name
+    778   0.003,                                  !- Thickness {m}
+    779   0.837,                                  !- Solar Transmittance at Normal Incidence
+    780   0.075,                                  !- Front Side Solar Reflectance at Normal Incidence
+    781   0.075,                                  !- Back Side Solar Reflectance at Normal Incidence
+    782   0.898,                                  !- Visible Transmittance at Normal Incidence
+    783   0.081,                                  !- Front Side Visible Reflectance at Normal Incidence
+    784   0.081,                                  !- Back Side Visible Reflectance at Normal Incidence
+    785   0,                                      !- Infrared Transmittance at Normal Incidence
+    786   0.84,                                   !- Front Side Infrared Hemispherical Emissivity
+    787   0.84,                                   !- Back Side Infrared Hemispherical Emissivity
+    788   0.9;                                    !- Conductivity {W/m-K}
+    789 
+    790 WindowMaterial:Glazing,
+    791   Theoretical Glass [207],                !- Name
+    792   SpectralAverage,                        !- Optical Data Type
+    793   ,                                       !- Window Glass Spectral Data Set Name
+    794   0.003,                                  !- Thickness {m}
+    795   0.3311,                                 !- Solar Transmittance at Normal Incidence
+    796   0.6189,                                 !- Front Side Solar Reflectance at Normal Incidence
+    797   0.6189,                                 !- Back Side Solar Reflectance at Normal Incidence
+    798   0.44,                                   !- Visible Transmittance at Normal Incidence
+    799   0.51,                                   !- Front Side Visible Reflectance at Normal Incidence
+    800   0.51,                                   !- Back Side Visible Reflectance at Normal Incidence
+    801   0,                                      !- Infrared Transmittance at Normal Incidence
+    802   0.9,                                    !- Front Side Infrared Hemispherical Emissivity
+    803   0.9,                                    !- Back Side Infrared Hemispherical Emissivity
+    804   0.0133,                                 !- Conductivity {W/m-K}
+    805   1,                                      !- Dirt Correction Factor for Solar and Visible Transmittance
+    806   No;                                     !- Solar Diffusing
+    807 
+    808 Construction,
+    809   000 Exterior Door,                      !- Name
+    810   000 F08 Metal surface,                  !- Layer 1
+    811   000 I01 25mm insulation board;          !- Layer 2
+    812 
+    813 Construction,
+    814   000 Exterior Window,                    !- Name
+    815   000 Clear 3mm,                          !- Layer 1
+    816   000 Air 13mm,                           !- Layer 2
+    817   000 Clear 3mm;                          !- Layer 3
+    818 
+    819 Construction,
+    820   000 ExtSlabCarpet 4in ClimateZone 1-8,  !- Name
+    821   MAT-CC05 4 HW CONCRETE,                 !- Layer 1
+    822   CP02 CARPET PAD;                        !- Layer 2
+    823 
+    824 Construction,
+    825   000 Interior Ceiling,                   !- Name
+    826   000 M11 100mm lightweight concrete,     !- Layer 1
+    827   000 F05 Ceiling air space resistance,   !- Layer 2
+    828   000 F16 Acoustic tile;                  !- Layer 3
+    829 
+    830 Construction,
+    831   000 Interior Door,                      !- Name
+    832   000 G05 25mm wood;                      !- Layer 1
+    833 
+    834 Construction,
+    835   000 Interior Floor,                     !- Name
+    836   000 F16 Acoustic tile,                  !- Layer 1
+    837   000 F05 Ceiling air space resistance,   !- Layer 2
+    838   000 M11 100mm lightweight concrete;     !- Layer 3
+    839 
+    840 Construction,
+    841   000 Interior Partition,                 !- Name
+    842   000 G05 25mm wood;                      !- Layer 1
+    843 
+    844 Construction,
+    845   000 Interior Wall,                      !- Name
+    846   000 G01a 19mm gypsum board,             !- Layer 1
+    847   000 F04 Wall air space resistance,      !- Layer 2
+    848   000 G01a 19mm gypsum board;             !- Layer 3
+    849 
+    850 Construction,
+    851   000 Interior Window,                    !- Name
+    852   000 Clear 3mm;                          !- Layer 1
+    853 
+    854 Construction,
+    855   Air Wall,                               !- Name
+    856   OS:Material:AirWall 1;                  !- Layer 1
+    857 
+    858 Construction,
+    859   ASHRAE 189.1-2009 ExtRoof IEAD ClimateZone 2-5, !- Name
+    860   Roof Membrane,                          !- Layer 1
+    861   Roof Insulation [21],                   !- Layer 2
+    862   Metal Decking;                          !- Layer 3
+    863 
+    864 Construction,
+    865   ASHRAE 189.1-2009 ExtWall SteelFrame ClimateZone 4-8, !- Name
+    866   MAT-SHEATH,                             !- Layer 1
+    867   Wall Insulation [39],                   !- Layer 2
+    868   1/2IN Gypsum;                           !- Layer 3
+    869 
+    870 Construction,
+    871   ASHRAE 189.1-2009 ExtWindow ClimateZone 4-5, !- Name
+    872   Theoretical Glass [207];                !- Layer 1
+    873 
+    874 ScheduleTypeLimits,
+    875   ActivityLevel,                          !- Name
+    876   0,                                      !- Lower Limit Value {BasedOnField A3}
+    877   ,                                       !- Upper Limit Value {BasedOnField A3}
+    878   Continuous,                             !- Numeric Type
+    879   activitylevel;                          !- Unit Type
+    880 
+    881 ScheduleTypeLimits,
+    882   Always On Discrete Limits,              !- Name
+    883   0,                                      !- Lower Limit Value {BasedOnField A3}
+    884   1,                                      !- Upper Limit Value {BasedOnField A3}
+    885   Discrete,                               !- Numeric Type
+    886   availability;                           !- Unit Type
+    887 
+    888 ScheduleTypeLimits,
+    889   Any Number;                             !- Name
+    890 
+    891 ScheduleTypeLimits,
+    892   Control Type,                           !- Name
+    893   0,                                      !- Lower Limit Value {BasedOnField A3}
+    894   4,                                      !- Upper Limit Value {BasedOnField A3}
+    895   DISCRETE;                               !- Numeric Type
+    896 
+    897 ScheduleTypeLimits,
+    898   Fraction,                               !- Name
+    899   0,                                      !- Lower Limit Value {BasedOnField A3}
+    900   1,                                      !- Upper Limit Value {BasedOnField A3}
+    901   CONTINUOUS;                             !- Numeric Type
+    902 
+    903 ScheduleTypeLimits,
+    904   On/Off,                                 !- Name
+    905   0,                                      !- Lower Limit Value {BasedOnField A3}
+    906   1,                                      !- Upper Limit Value {BasedOnField A3}
+    907   DISCRETE;                               !- Numeric Type
+    908 
+    909 Schedule:Constant,
+    910   Always On Discrete,                     !- Name
+    911   Always On Discrete Limits,              !- Schedule Type Limits Name
+    912   1;                                      !- Hourly Value
+    913 
+    914 Schedule:Day:Interval,
+    915   Always Off Default Schedule,            !- Name
+    916   On/Off,                                 !- Schedule Type Limits Name
+    917   No,                                     !- Interpolate to Timestep
+    918   24:00,                                  !- Time 1 {hh:mm}
+    919   0;                                      !- Value Until Time 1
+    920 
+    921 Schedule:Day:Interval,
+    922   Always Off Summer Design Day,           !- Name
+    923   On/Off,                                 !- Schedule Type Limits Name
+    924   No,                                     !- Interpolate to Timestep
+    925   24:00,                                  !- Time 1 {hh:mm}
+    926   0;                                      !- Value Until Time 1
+    927 
+    928 Schedule:Day:Interval,
+    929   Always Off Winter Design Day,           !- Name
+    930   On/Off,                                 !- Schedule Type Limits Name
+    931   No,                                     !- Interpolate to Timestep
+    932   24:00,                                  !- Time 1 {hh:mm}
+    933   0;                                      !- Value Until Time 1
+    934 
+    935 Schedule:Day:Interval,
+    936   Always On Default Schedule,             !- Name
+    937   On/Off,                                 !- Schedule Type Limits Name
+    938   No,                                     !- Interpolate to Timestep
+    939   24:00,                                  !- Time 1 {hh:mm}
+    940   1;                                      !- Value Until Time 1
+    941 
+    942 Schedule:Day:Interval,
+    943   Always On Summer Design Day,            !- Name
+    944   On/Off,                                 !- Schedule Type Limits Name
+    945   No,                                     !- Interpolate to Timestep
+    946   24:00,                                  !- Time 1 {hh:mm}
+    947   1;                                      !- Value Until Time 1
+    948 
+    949 Schedule:Day:Interval,
+    950   Always On Winter Design Day,            !- Name
+    951   On/Off,                                 !- Schedule Type Limits Name
+    952   No,                                     !- Interpolate to Timestep
+    953   24:00,                                  !- Time 1 {hh:mm}
+    954   1;                                      !- Value Until Time 1
+    955 
+    956 Schedule:Day:Interval,
+    957   Medium Office Activity Default Schedule, !- Name
+    958   ActivityLevel,                          !- Schedule Type Limits Name
+    959   No,                                     !- Interpolate to Timestep
+    960   24:00,                                  !- Time 1 {hh:mm}
+    961   120;                                    !- Value Until Time 1
+    962 
+    963 Schedule:Day:Interval,
+    964   Medium Office Activity Summer Design Day, !- Name
+    965   ActivityLevel,                          !- Schedule Type Limits Name
+    966   No,                                     !- Interpolate to Timestep
+    967   24:00,                                  !- Time 1 {hh:mm}
+    968   120;                                    !- Value Until Time 1
+    969 
+    970 Schedule:Day:Interval,
+    971   Medium Office Activity Winter Design Day, !- Name
+    972   ActivityLevel,                          !- Schedule Type Limits Name
+    973   No,                                     !- Interpolate to Timestep
+    974   24:00,                                  !- Time 1 {hh:mm}
+    975   120;                                    !- Value Until Time 1
+    976 
+    977 Schedule:Day:Interval,
+    978   Medium Office BLDG ELEVATORS Default Schedule, !- Name
+    979   Fraction,                               !- Schedule Type Limits Name
+    980   No,                                     !- Interpolate to Timestep
+    981   07:00,                                  !- Time 1 {hh:mm}
+    982   0,                                      !- Value Until Time 1
+    983   08:00,                                  !- Time 2 {hh:mm}
+    984   0.35,                                   !- Value Until Time 2
+    985   09:00,                                  !- Time 3 {hh:mm}
+    986   0.69,                                   !- Value Until Time 3
+    987   10:00,                                  !- Time 4 {hh:mm}
+    988   0.43,                                   !- Value Until Time 4
+    989   11:00,                                  !- Time 5 {hh:mm}
+    990   0.37,                                   !- Value Until Time 5
+    991   12:00,                                  !- Time 6 {hh:mm}
+    992   0.43,                                   !- Value Until Time 6
+    993   13:00,                                  !- Time 7 {hh:mm}
+    994   0.58,                                   !- Value Until Time 7
+    995   14:00,                                  !- Time 8 {hh:mm}
+    996   0.48,                                   !- Value Until Time 8
+    997   15:00,                                  !- Time 9 {hh:mm}
+    998   0.37,                                   !- Value Until Time 9
+    999   16:00,                                  !- Time 10 {hh:mm}
+   1000   0.37,                                   !- Value Until Time 10
+   1001   17:00,                                  !- Time 11 {hh:mm}
+   1002   0.46,                                   !- Value Until Time 11
+   1003   18:00,                                  !- Time 12 {hh:mm}
+   1004   0.62,                                   !- Value Until Time 12
+   1005   19:00,                                  !- Time 13 {hh:mm}
+   1006   0.12,                                   !- Value Until Time 13
+   1007   20:00,                                  !- Time 14 {hh:mm}
+   1008   0.04,                                   !- Value Until Time 14
+   1009   21:00,                                  !- Time 15 {hh:mm}
+   1010   0.04,                                   !- Value Until Time 15
+   1011   24:00,                                  !- Time 16 {hh:mm}
+   1012   0;                                      !- Value Until Time 16
+   1013 
+   1014 Schedule:Day:Interval,
+   1015   Medium Office BLDG ELEVATORS Rule 1 Day Schedule, !- Name
+   1016   Fraction,                               !- Schedule Type Limits Name
+   1017   No,                                     !- Interpolate to Timestep
+   1018   24:00,                                  !- Time 1 {hh:mm}
+   1019   0;                                      !- Value Until Time 1
+   1020 
+   1021 Schedule:Day:Interval,
+   1022   Medium Office BLDG ELEVATORS Rule 2 Day Schedule, !- Name
+   1023   Fraction,                               !- Schedule Type Limits Name
+   1024   No,                                     !- Interpolate to Timestep
+   1025   07:00,                                  !- Time 1 {hh:mm}
+   1026   0,                                      !- Value Until Time 1
+   1027   08:00,                                  !- Time 2 {hh:mm}
+   1028   0.16,                                   !- Value Until Time 2
+   1029   09:00,                                  !- Time 3 {hh:mm}
+   1030   0.14,                                   !- Value Until Time 3
+   1031   10:00,                                  !- Time 4 {hh:mm}
+   1032   0.21,                                   !- Value Until Time 4
+   1033   11:00,                                  !- Time 5 {hh:mm}
+   1034   0.18,                                   !- Value Until Time 5
+   1035   12:00,                                  !- Time 6 {hh:mm}
+   1036   0.25,                                   !- Value Until Time 6
+   1037   13:00,                                  !- Time 7 {hh:mm}
+   1038   0.21,                                   !- Value Until Time 7
+   1039   14:00,                                  !- Time 8 {hh:mm}
+   1040   0.13,                                   !- Value Until Time 8
+   1041   15:00,                                  !- Time 9 {hh:mm}
+   1042   0.08,                                   !- Value Until Time 9
+   1043   16:00,                                  !- Time 10 {hh:mm}
+   1044   0.04,                                   !- Value Until Time 10
+   1045   17:00,                                  !- Time 11 {hh:mm}
+   1046   0.05,                                   !- Value Until Time 11
+   1047   18:00,                                  !- Time 12 {hh:mm}
+   1048   0.06,                                   !- Value Until Time 12
+   1049   24:00,                                  !- Time 13 {hh:mm}
+   1050   0;                                      !- Value Until Time 13
+   1051 
+   1052 Schedule:Day:Interval,
+   1053   Medium Office BLDG ELEVATORS Summer Design Day, !- Name
+   1054   Fraction,                               !- Schedule Type Limits Name
+   1055   No,                                     !- Interpolate to Timestep
+   1056   07:00,                                  !- Time 1 {hh:mm}
+   1057   0,                                      !- Value Until Time 1
+   1058   08:00,                                  !- Time 2 {hh:mm}
+   1059   0.35,                                   !- Value Until Time 2
+   1060   09:00,                                  !- Time 3 {hh:mm}
+   1061   0.69,                                   !- Value Until Time 3
+   1062   10:00,                                  !- Time 4 {hh:mm}
+   1063   0.43,                                   !- Value Until Time 4
+   1064   11:00,                                  !- Time 5 {hh:mm}
+   1065   0.37,                                   !- Value Until Time 5
+   1066   12:00,                                  !- Time 6 {hh:mm}
+   1067   0.43,                                   !- Value Until Time 6
+   1068   13:00,                                  !- Time 7 {hh:mm}
+   1069   0.58,                                   !- Value Until Time 7
+   1070   14:00,                                  !- Time 8 {hh:mm}
+   1071   0.48,                                   !- Value Until Time 8
+   1072   15:00,                                  !- Time 9 {hh:mm}
+   1073   0.37,                                   !- Value Until Time 9
+   1074   16:00,                                  !- Time 10 {hh:mm}
+   1075   0.37,                                   !- Value Until Time 10
+   1076   17:00,                                  !- Time 11 {hh:mm}
+   1077   0.46,                                   !- Value Until Time 11
+   1078   18:00,                                  !- Time 12 {hh:mm}
+   1079   0.62,                                   !- Value Until Time 12
+   1080   19:00,                                  !- Time 13 {hh:mm}
+   1081   0.12,                                   !- Value Until Time 13
+   1082   20:00,                                  !- Time 14 {hh:mm}
+   1083   0.04,                                   !- Value Until Time 14
+   1084   21:00,                                  !- Time 15 {hh:mm}
+   1085   0.04,                                   !- Value Until Time 15
+   1086   24:00,                                  !- Time 16 {hh:mm}
+   1087   0;                                      !- Value Until Time 16
+   1088 
+   1089 Schedule:Day:Interval,
+   1090   Medium Office BLDG ELEVATORS Winter Design Day, !- Name
+   1091   Fraction,                               !- Schedule Type Limits Name
+   1092   No,                                     !- Interpolate to Timestep
+   1093   07:00,                                  !- Time 1 {hh:mm}
+   1094   0,                                      !- Value Until Time 1
+   1095   08:00,                                  !- Time 2 {hh:mm}
+   1096   0.16,                                   !- Value Until Time 2
+   1097   09:00,                                  !- Time 3 {hh:mm}
+   1098   0.14,                                   !- Value Until Time 3
+   1099   10:00,                                  !- Time 4 {hh:mm}
+   1100   0.21,                                   !- Value Until Time 4
+   1101   11:00,                                  !- Time 5 {hh:mm}
+   1102   0.18,                                   !- Value Until Time 5
+   1103   12:00,                                  !- Time 6 {hh:mm}
+   1104   0.25,                                   !- Value Until Time 6
+   1105   13:00,                                  !- Time 7 {hh:mm}
+   1106   0.21,                                   !- Value Until Time 7
+   1107   14:00,                                  !- Time 8 {hh:mm}
+   1108   0.13,                                   !- Value Until Time 8
+   1109   15:00,                                  !- Time 9 {hh:mm}
+   1110   0.08,                                   !- Value Until Time 9
+   1111   16:00,                                  !- Time 10 {hh:mm}
+   1112   0.04,                                   !- Value Until Time 10
+   1113   17:00,                                  !- Time 11 {hh:mm}
+   1114   0.05,                                   !- Value Until Time 11
+   1115   18:00,                                  !- Time 12 {hh:mm}
+   1116   0.06,                                   !- Value Until Time 12
+   1117   24:00,                                  !- Time 13 {hh:mm}
+   1118   0;                                      !- Value Until Time 13
+   1119 
+   1120 Schedule:Day:Interval,
+   1121   Medium Office Bldg Equip Default Schedule, !- Name
+   1122   Fraction,                               !- Schedule Type Limits Name
+   1123   No,                                     !- Interpolate to Timestep
+   1124   08:00,                                  !- Time 1 {hh:mm}
+   1125   0.4,                                    !- Value Until Time 1
+   1126   12:00,                                  !- Time 2 {hh:mm}
+   1127   0.9,                                    !- Value Until Time 2
+   1128   13:00,                                  !- Time 3 {hh:mm}
+   1129   0.8,                                    !- Value Until Time 3
+   1130   17:00,                                  !- Time 4 {hh:mm}
+   1131   0.9,                                    !- Value Until Time 4
+   1132   18:00,                                  !- Time 5 {hh:mm}
+   1133   0.8,                                    !- Value Until Time 5
+   1134   20:00,                                  !- Time 6 {hh:mm}
+   1135   0.6,                                    !- Value Until Time 6
+   1136   22:00,                                  !- Time 7 {hh:mm}
+   1137   0.5,                                    !- Value Until Time 7
+   1138   24:00,                                  !- Time 8 {hh:mm}
+   1139   0.4;                                    !- Value Until Time 8
+   1140 
+   1141 Schedule:Day:Interval,
+   1142   Medium Office Bldg Equip Rule 1 Day Schedule, !- Name
+   1143   Fraction,                               !- Schedule Type Limits Name
+   1144   No,                                     !- Interpolate to Timestep
+   1145   24:00,                                  !- Time 1 {hh:mm}
+   1146   0.3;                                    !- Value Until Time 1
+   1147 
+   1148 Schedule:Day:Interval,
+   1149   Medium Office Bldg Equip Rule 2 Day Schedule, !- Name
+   1150   Fraction,                               !- Schedule Type Limits Name
+   1151   No,                                     !- Interpolate to Timestep
+   1152   06:00,                                  !- Time 1 {hh:mm}
+   1153   0.3,                                    !- Value Until Time 1
+   1154   08:00,                                  !- Time 2 {hh:mm}
+   1155   0.4,                                    !- Value Until Time 2
+   1156   14:00,                                  !- Time 3 {hh:mm}
+   1157   0.5,                                    !- Value Until Time 3
+   1158   17:00,                                  !- Time 4 {hh:mm}
+   1159   0.35,                                   !- Value Until Time 4
+   1160   24:00,                                  !- Time 5 {hh:mm}
+   1161   0.3;                                    !- Value Until Time 5
+   1162 
+   1163 Schedule:Day:Interval,
+   1164   Medium Office Bldg Equip Summer Design Day, !- Name
+   1165   Fraction,                               !- Schedule Type Limits Name
+   1166   No,                                     !- Interpolate to Timestep
+   1167   24:00,                                  !- Time 1 {hh:mm}
+   1168   1;                                      !- Value Until Time 1
+   1169 
+   1170 Schedule:Day:Interval,
+   1171   Medium Office Bldg Equip Winter Design Day, !- Name
+   1172   Fraction,                               !- Schedule Type Limits Name
+   1173   No,                                     !- Interpolate to Timestep
+   1174   24:00,                                  !- Time 1 {hh:mm}
+   1175   0;                                      !- Value Until Time 1
+   1176 
+   1177 Schedule:Day:Interval,
+   1178   Medium Office Bldg Light Default Schedule, !- Name
+   1179   Fraction,                               !- Schedule Type Limits Name
+   1180   No,                                     !- Interpolate to Timestep
+   1181   05:00,                                  !- Time 1 {hh:mm}
+   1182   0.05,                                   !- Value Until Time 1
+   1183   07:00,                                  !- Time 2 {hh:mm}
+   1184   0.1,                                    !- Value Until Time 2
+   1185   08:00,                                  !- Time 3 {hh:mm}
+   1186   0.3,                                    !- Value Until Time 3
+   1187   17:00,                                  !- Time 4 {hh:mm}
+   1188   0.9,                                    !- Value Until Time 4
+   1189   18:00,                                  !- Time 5 {hh:mm}
+   1190   0.7,                                    !- Value Until Time 5
+   1191   20:00,                                  !- Time 6 {hh:mm}
+   1192   0.5,                                    !- Value Until Time 6
+   1193   22:00,                                  !- Time 7 {hh:mm}
+   1194   0.3,                                    !- Value Until Time 7
+   1195   23:00,                                  !- Time 8 {hh:mm}
+   1196   0.1,                                    !- Value Until Time 8
+   1197   24:00,                                  !- Time 9 {hh:mm}
+   1198   0.05;                                   !- Value Until Time 9
+   1199 
+   1200 Schedule:Day:Interval,
+   1201   Medium Office Bldg Light Rule 1 Day Schedule, !- Name
+   1202   Fraction,                               !- Schedule Type Limits Name
+   1203   No,                                     !- Interpolate to Timestep
+   1204   24:00,                                  !- Time 1 {hh:mm}
+   1205   0.05;                                   !- Value Until Time 1
+   1206 
+   1207 Schedule:Day:Interval,
+   1208   Medium Office Bldg Light Rule 2 Day Schedule, !- Name
+   1209   Fraction,                               !- Schedule Type Limits Name
+   1210   No,                                     !- Interpolate to Timestep
+   1211   06:00,                                  !- Time 1 {hh:mm}
+   1212   0.05,                                   !- Value Until Time 1
+   1213   08:00,                                  !- Time 2 {hh:mm}
+   1214   0.1,                                    !- Value Until Time 2
+   1215   14:00,                                  !- Time 3 {hh:mm}
+   1216   0.5,                                    !- Value Until Time 3
+   1217   17:00,                                  !- Time 4 {hh:mm}
+   1218   0.15,                                   !- Value Until Time 4
+   1219   24:00,                                  !- Time 5 {hh:mm}
+   1220   0.05;                                   !- Value Until Time 5
+   1221 
+   1222 Schedule:Day:Interval,
+   1223   Medium Office Bldg Light Summer Design Day, !- Name
+   1224   Fraction,                               !- Schedule Type Limits Name
+   1225   No,                                     !- Interpolate to Timestep
+   1226   24:00,                                  !- Time 1 {hh:mm}
+   1227   1;                                      !- Value Until Time 1
+   1228 
+   1229 Schedule:Day:Interval,
+   1230   Medium Office Bldg Light Winter Design Day, !- Name
+   1231   Fraction,                               !- Schedule Type Limits Name
+   1232   No,                                     !- Interpolate to Timestep
+   1233   24:00,                                  !- Time 1 {hh:mm}
+   1234   0;                                      !- Value Until Time 1
+   1235 
+   1236 Schedule:Day:Interval,
+   1237   Medium Office Bldg Occ Default Schedule, !- Name
+   1238   Fraction,                               !- Schedule Type Limits Name
+   1239   No,                                     !- Interpolate to Timestep
+   1240   06:00,                                  !- Time 1 {hh:mm}
+   1241   0,                                      !- Value Until Time 1
+   1242   07:00,                                  !- Time 2 {hh:mm}
+   1243   0.1,                                    !- Value Until Time 2
+   1244   08:00,                                  !- Time 3 {hh:mm}
+   1245   0.2,                                    !- Value Until Time 3
+   1246   12:00,                                  !- Time 4 {hh:mm}
+   1247   0.95,                                   !- Value Until Time 4
+   1248   13:00,                                  !- Time 5 {hh:mm}
+   1249   0.5,                                    !- Value Until Time 5
+   1250   17:00,                                  !- Time 6 {hh:mm}
+   1251   0.95,                                   !- Value Until Time 6
+   1252   18:00,                                  !- Time 7 {hh:mm}
+   1253   0.7,                                    !- Value Until Time 7
+   1254   20:00,                                  !- Time 8 {hh:mm}
+   1255   0.4,                                    !- Value Until Time 8
+   1256   22:00,                                  !- Time 9 {hh:mm}
+   1257   0.1,                                    !- Value Until Time 9
+   1258   24:00,                                  !- Time 10 {hh:mm}
+   1259   0.05;                                   !- Value Until Time 10
+   1260 
+   1261 Schedule:Day:Interval,
+   1262   Medium Office Bldg Occ Rule 1 Day Schedule, !- Name
+   1263   Fraction,                               !- Schedule Type Limits Name
+   1264   No,                                     !- Interpolate to Timestep
+   1265   24:00,                                  !- Time 1 {hh:mm}
+   1266   0;                                      !- Value Until Time 1
+   1267 
+   1268 Schedule:Day:Interval,
+   1269   Medium Office Bldg Occ Rule 2 Day Schedule, !- Name
+   1270   Fraction,                               !- Schedule Type Limits Name
+   1271   No,                                     !- Interpolate to Timestep
+   1272   06:00,                                  !- Time 1 {hh:mm}
+   1273   0,                                      !- Value Until Time 1
+   1274   08:00,                                  !- Time 2 {hh:mm}
+   1275   0.1,                                    !- Value Until Time 2
+   1276   14:00,                                  !- Time 3 {hh:mm}
+   1277   0.5,                                    !- Value Until Time 3
+   1278   17:00,                                  !- Time 4 {hh:mm}
+   1279   0.1,                                    !- Value Until Time 4
+   1280   24:00,                                  !- Time 5 {hh:mm}
+   1281   0;                                      !- Value Until Time 5
+   1282 
+   1283 Schedule:Day:Interval,
+   1284   Medium Office Bldg Occ Summer Design Day, !- Name
+   1285   Fraction,                               !- Schedule Type Limits Name
+   1286   No,                                     !- Interpolate to Timestep
+   1287   06:00,                                  !- Time 1 {hh:mm}
+   1288   0,                                      !- Value Until Time 1
+   1289   22:00,                                  !- Time 2 {hh:mm}
+   1290   1,                                      !- Value Until Time 2
+   1291   24:00,                                  !- Time 3 {hh:mm}
+   1292   0.05;                                   !- Value Until Time 3
+   1293 
+   1294 Schedule:Day:Interval,
+   1295   Medium Office Bldg Occ Winter Design Day, !- Name
+   1296   Fraction,                               !- Schedule Type Limits Name
+   1297   No,                                     !- Interpolate to Timestep
+   1298   24:00,                                  !- Time 1 {hh:mm}
+   1299   0;                                      !- Value Until Time 1
+   1300 
+   1301 Schedule:Day:Interval,
+   1302   Medium Office Bldg Swh Default Schedule, !- Name
+   1303   Fraction,                               !- Schedule Type Limits Name
+   1304   No,                                     !- Interpolate to Timestep
+   1305   05:00,                                  !- Time 1 {hh:mm}
+   1306   0.05,                                   !- Value Until Time 1
+   1307   06:00,                                  !- Time 2 {hh:mm}
+   1308   0.08,                                   !- Value Until Time 2
+   1309   07:00,                                  !- Time 3 {hh:mm}
+   1310   0.07,                                   !- Value Until Time 3
+   1311   08:00,                                  !- Time 4 {hh:mm}
+   1312   0.19,                                   !- Value Until Time 4
+   1313   09:00,                                  !- Time 5 {hh:mm}
+   1314   0.35,                                   !- Value Until Time 5
+   1315   10:00,                                  !- Time 6 {hh:mm}
+   1316   0.38,                                   !- Value Until Time 6
+   1317   11:00,                                  !- Time 7 {hh:mm}
+   1318   0.39,                                   !- Value Until Time 7
+   1319   12:00,                                  !- Time 8 {hh:mm}
+   1320   0.47,                                   !- Value Until Time 8
+   1321   13:00,                                  !- Time 9 {hh:mm}
+   1322   0.57,                                   !- Value Until Time 9
+   1323   14:00,                                  !- Time 10 {hh:mm}
+   1324   0.54,                                   !- Value Until Time 10
+   1325   15:00,                                  !- Time 11 {hh:mm}
+   1326   0.34,                                   !- Value Until Time 11
+   1327   16:00,                                  !- Time 12 {hh:mm}
+   1328   0.33,                                   !- Value Until Time 12
+   1329   17:00,                                  !- Time 13 {hh:mm}
+   1330   0.44,                                   !- Value Until Time 13
+   1331   18:00,                                  !- Time 14 {hh:mm}
+   1332   0.26,                                   !- Value Until Time 14
+   1333   19:00,                                  !- Time 15 {hh:mm}
+   1334   0.21,                                   !- Value Until Time 15
+   1335   20:00,                                  !- Time 16 {hh:mm}
+   1336   0.15,                                   !- Value Until Time 16
+   1337   21:00,                                  !- Time 17 {hh:mm}
+   1338   0.17,                                   !- Value Until Time 17
+   1339   22:00,                                  !- Time 18 {hh:mm}
+   1340   0.08,                                   !- Value Until Time 18
+   1341   24:00,                                  !- Time 19 {hh:mm}
+   1342   0.05;                                   !- Value Until Time 19
+   1343 
+   1344 Schedule:Day:Interval,
+   1345   Medium Office Bldg Swh Rule 1 Day Schedule, !- Name
+   1346   Fraction,                               !- Schedule Type Limits Name
+   1347   No,                                     !- Interpolate to Timestep
+   1348   05:00,                                  !- Time 1 {hh:mm}
+   1349   0.04,                                   !- Value Until Time 1
+   1350   06:00,                                  !- Time 2 {hh:mm}
+   1351   0.07,                                   !- Value Until Time 2
+   1352   11:00,                                  !- Time 3 {hh:mm}
+   1353   0.04,                                   !- Value Until Time 3
+   1354   13:00,                                  !- Time 4 {hh:mm}
+   1355   0.06,                                   !- Value Until Time 4
+   1356   14:00,                                  !- Time 5 {hh:mm}
+   1357   0.09,                                   !- Value Until Time 5
+   1358   15:00,                                  !- Time 6 {hh:mm}
+   1359   0.06,                                   !- Value Until Time 6
+   1360   21:00,                                  !- Time 7 {hh:mm}
+   1361   0.04,                                   !- Value Until Time 7
+   1362   22:00,                                  !- Time 8 {hh:mm}
+   1363   0.07,                                   !- Value Until Time 8
+   1364   24:00,                                  !- Time 9 {hh:mm}
+   1365   0.04;                                   !- Value Until Time 9
+   1366 
+   1367 Schedule:Day:Interval,
+   1368   Medium Office Bldg Swh Rule 2 Day Schedule, !- Name
+   1369   Fraction,                               !- Schedule Type Limits Name
+   1370   No,                                     !- Interpolate to Timestep
+   1371   05:00,                                  !- Time 1 {hh:mm}
+   1372   0.05,                                   !- Value Until Time 1
+   1373   06:00,                                  !- Time 2 {hh:mm}
+   1374   0.08,                                   !- Value Until Time 2
+   1375   07:00,                                  !- Time 3 {hh:mm}
+   1376   0.07,                                   !- Value Until Time 3
+   1377   08:00,                                  !- Time 4 {hh:mm}
+   1378   0.11,                                   !- Value Until Time 4
+   1379   09:00,                                  !- Time 5 {hh:mm}
+   1380   0.15,                                   !- Value Until Time 5
+   1381   10:00,                                  !- Time 6 {hh:mm}
+   1382   0.21,                                   !- Value Until Time 6
+   1383   11:00,                                  !- Time 7 {hh:mm}
+   1384   0.19,                                   !- Value Until Time 7
+   1385   12:00,                                  !- Time 8 {hh:mm}
+   1386   0.23,                                   !- Value Until Time 8
+   1387   13:00,                                  !- Time 9 {hh:mm}
+   1388   0.2,                                    !- Value Until Time 9
+   1389   14:00,                                  !- Time 10 {hh:mm}
+   1390   0.19,                                   !- Value Until Time 10
+   1391   15:00,                                  !- Time 11 {hh:mm}
+   1392   0.15,                                   !- Value Until Time 11
+   1393   16:00,                                  !- Time 12 {hh:mm}
+   1394   0.13,                                   !- Value Until Time 12
+   1395   17:00,                                  !- Time 13 {hh:mm}
+   1396   0.14,                                   !- Value Until Time 13
+   1397   21:00,                                  !- Time 14 {hh:mm}
+   1398   0.07,                                   !- Value Until Time 14
+   1399   22:00,                                  !- Time 15 {hh:mm}
+   1400   0.09,                                   !- Value Until Time 15
+   1401   24:00,                                  !- Time 16 {hh:mm}
+   1402   0.05;                                   !- Value Until Time 16
+   1403 
+   1404 Schedule:Day:Interval,
+   1405   Medium Office Bldg Swh Summer Design Day, !- Name
+   1406   Fraction,                               !- Schedule Type Limits Name
+   1407   No,                                     !- Interpolate to Timestep
+   1408   05:00,                                  !- Time 1 {hh:mm}
+   1409   0.05,                                   !- Value Until Time 1
+   1410   06:00,                                  !- Time 2 {hh:mm}
+   1411   0.08,                                   !- Value Until Time 2
+   1412   07:00,                                  !- Time 3 {hh:mm}
+   1413   0.07,                                   !- Value Until Time 3
+   1414   08:00,                                  !- Time 4 {hh:mm}
+   1415   0.19,                                   !- Value Until Time 4
+   1416   09:00,                                  !- Time 5 {hh:mm}
+   1417   0.35,                                   !- Value Until Time 5
+   1418   10:00,                                  !- Time 6 {hh:mm}
+   1419   0.38,                                   !- Value Until Time 6
+   1420   11:00,                                  !- Time 7 {hh:mm}
+   1421   0.39,                                   !- Value Until Time 7
+   1422   12:00,                                  !- Time 8 {hh:mm}
+   1423   0.47,                                   !- Value Until Time 8
+   1424   13:00,                                  !- Time 9 {hh:mm}
+   1425   0.57,                                   !- Value Until Time 9
+   1426   14:00,                                  !- Time 10 {hh:mm}
+   1427   0.54,                                   !- Value Until Time 10
+   1428   15:00,                                  !- Time 11 {hh:mm}
+   1429   0.34,                                   !- Value Until Time 11
+   1430   16:00,                                  !- Time 12 {hh:mm}
+   1431   0.33,                                   !- Value Until Time 12
+   1432   17:00,                                  !- Time 13 {hh:mm}
+   1433   0.44,                                   !- Value Until Time 13
+   1434   18:00,                                  !- Time 14 {hh:mm}
+   1435   0.26,                                   !- Value Until Time 14
+   1436   19:00,                                  !- Time 15 {hh:mm}
+   1437   0.21,                                   !- Value Until Time 15
+   1438   20:00,                                  !- Time 16 {hh:mm}
+   1439   0.15,                                   !- Value Until Time 16
+   1440   21:00,                                  !- Time 17 {hh:mm}
+   1441   0.17,                                   !- Value Until Time 17
+   1442   22:00,                                  !- Time 18 {hh:mm}
+   1443   0.08,                                   !- Value Until Time 18
+   1444   24:00,                                  !- Time 19 {hh:mm}
+   1445   0.05;                                   !- Value Until Time 19
+   1446 
+   1447 Schedule:Day:Interval,
+   1448   Medium Office Bldg Swh Winter Design Day, !- Name
+   1449   Fraction,                               !- Schedule Type Limits Name
+   1450   No,                                     !- Interpolate to Timestep
+   1451   05:00,                                  !- Time 1 {hh:mm}
+   1452   0.05,                                   !- Value Until Time 1
+   1453   06:00,                                  !- Time 2 {hh:mm}
+   1454   0.08,                                   !- Value Until Time 2
+   1455   07:00,                                  !- Time 3 {hh:mm}
+   1456   0.07,                                   !- Value Until Time 3
+   1457   08:00,                                  !- Time 4 {hh:mm}
+   1458   0.11,                                   !- Value Until Time 4
+   1459   09:00,                                  !- Time 5 {hh:mm}
+   1460   0.15,                                   !- Value Until Time 5
+   1461   10:00,                                  !- Time 6 {hh:mm}
+   1462   0.21,                                   !- Value Until Time 6
+   1463   11:00,                                  !- Time 7 {hh:mm}
+   1464   0.19,                                   !- Value Until Time 7
+   1465   12:00,                                  !- Time 8 {hh:mm}
+   1466   0.23,                                   !- Value Until Time 8
+   1467   13:00,                                  !- Time 9 {hh:mm}
+   1468   0.2,                                    !- Value Until Time 9
+   1469   14:00,                                  !- Time 10 {hh:mm}
+   1470   0.19,                                   !- Value Until Time 10
+   1471   15:00,                                  !- Time 11 {hh:mm}
+   1472   0.15,                                   !- Value Until Time 11
+   1473   16:00,                                  !- Time 12 {hh:mm}
+   1474   0.13,                                   !- Value Until Time 12
+   1475   17:00,                                  !- Time 13 {hh:mm}
+   1476   0.14,                                   !- Value Until Time 13
+   1477   21:00,                                  !- Time 14 {hh:mm}
+   1478   0.07,                                   !- Value Until Time 14
+   1479   22:00,                                  !- Time 15 {hh:mm}
+   1480   0.09,                                   !- Value Until Time 15
+   1481   24:00,                                  !- Time 16 {hh:mm}
+   1482   0.05;                                   !- Value Until Time 16
+   1483 
+   1484 Schedule:Day:Interval,
+   1485   Medium Office ClgSetp Default Schedule, !- Name
+   1486   Temperature 2,                          !- Schedule Type Limits Name
+   1487   No,                                     !- Interpolate to Timestep
+   1488   06:00,                                  !- Time 1 {hh:mm}
+   1489   26.7,                                   !- Value Until Time 1
+   1490   22:00,                                  !- Time 2 {hh:mm}
+   1491   24,                                     !- Value Until Time 2
+   1492   24:00,                                  !- Time 3 {hh:mm}
+   1493   26.7;                                   !- Value Until Time 3
+   1494 
+   1495 Schedule:Day:Interval,
+   1496   Medium Office ClgSetp Rule 1 Day Schedule, !- Name
+   1497   Temperature 2,                          !- Schedule Type Limits Name
+   1498   No,                                     !- Interpolate to Timestep
+   1499   24:00,                                  !- Time 1 {hh:mm}
+   1500   26.7;                                   !- Value Until Time 1
+   1501 
+   1502 Schedule:Day:Interval,
+   1503   Medium Office ClgSetp Rule 2 Day Schedule, !- Name
+   1504   Temperature 2,                          !- Schedule Type Limits Name
+   1505   No,                                     !- Interpolate to Timestep
+   1506   06:00,                                  !- Time 1 {hh:mm}
+   1507   26.7,                                   !- Value Until Time 1
+   1508   18:00,                                  !- Time 2 {hh:mm}
+   1509   24,                                     !- Value Until Time 2
+   1510   24:00,                                  !- Time 3 {hh:mm}
+   1511   26.7;                                   !- Value Until Time 3
+   1512 
+   1513 Schedule:Day:Interval,
+   1514   Medium Office ClgSetp Summer Design Day, !- Name
+   1515   Temperature 2,                          !- Schedule Type Limits Name
+   1516   No,                                     !- Interpolate to Timestep
+   1517   06:00,                                  !- Time 1 {hh:mm}
+   1518   26.7,                                   !- Value Until Time 1
+   1519   22:00,                                  !- Time 2 {hh:mm}
+   1520   24,                                     !- Value Until Time 2
+   1521   24:00,                                  !- Time 3 {hh:mm}
+   1522   26.7;                                   !- Value Until Time 3
+   1523 
+   1524 Schedule:Day:Interval,
+   1525   Medium Office ClgSetp Winter Design Day, !- Name
+   1526   Temperature 2,                          !- Schedule Type Limits Name
+   1527   No,                                     !- Interpolate to Timestep
+   1528   24:00,                                  !- Time 1 {hh:mm}
+   1529   26.7;                                   !- Value Until Time 1
+   1530 
+   1531 Schedule:Day:Interval,
+   1532   Medium Office Clothing Default Schedule, !- Name
+   1533   Any Number,                             !- Schedule Type Limits Name
+   1534   No,                                     !- Interpolate to Timestep
+   1535   24:00,                                  !- Time 1 {hh:mm}
+   1536   1;                                      !- Value Until Time 1
+   1537 
+   1538 Schedule:Day:Interval,
+   1539   Medium Office Clothing Rule 1 Day Schedule, !- Name
+   1540   Any Number,                             !- Schedule Type Limits Name
+   1541   No,                                     !- Interpolate to Timestep
+   1542   24:00,                                  !- Time 1 {hh:mm}
+   1543   1;                                      !- Value Until Time 1
+   1544 
+   1545 Schedule:Day:Interval,
+   1546   Medium Office Clothing Rule 2 Day Schedule, !- Name
+   1547   Any Number,                             !- Schedule Type Limits Name
+   1548   No,                                     !- Interpolate to Timestep
+   1549   24:00,                                  !- Time 1 {hh:mm}
+   1550   0.5;                                    !- Value Until Time 1
+   1551 
+   1552 Schedule:Day:Interval,
+   1553   Medium Office Clothing Summer Design Day, !- Name
+   1554   Any Number,                             !- Schedule Type Limits Name
+   1555   No,                                     !- Interpolate to Timestep
+   1556   24:00,                                  !- Time 1 {hh:mm}
+   1557   0.5;                                    !- Value Until Time 1
+   1558 
+   1559 Schedule:Day:Interval,
+   1560   Medium Office Clothing Winter Design Day, !- Name
+   1561   Any Number,                             !- Schedule Type Limits Name
+   1562   No,                                     !- Interpolate to Timestep
+   1563   24:00,                                  !- Time 1 {hh:mm}
+   1564   1;                                      !- Value Until Time 1
+   1565 
+   1566 Schedule:Day:Interval,
+   1567   Medium Office HtgSetp Default Schedule, !- Name
+   1568   Temperature 1,                          !- Schedule Type Limits Name
+   1569   No,                                     !- Interpolate to Timestep
+   1570   06:00,                                  !- Time 1 {hh:mm}
+   1571   15.6,                                   !- Value Until Time 1
+   1572   22:00,                                  !- Time 2 {hh:mm}
+   1573   21,                                     !- Value Until Time 2
+   1574   24:00,                                  !- Time 3 {hh:mm}
+   1575   15.6;                                   !- Value Until Time 3
+   1576 
+   1577 Schedule:Day:Interval,
+   1578   Medium Office HtgSetp Rule 1 Day Schedule, !- Name
+   1579   Temperature 1,                          !- Schedule Type Limits Name
+   1580   No,                                     !- Interpolate to Timestep
+   1581   24:00,                                  !- Time 1 {hh:mm}
+   1582   15.6;                                   !- Value Until Time 1
+   1583 
+   1584 Schedule:Day:Interval,
+   1585   Medium Office HtgSetp Rule 2 Day Schedule, !- Name
+   1586   Temperature 1,                          !- Schedule Type Limits Name
+   1587   No,                                     !- Interpolate to Timestep
+   1588   06:00,                                  !- Time 1 {hh:mm}
+   1589   15.6,                                   !- Value Until Time 1
+   1590   18:00,                                  !- Time 2 {hh:mm}
+   1591   21,                                     !- Value Until Time 2
+   1592   24:00,                                  !- Time 3 {hh:mm}
+   1593   15.6;                                   !- Value Until Time 3
+   1594 
+   1595 Schedule:Day:Interval,
+   1596   Medium Office HtgSetp Summer Design Day, !- Name
+   1597   Temperature 1,                          !- Schedule Type Limits Name
+   1598   No,                                     !- Interpolate to Timestep
+   1599   24:00,                                  !- Time 1 {hh:mm}
+   1600   15.6;                                   !- Value Until Time 1
+   1601 
+   1602 Schedule:Day:Interval,
+   1603   Medium Office HtgSetp Winter Design Day, !- Name
+   1604   Temperature 1,                          !- Schedule Type Limits Name
+   1605   No,                                     !- Interpolate to Timestep
+   1606   24:00,                                  !- Time 1 {hh:mm}
+   1607   21;                                     !- Value Until Time 1
+   1608 
+   1609 Schedule:Day:Interval,
+   1610   Medium Office Infil Quarter On Default Schedule, !- Name
+   1611   Fraction,                               !- Schedule Type Limits Name
+   1612   No,                                     !- Interpolate to Timestep
+   1613   06:00,                                  !- Time 1 {hh:mm}
+   1614   1,                                      !- Value Until Time 1
+   1615   22:00,                                  !- Time 2 {hh:mm}
+   1616   0.25,                                   !- Value Until Time 2
+   1617   24:00,                                  !- Time 3 {hh:mm}
+   1618   1;                                      !- Value Until Time 3
+   1619 
+   1620 Schedule:Day:Interval,
+   1621   Medium Office Infil Quarter On Rule 1 Day Schedule, !- Name
+   1622   Fraction,                               !- Schedule Type Limits Name
+   1623   No,                                     !- Interpolate to Timestep
+   1624   24:00,                                  !- Time 1 {hh:mm}
+   1625   1;                                      !- Value Until Time 1
+   1626 
+   1627 Schedule:Day:Interval,
+   1628   Medium Office Infil Quarter On Rule 2 Day Schedule, !- Name
+   1629   Fraction,                               !- Schedule Type Limits Name
+   1630   No,                                     !- Interpolate to Timestep
+   1631   06:00,                                  !- Time 1 {hh:mm}
+   1632   1,                                      !- Value Until Time 1
+   1633   18:00,                                  !- Time 2 {hh:mm}
+   1634   0.25,                                   !- Value Until Time 2
+   1635   24:00,                                  !- Time 3 {hh:mm}
+   1636   1;                                      !- Value Until Time 3
+   1637 
+   1638 Schedule:Day:Interval,
+   1639   Medium Office Infil Quarter On Summer Design Day, !- Name
+   1640   Fraction,                               !- Schedule Type Limits Name
+   1641   No,                                     !- Interpolate to Timestep
+   1642   06:00,                                  !- Time 1 {hh:mm}
+   1643   1,                                      !- Value Until Time 1
+   1644   22:00,                                  !- Time 2 {hh:mm}
+   1645   0.25,                                   !- Value Until Time 2
+   1646   24:00,                                  !- Time 3 {hh:mm}
+   1647   1;                                      !- Value Until Time 3
+   1648 
+   1649 Schedule:Day:Interval,
+   1650   Medium Office Infil Quarter On Winter Design Day, !- Name
+   1651   Fraction,                               !- Schedule Type Limits Name
+   1652   No,                                     !- Interpolate to Timestep
+   1653   06:00,                                  !- Time 1 {hh:mm}
+   1654   1,                                      !- Value Until Time 1
+   1655   18:00,                                  !- Time 2 {hh:mm}
+   1656   0.25,                                   !- Value Until Time 2
+   1657   24:00,                                  !- Time 3 {hh:mm}
+   1658   1;                                      !- Value Until Time 3
+   1659 
+   1660 Schedule:Day:Interval,
+   1661   Medium Office Work Eff Default Schedule, !- Name
+   1662   Fraction,                               !- Schedule Type Limits Name
+   1663   No,                                     !- Interpolate to Timestep
+   1664   24:00,                                  !- Time 1 {hh:mm}
+   1665   0;                                      !- Value Until Time 1
+   1666 
+   1667 Schedule:Day:Interval,
+   1668   Medium Office Work Eff Summer Design Day, !- Name
+   1669   Fraction,                               !- Schedule Type Limits Name
+   1670   No,                                     !- Interpolate to Timestep
+   1671   24:00,                                  !- Time 1 {hh:mm}
+   1672   0;                                      !- Value Until Time 1
+   1673 
+   1674 Schedule:Day:Interval,
+   1675   Medium Office Work Eff Winter Design Day, !- Name
+   1676   Fraction,                               !- Schedule Type Limits Name
+   1677   No,                                     !- Interpolate to Timestep
+   1678   24:00,                                  !- Time 1 {hh:mm}
+   1679   0;                                      !- Value Until Time 1
+   1680 
+   1681 Schedule:Week:Daily,
+   1682   Schedule:Week:Daily {ed36f847-59cb-43ae-8f04-c8d11be1b8c1}, !- Name
+   1683   Always Off Default Schedule,            !- Sunday Schedule:Day Name
+   1684   Always Off Default Schedule,            !- Monday Schedule:Day Name
+   1685   Always Off Default Schedule,            !- Tuesday Schedule:Day Name
+   1686   Always Off Default Schedule,            !- Wednesday Schedule:Day Name
+   1687   Always Off Default Schedule,            !- Thursday Schedule:Day Name
+   1688   Always Off Default Schedule,            !- Friday Schedule:Day Name
+   1689   Always Off Default Schedule,            !- Saturday Schedule:Day Name
+   1690   Always Off Default Schedule,            !- Holiday Schedule:Day Name
+   1691   Always Off Summer Design Day,           !- SummerDesignDay Schedule:Day Name
+   1692   Always Off Winter Design Day,           !- WinterDesignDay Schedule:Day Name
+   1693   Always Off Default Schedule,            !- CustomDay1 Schedule:Day Name
+   1694   Always Off Default Schedule;            !- CustomDay2 Schedule:Day Name
+   1695 
+   1696 Schedule:Year,
+   1697   Always Off,                             !- Name
+   1698   On/Off,                                 !- Schedule Type Limits Name
+   1699   Schedule:Week:Daily {ed36f847-59cb-43ae-8f04-c8d11be1b8c1}, !- Schedule:Week Name 1
+   1700   1,                                      !- Start Month 1
+   1701   1,                                      !- Start Day 1
+   1702   12,                                     !- End Month 1
+   1703   31;                                     !- End Day 1
+   1704 
+   1705 Schedule:Week:Daily,
+   1706   Schedule:Week:Daily {65c4b123-eb8b-4780-91e8-124cb6df9b7f}, !- Name
+   1707   Always On Default Schedule,             !- Sunday Schedule:Day Name
+   1708   Always On Default Schedule,             !- Monday Schedule:Day Name
+   1709   Always On Default Schedule,             !- Tuesday Schedule:Day Name
+   1710   Always On Default Schedule,             !- Wednesday Schedule:Day Name
+   1711   Always On Default Schedule,             !- Thursday Schedule:Day Name
+   1712   Always On Default Schedule,             !- Friday Schedule:Day Name
+   1713   Always On Default Schedule,             !- Saturday Schedule:Day Name
+   1714   Always On Default Schedule,             !- Holiday Schedule:Day Name
+   1715   Always On Summer Design Day,            !- SummerDesignDay Schedule:Day Name
+   1716   Always On Winter Design Day,            !- WinterDesignDay Schedule:Day Name
+   1717   Always On Default Schedule,             !- CustomDay1 Schedule:Day Name
+   1718   Always On Default Schedule;             !- CustomDay2 Schedule:Day Name
+   1719 
+   1720 Schedule:Year,
+   1721   Always On,                              !- Name
+   1722   On/Off,                                 !- Schedule Type Limits Name
+   1723   Schedule:Week:Daily {65c4b123-eb8b-4780-91e8-124cb6df9b7f}, !- Schedule:Week Name 1
+   1724   1,                                      !- Start Month 1
+   1725   1,                                      !- Start Day 1
+   1726   12,                                     !- End Month 1
+   1727   31;                                     !- End Day 1
+   1728 
+   1729 Schedule:Week:Daily,
+   1730   Schedule:Week:Daily {53ff870e-66a3-422c-ab76-13c4925f245f}, !- Name
+   1731   Medium Office Activity Default Schedule, !- Sunday Schedule:Day Name
+   1732   Medium Office Activity Default Schedule, !- Monday Schedule:Day Name
+   1733   Medium Office Activity Default Schedule, !- Tuesday Schedule:Day Name
+   1734   Medium Office Activity Default Schedule, !- Wednesday Schedule:Day Name
+   1735   Medium Office Activity Default Schedule, !- Thursday Schedule:Day Name
+   1736   Medium Office Activity Default Schedule, !- Friday Schedule:Day Name
+   1737   Medium Office Activity Default Schedule, !- Saturday Schedule:Day Name
+   1738   Medium Office Activity Default Schedule, !- Holiday Schedule:Day Name
+   1739   Medium Office Activity Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1740   Medium Office Activity Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1741   Medium Office Activity Default Schedule, !- CustomDay1 Schedule:Day Name
+   1742   Medium Office Activity Default Schedule; !- CustomDay2 Schedule:Day Name
+   1743 
+   1744 Schedule:Year,
+   1745   Medium Office Activity,                 !- Name
+   1746   ActivityLevel,                          !- Schedule Type Limits Name
+   1747   Schedule:Week:Daily {53ff870e-66a3-422c-ab76-13c4925f245f}, !- Schedule:Week Name 1
+   1748   1,                                      !- Start Month 1
+   1749   1,                                      !- Start Day 1
+   1750   12,                                     !- End Month 1
+   1751   31;                                     !- End Day 1
+   1752 
+   1753 Schedule:Week:Daily,
+   1754   Schedule:Week:Daily {ea2643a2-6126-49f4-ac23-ab801e7ae8e8}, !- Name
+   1755   Medium Office BLDG ELEVATORS Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   1756   Medium Office BLDG ELEVATORS Default Schedule, !- Monday Schedule:Day Name
+   1757   Medium Office BLDG ELEVATORS Default Schedule, !- Tuesday Schedule:Day Name
+   1758   Medium Office BLDG ELEVATORS Default Schedule, !- Wednesday Schedule:Day Name
+   1759   Medium Office BLDG ELEVATORS Default Schedule, !- Thursday Schedule:Day Name
+   1760   Medium Office BLDG ELEVATORS Default Schedule, !- Friday Schedule:Day Name
+   1761   Medium Office BLDG ELEVATORS Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1762   Medium Office BLDG ELEVATORS Default Schedule, !- Holiday Schedule:Day Name
+   1763   Medium Office BLDG ELEVATORS Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1764   Medium Office BLDG ELEVATORS Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1765   Medium Office BLDG ELEVATORS Default Schedule, !- CustomDay1 Schedule:Day Name
+   1766   Medium Office BLDG ELEVATORS Default Schedule; !- CustomDay2 Schedule:Day Name
+   1767 
+   1768 Schedule:Year,
+   1769   Medium Office BLDG ELEVATORS,           !- Name
+   1770   Fraction,                               !- Schedule Type Limits Name
+   1771   Schedule:Week:Daily {ea2643a2-6126-49f4-ac23-ab801e7ae8e8}, !- Schedule:Week Name 1
+   1772   1,                                      !- Start Month 1
+   1773   1,                                      !- Start Day 1
+   1774   12,                                     !- End Month 1
+   1775   31;                                     !- End Day 1
+   1776 
+   1777 Schedule:Week:Daily,
+   1778   Schedule:Week:Daily {37115698-4526-4477-9e1a-6960c2c385ae}, !- Name
+   1779   Medium Office Bldg Equip Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   1780   Medium Office Bldg Equip Default Schedule, !- Monday Schedule:Day Name
+   1781   Medium Office Bldg Equip Default Schedule, !- Tuesday Schedule:Day Name
+   1782   Medium Office Bldg Equip Default Schedule, !- Wednesday Schedule:Day Name
+   1783   Medium Office Bldg Equip Default Schedule, !- Thursday Schedule:Day Name
+   1784   Medium Office Bldg Equip Default Schedule, !- Friday Schedule:Day Name
+   1785   Medium Office Bldg Equip Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1786   Medium Office Bldg Equip Default Schedule, !- Holiday Schedule:Day Name
+   1787   Medium Office Bldg Equip Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1788   Medium Office Bldg Equip Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1789   Medium Office Bldg Equip Default Schedule, !- CustomDay1 Schedule:Day Name
+   1790   Medium Office Bldg Equip Default Schedule; !- CustomDay2 Schedule:Day Name
+   1791 
+   1792 Schedule:Year,
+   1793   Medium Office Bldg Equip,               !- Name
+   1794   Fraction,                               !- Schedule Type Limits Name
+   1795   Schedule:Week:Daily {37115698-4526-4477-9e1a-6960c2c385ae}, !- Schedule:Week Name 1
+   1796   1,                                      !- Start Month 1
+   1797   1,                                      !- Start Day 1
+   1798   12,                                     !- End Month 1
+   1799   31;                                     !- End Day 1
+   1800 
+   1801 Schedule:Week:Daily,
+   1802   Schedule:Week:Daily {e8748835-dcd2-4be4-bdbe-bcba352dd0e0}, !- Name
+   1803   Medium Office Bldg Light Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   1804   Medium Office Bldg Light Default Schedule, !- Monday Schedule:Day Name
+   1805   Medium Office Bldg Light Default Schedule, !- Tuesday Schedule:Day Name
+   1806   Medium Office Bldg Light Default Schedule, !- Wednesday Schedule:Day Name
+   1807   Medium Office Bldg Light Default Schedule, !- Thursday Schedule:Day Name
+   1808   Medium Office Bldg Light Default Schedule, !- Friday Schedule:Day Name
+   1809   Medium Office Bldg Light Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1810   Medium Office Bldg Light Default Schedule, !- Holiday Schedule:Day Name
+   1811   Medium Office Bldg Light Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1812   Medium Office Bldg Light Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1813   Medium Office Bldg Light Default Schedule, !- CustomDay1 Schedule:Day Name
+   1814   Medium Office Bldg Light Default Schedule; !- CustomDay2 Schedule:Day Name
+   1815 
+   1816 Schedule:Year,
+   1817   Medium Office Bldg Light,               !- Name
+   1818   Fraction,                               !- Schedule Type Limits Name
+   1819   Schedule:Week:Daily {e8748835-dcd2-4be4-bdbe-bcba352dd0e0}, !- Schedule:Week Name 1
+   1820   1,                                      !- Start Month 1
+   1821   1,                                      !- Start Day 1
+   1822   12,                                     !- End Month 1
+   1823   31;                                     !- End Day 1
+   1824 
+   1825 Schedule:Week:Daily,
+   1826   Schedule:Week:Daily {b1593e91-0066-42ee-aad8-825c559652ae}, !- Name
+   1827   Medium Office Bldg Occ Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   1828   Medium Office Bldg Occ Default Schedule, !- Monday Schedule:Day Name
+   1829   Medium Office Bldg Occ Default Schedule, !- Tuesday Schedule:Day Name
+   1830   Medium Office Bldg Occ Default Schedule, !- Wednesday Schedule:Day Name
+   1831   Medium Office Bldg Occ Default Schedule, !- Thursday Schedule:Day Name
+   1832   Medium Office Bldg Occ Default Schedule, !- Friday Schedule:Day Name
+   1833   Medium Office Bldg Occ Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1834   Medium Office Bldg Occ Default Schedule, !- Holiday Schedule:Day Name
+   1835   Medium Office Bldg Occ Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1836   Medium Office Bldg Occ Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1837   Medium Office Bldg Occ Default Schedule, !- CustomDay1 Schedule:Day Name
+   1838   Medium Office Bldg Occ Default Schedule; !- CustomDay2 Schedule:Day Name
+   1839 
+   1840 Schedule:Year,
+   1841   Medium Office Bldg Occ,                 !- Name
+   1842   Fraction,                               !- Schedule Type Limits Name
+   1843   Schedule:Week:Daily {b1593e91-0066-42ee-aad8-825c559652ae}, !- Schedule:Week Name 1
+   1844   1,                                      !- Start Month 1
+   1845   1,                                      !- Start Day 1
+   1846   12,                                     !- End Month 1
+   1847   31;                                     !- End Day 1
+   1848 
+   1849 Schedule:Week:Daily,
+   1850   Schedule:Week:Daily {47f4edf7-c9bf-4253-b50f-7b83fec23338}, !- Name
+   1851   Medium Office Bldg Swh Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   1852   Medium Office Bldg Swh Default Schedule, !- Monday Schedule:Day Name
+   1853   Medium Office Bldg Swh Default Schedule, !- Tuesday Schedule:Day Name
+   1854   Medium Office Bldg Swh Default Schedule, !- Wednesday Schedule:Day Name
+   1855   Medium Office Bldg Swh Default Schedule, !- Thursday Schedule:Day Name
+   1856   Medium Office Bldg Swh Default Schedule, !- Friday Schedule:Day Name
+   1857   Medium Office Bldg Swh Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1858   Medium Office Bldg Swh Default Schedule, !- Holiday Schedule:Day Name
+   1859   Medium Office Bldg Swh Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1860   Medium Office Bldg Swh Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1861   Medium Office Bldg Swh Default Schedule, !- CustomDay1 Schedule:Day Name
+   1862   Medium Office Bldg Swh Default Schedule; !- CustomDay2 Schedule:Day Name
+   1863 
+   1864 Schedule:Year,
+   1865   Medium Office Bldg Swh,                 !- Name
+   1866   Fraction,                               !- Schedule Type Limits Name
+   1867   Schedule:Week:Daily {47f4edf7-c9bf-4253-b50f-7b83fec23338}, !- Schedule:Week Name 1
+   1868   1,                                      !- Start Month 1
+   1869   1,                                      !- Start Day 1
+   1870   12,                                     !- End Month 1
+   1871   31;                                     !- End Day 1
+   1872 
+   1873 Schedule:Week:Daily,
+   1874   Schedule:Week:Daily {59d5c300-b319-4e0a-bbf8-53868dd4ffca}, !- Name
+   1875   Medium Office ClgSetp Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   1876   Medium Office ClgSetp Default Schedule, !- Monday Schedule:Day Name
+   1877   Medium Office ClgSetp Default Schedule, !- Tuesday Schedule:Day Name
+   1878   Medium Office ClgSetp Default Schedule, !- Wednesday Schedule:Day Name
+   1879   Medium Office ClgSetp Default Schedule, !- Thursday Schedule:Day Name
+   1880   Medium Office ClgSetp Default Schedule, !- Friday Schedule:Day Name
+   1881   Medium Office ClgSetp Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1882   Medium Office ClgSetp Default Schedule, !- Holiday Schedule:Day Name
+   1883   Medium Office ClgSetp Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1884   Medium Office ClgSetp Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1885   Medium Office ClgSetp Default Schedule, !- CustomDay1 Schedule:Day Name
+   1886   Medium Office ClgSetp Default Schedule; !- CustomDay2 Schedule:Day Name
+   1887 
+   1888 Schedule:Year,
+   1889   Medium Office ClgSetp,                  !- Name
+   1890   Temperature 2,                          !- Schedule Type Limits Name
+   1891   Schedule:Week:Daily {59d5c300-b319-4e0a-bbf8-53868dd4ffca}, !- Schedule:Week Name 1
+   1892   1,                                      !- Start Month 1
+   1893   1,                                      !- Start Day 1
+   1894   12,                                     !- End Month 1
+   1895   31;                                     !- End Day 1
+   1896 
+   1897 Schedule:Week:Daily,
+   1898   Schedule:Week:Daily {8fbab7b1-b921-47ad-8985-dec4e7375824}, !- Name
+   1899   Medium Office Clothing Default Schedule, !- Sunday Schedule:Day Name
+   1900   Medium Office Clothing Default Schedule, !- Monday Schedule:Day Name
+   1901   Medium Office Clothing Default Schedule, !- Tuesday Schedule:Day Name
+   1902   Medium Office Clothing Default Schedule, !- Wednesday Schedule:Day Name
+   1903   Medium Office Clothing Default Schedule, !- Thursday Schedule:Day Name
+   1904   Medium Office Clothing Default Schedule, !- Friday Schedule:Day Name
+   1905   Medium Office Clothing Default Schedule, !- Saturday Schedule:Day Name
+   1906   Medium Office Clothing Default Schedule, !- Holiday Schedule:Day Name
+   1907   Medium Office Clothing Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1908   Medium Office Clothing Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1909   Medium Office Clothing Default Schedule, !- CustomDay1 Schedule:Day Name
+   1910   Medium Office Clothing Default Schedule; !- CustomDay2 Schedule:Day Name
+   1911 
+   1912 Schedule:Week:Daily,
+   1913   Schedule:Week:Daily {68863e79-5ecc-4c2b-ad09-4d35854db170}, !- Name
+   1914   Medium Office Clothing Default Schedule, !- Sunday Schedule:Day Name
+   1915   Medium Office Clothing Rule 2 Day Schedule, !- Monday Schedule:Day Name
+   1916   Medium Office Clothing Rule 2 Day Schedule, !- Tuesday Schedule:Day Name
+   1917   Medium Office Clothing Rule 2 Day Schedule, !- Wednesday Schedule:Day Name
+   1918   Medium Office Clothing Rule 2 Day Schedule, !- Thursday Schedule:Day Name
+   1919   Medium Office Clothing Rule 2 Day Schedule, !- Friday Schedule:Day Name
+   1920   Medium Office Clothing Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1921   Medium Office Clothing Default Schedule, !- Holiday Schedule:Day Name
+   1922   Medium Office Clothing Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1923   Medium Office Clothing Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1924   Medium Office Clothing Default Schedule, !- CustomDay1 Schedule:Day Name
+   1925   Medium Office Clothing Default Schedule; !- CustomDay2 Schedule:Day Name
+   1926 
+   1927 Schedule:Week:Daily,
+   1928   Schedule:Week:Daily {01c4f5a3-3b62-48b0-8a56-f179dbac4d29}, !- Name
+   1929   Medium Office Clothing Rule 2 Day Schedule, !- Sunday Schedule:Day Name
+   1930   Medium Office Clothing Rule 2 Day Schedule, !- Monday Schedule:Day Name
+   1931   Medium Office Clothing Rule 2 Day Schedule, !- Tuesday Schedule:Day Name
+   1932   Medium Office Clothing Rule 2 Day Schedule, !- Wednesday Schedule:Day Name
+   1933   Medium Office Clothing Rule 2 Day Schedule, !- Thursday Schedule:Day Name
+   1934   Medium Office Clothing Rule 2 Day Schedule, !- Friday Schedule:Day Name
+   1935   Medium Office Clothing Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1936   Medium Office Clothing Default Schedule, !- Holiday Schedule:Day Name
+   1937   Medium Office Clothing Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1938   Medium Office Clothing Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1939   Medium Office Clothing Default Schedule, !- CustomDay1 Schedule:Day Name
+   1940   Medium Office Clothing Default Schedule; !- CustomDay2 Schedule:Day Name
+   1941 
+   1942 Schedule:Week:Daily,
+   1943   Schedule:Week:Daily {83678e26-63fd-4a65-9094-f23db2433ec2}, !- Name
+   1944   Medium Office Clothing Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   1945   Medium Office Clothing Rule 1 Day Schedule, !- Monday Schedule:Day Name
+   1946   Medium Office Clothing Rule 1 Day Schedule, !- Tuesday Schedule:Day Name
+   1947   Medium Office Clothing Rule 1 Day Schedule, !- Wednesday Schedule:Day Name
+   1948   Medium Office Clothing Rule 1 Day Schedule, !- Thursday Schedule:Day Name
+   1949   Medium Office Clothing Rule 1 Day Schedule, !- Friday Schedule:Day Name
+   1950   Medium Office Clothing Rule 1 Day Schedule, !- Saturday Schedule:Day Name
+   1951   Medium Office Clothing Default Schedule, !- Holiday Schedule:Day Name
+   1952   Medium Office Clothing Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1953   Medium Office Clothing Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1954   Medium Office Clothing Default Schedule, !- CustomDay1 Schedule:Day Name
+   1955   Medium Office Clothing Default Schedule; !- CustomDay2 Schedule:Day Name
+   1956 
+   1957 Schedule:Year,
+   1958   Medium Office Clothing,                 !- Name
+   1959   Any Number,                             !- Schedule Type Limits Name
+   1960   Schedule:Week:Daily {8fbab7b1-b921-47ad-8985-dec4e7375824}, !- Schedule:Week Name 1
+   1961   1,                                      !- Start Month 1
+   1962   1,                                      !- Start Day 1
+   1963   4,                                      !- End Month 1
+   1964   29,                                     !- End Day 1
+   1965   Schedule:Week:Daily {68863e79-5ecc-4c2b-ad09-4d35854db170}, !- Schedule:Week Name 2
+   1966   4,                                      !- Start Month 2
+   1967   30,                                     !- Start Day 2
+   1968   5,                                      !- End Month 2
+   1969   6,                                      !- End Day 2
+   1970   Schedule:Week:Daily {01c4f5a3-3b62-48b0-8a56-f179dbac4d29}, !- Schedule:Week Name 3
+   1971   5,                                      !- Start Month 3
+   1972   7,                                      !- Start Day 3
+   1973   9,                                      !- End Month 3
+   1974   30,                                     !- End Day 3
+   1975   Schedule:Week:Daily {83678e26-63fd-4a65-9094-f23db2433ec2}, !- Schedule:Week Name 4
+   1976   10,                                     !- Start Month 4
+   1977   1,                                      !- Start Day 4
+   1978   12,                                     !- End Month 4
+   1979   31;                                     !- End Day 4
+   1980 
+   1981 Schedule:Week:Daily,
+   1982   Schedule:Week:Daily {962e6a9c-3552-47f7-9b32-19578f9227d2}, !- Name
+   1983   Medium Office HtgSetp Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   1984   Medium Office HtgSetp Default Schedule, !- Monday Schedule:Day Name
+   1985   Medium Office HtgSetp Default Schedule, !- Tuesday Schedule:Day Name
+   1986   Medium Office HtgSetp Default Schedule, !- Wednesday Schedule:Day Name
+   1987   Medium Office HtgSetp Default Schedule, !- Thursday Schedule:Day Name
+   1988   Medium Office HtgSetp Default Schedule, !- Friday Schedule:Day Name
+   1989   Medium Office HtgSetp Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   1990   Medium Office HtgSetp Default Schedule, !- Holiday Schedule:Day Name
+   1991   Medium Office HtgSetp Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   1992   Medium Office HtgSetp Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   1993   Medium Office HtgSetp Default Schedule, !- CustomDay1 Schedule:Day Name
+   1994   Medium Office HtgSetp Default Schedule; !- CustomDay2 Schedule:Day Name
+   1995 
+   1996 Schedule:Year,
+   1997   Medium Office HtgSetp,                  !- Name
+   1998   Temperature 1,                          !- Schedule Type Limits Name
+   1999   Schedule:Week:Daily {962e6a9c-3552-47f7-9b32-19578f9227d2}, !- Schedule:Week Name 1
+   2000   1,                                      !- Start Month 1
+   2001   1,                                      !- Start Day 1
+   2002   12,                                     !- End Month 1
+   2003   31;                                     !- End Day 1
+   2004 
+   2005 Schedule:Week:Daily,
+   2006   Schedule:Week:Daily {1e57fe50-d1ee-4363-bae6-730f3d3cbbcd}, !- Name
+   2007   Medium Office Infil Quarter On Rule 1 Day Schedule, !- Sunday Schedule:Day Name
+   2008   Medium Office Infil Quarter On Default Schedule, !- Monday Schedule:Day Name
+   2009   Medium Office Infil Quarter On Default Schedule, !- Tuesday Schedule:Day Name
+   2010   Medium Office Infil Quarter On Default Schedule, !- Wednesday Schedule:Day Name
+   2011   Medium Office Infil Quarter On Default Schedule, !- Thursday Schedule:Day Name
+   2012   Medium Office Infil Quarter On Default Schedule, !- Friday Schedule:Day Name
+   2013   Medium Office Infil Quarter On Rule 2 Day Schedule, !- Saturday Schedule:Day Name
+   2014   Medium Office Infil Quarter On Default Schedule, !- Holiday Schedule:Day Name
+   2015   Medium Office Infil Quarter On Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   2016   Medium Office Infil Quarter On Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   2017   Medium Office Infil Quarter On Default Schedule, !- CustomDay1 Schedule:Day Name
+   2018   Medium Office Infil Quarter On Default Schedule; !- CustomDay2 Schedule:Day Name
+   2019 
+   2020 Schedule:Year,
+   2021   Medium Office Infil Quarter On,         !- Name
+   2022   Fraction,                               !- Schedule Type Limits Name
+   2023   Schedule:Week:Daily {1e57fe50-d1ee-4363-bae6-730f3d3cbbcd}, !- Schedule:Week Name 1
+   2024   1,                                      !- Start Month 1
+   2025   1,                                      !- Start Day 1
+   2026   12,                                     !- End Month 1
+   2027   31;                                     !- End Day 1
+   2028 
+   2029 Schedule:Week:Daily,
+   2030   Schedule:Week:Daily {b8f2c042-c070-48de-9ca2-3aa95eb35283}, !- Name
+   2031   Medium Office Work Eff Default Schedule, !- Sunday Schedule:Day Name
+   2032   Medium Office Work Eff Default Schedule, !- Monday Schedule:Day Name
+   2033   Medium Office Work Eff Default Schedule, !- Tuesday Schedule:Day Name
+   2034   Medium Office Work Eff Default Schedule, !- Wednesday Schedule:Day Name
+   2035   Medium Office Work Eff Default Schedule, !- Thursday Schedule:Day Name
+   2036   Medium Office Work Eff Default Schedule, !- Friday Schedule:Day Name
+   2037   Medium Office Work Eff Default Schedule, !- Saturday Schedule:Day Name
+   2038   Medium Office Work Eff Default Schedule, !- Holiday Schedule:Day Name
+   2039   Medium Office Work Eff Summer Design Day, !- SummerDesignDay Schedule:Day Name
+   2040   Medium Office Work Eff Winter Design Day, !- WinterDesignDay Schedule:Day Name
+   2041   Medium Office Work Eff Default Schedule, !- CustomDay1 Schedule:Day Name
+   2042   Medium Office Work Eff Default Schedule; !- CustomDay2 Schedule:Day Name
+   2043 
+   2044 Schedule:Year,
+   2045   Medium Office Work Eff,                 !- Name
+   2046   Fraction,                               !- Schedule Type Limits Name
+   2047   Schedule:Week:Daily {b8f2c042-c070-48de-9ca2-3aa95eb35283}, !- Schedule:Week Name 1
+   2048   1,                                      !- Start Month 1
+   2049   1,                                      !- Start Day 1
+   2050   12,                                     !- End Month 1
+   2051   31;                                     !- End Day 1
+   2052 
+   2053 RunPeriodControl:DaylightSavingTime,
+   2054   2nd Sunday in March,                    !- Start Date
+   2055   1st Sunday in November;                 !- End Date
+   2056 
+   2057 OutputControl:ReportingTolerances,
+   2058   0.2,                                    !- Tolerance for Time Heating Setpoint Not Met {deltaC}
+   2059   0.2;                                    !- Tolerance for Time Cooling Setpoint Not Met {deltaC}
+   2060 
+   2061 Site:Location,
+   2062   Site 1,                                 !- Name
+   2063   40.78,                                  !- Latitude {deg}
+   2064   -73.97,                                 !- Longitude {deg}
+   2065   -5,                                     !- Time Zone {hr}
+   2066   40;                                     !- Elevation {m}
+   2067 
+   2068 ZoneList,
+   2069   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice, !- Name
+   2070   ThermalZone01;                          !- Zone Name 1
+   2071 
+   2072 Lights,
+   2073   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice LightsInst, !- Name
+   2074   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice, !- Zone or ZoneList Name
+   2075   Medium Office Bldg Light,               !- Schedule Name
+   2076   Watts/Area,                             !- Design Level Calculation Method
+   2077   ,                                       !- Lighting Level {W}
+   2078   9.68752354606417,                       !- Watts per Zone Floor Area {W/m2}
+   2079   ,                                       !- Watts per Person {W/person}
+   2080   ,                                       !- Return Air Fraction
+   2081   ,                                       !- Fraction Radiant
+   2082   ,                                       !- Fraction Visible
+   2083   ,                                       !- Fraction Replaceable
+   2084   Lights;                                 !- End-Use Subcategory
+   2085 
+   2086 People,
+   2087   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice PeopInst, !- Name
+   2088   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice, !- Zone or ZoneList Name
+   2089   Medium Office Bldg Occ,                 !- Number of People Schedule Name
+   2090   People/Area,                            !- Number of People Calculation Method
+   2091   0,                                      !- Number of People
+   2092   0.0538195752559121,                     !- People per Zone Floor Area {person/m2}
+   2093   ,                                       !- Zone Floor Area per Person {m2/person}
+   2094   0.3,                                    !- Fraction Radiant
+   2095   ,                                       !- Sensible Heat Fraction
+   2096   Medium Office Activity;                 !- Activity Level Schedule Name
+   2097 
+   2098 ElectricEquipment,
+   2099   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice ElecInst, !- Name
+   2100   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice, !- Zone or ZoneList Name
+   2101   Medium Office Bldg Equip,               !- Schedule Name
+   2102   Watts/Area,                             !- Design Level Calculation Method
+   2103   ,                                       !- Design Level {W}
+   2104   5.8125141276385,                        !- Watts per Zone Floor Area {W/m2}
+   2105   ,                                       !- Watts per Person {W/person}
+   2106   ,                                       !- Fraction Latent
+   2107   ,                                       !- Fraction Radiant
+   2108   ,                                       !- Fraction Lost
+   2109   ElectricEquipment;                      !- End-Use Subcategory
+   2110 
+   2111 ZoneInfiltration:DesignFlowRate,
+   2112   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice Infil, !- Name
+   2113   ASHRAE 189.1-2009 ClimateZone 4-8 MediumOffice, !- Zone or ZoneList Name
+   2114   Medium Office Infil Quarter On,         !- Schedule Name
+   2115   AirChanges/Hour,                        !- Design Flow Rate Calculation Method
+   2116   ,                                       !- Design Flow Rate {m3/s}
+   2117   ,                                       !- Flow per Zone Floor Area {m3/s-m2}
+   2118   ,                                       !- Flow per Exterior Surface Area {m3/s-m2}
+   2119   0.15,                                   !- Air Changes per Hour {1/hr}
+   2120   ,                                       !- Constant Term Coefficient
+   2121   ,                                       !- Temperature Term Coefficient
+   2122   ,                                       !- Velocity Term Coefficient
+   2123   ;                                       !- Velocity Squared Term Coefficient
+   2124 
+   2125 ThermostatSetpoint:DualSetpoint,
+   2126   Medium Office Thermostat,               !- Name
+   2127   Medium Office HtgSetp,                  !- Heating Setpoint Temperature Schedule Name
+   2128   Medium Office ClgSetp;                  !- Cooling Setpoint Temperature Schedule Name
+   2129 
+   2130 Output:Variable,
+   2131   *,                                      !- Key Value
+   2132   Surface Outside Face Temperature,       !- Variable Name
+   2133   Hourly;                                 !- Reporting Frequency
+   2134 
+   2135 Output:Variable,
+   2136   *,                                      !- Key Value
+   2137   Zone Predicted Sensible Load to Setpoint Heat Transfer Rate, !- Variable Name
+   2138   Hourly;                                 !- Reporting Frequency
+   2139 
+   2140 Output:Variable,
+   2141   *,                                      !- Key Value
+   2142   Zone Air System Sensible Cooling Energy, !- Variable Name
+   2143   Hourly;                                 !- Reporting Frequency
+   2144 
+   2145 Output:Variable,
+   2146   *,                                      !- Key Value
+   2147   Zone Air System Sensible Cooling Rate,  !- Variable Name
+   2148   Hourly;                                 !- Reporting Frequency
+   2149 
+   2150 Output:Variable,
+   2151   *,                                      !- Key Value
+   2152   Zone Air System Sensible Heating Energy, !- Variable Name
+   2153   Hourly;                                 !- Reporting Frequency
+   2154 
+   2155 Output:Variable,
+   2156   *,                                      !- Key Value
+   2157   Zone Air System Sensible Heating Rate,  !- Variable Name
+   2158   Hourly;                                 !- Reporting Frequency
+   2159 
+   2160 OutputControl:Table:Style,
+   2161   HTML;                                   !- Column Separator
+   2162 
+   2163 Output:Table:SummaryReports,
+   2164   AllSummary;                             !- Report Name 1
+   2165 
+   2166 Output:VariableDictionary,
+   2167   IDF,                                    !- Key Field
+   2168   Unsorted;                               !- Sort Option
+   2169 
+   2170 Output:SQLite,
+   2171   SimpleAndTabular;                       !- Option Type
+   2172 !
+   2173 ! -------------------------------------------------------------
+   2174 ! New objects created from ExpandObjects
+   2175 ! -------------------------------------------------------------
+   2176 !
+   2177 
+   2178 Schedule:Compact,
+   2179   HVACTemplate-Always 4,                                   !- Name
+   2180   HVACTemplate Any Number,                                 !- Schedule Type Limits Name
+   2181   Through: 12/31,                                          !- Field 1
+   2182   For: AllDays,                                            !- Field 2
+   2183   Until: 24:00,                                            !- Field 3
+   2184   4;                                                       !- Field 4
+   2185 
+   2186 ZoneHVAC:EquipmentConnections,
+   2187   ThermalZone01,                                           !- Zone Name
+   2188   ThermalZone01 Equipment,                                 !- Zone Conditioning Equipment List Name
+   2189   ThermalZone01 Supply Inlet,                              !- Zone Air Inlet Node or NodeList Name
+   2190   ,                                                        !- Zone Air Exhaust Node or NodeList Name
+   2191   ThermalZone01 Zone Air Node,                             !- Zone Air Node Name
+   2192   ThermalZone01 Return Outlet;                             !- Zone Return Air Node Name
+   2193 
+   2194 ZoneHVAC:EquipmentList,
+   2195   ThermalZone01 Equipment,                                 !- Name
+   2196   ZoneHVAC:IdealLoadsAirSystem,                            !- Zone Equipment Object Type
+   2197   ThermalZone01ZoneHVAC:IdealLoadsAirSystem,               !- Zone Equipment Name
+   2198   1,                                                       !- Zone Equipment Cooling Sequence
+   2199   1;                                                       !- Zone Equipment Heating or No-Load Sequence
+   2200 
+   2201 ZoneHVAC:IdealLoadsAirSystem,
+   2202   ThermalZone01ZoneHVAC:IdealLoadsAirSystem,               !- Name
+   2203   ,                                                        !- Availability Schedule Name
+   2204   ThermalZone01 Supply Inlet,                              !- Zone Supply Air Node Name
+   2205   ,                                                        !- Zone Exhaust Air Node Name
+   2206   50,                                                      !- Maximum Heating Supply Air Temperature [C]
+   2207   13,                                                      !- Minimum Cooling Supply Air Temperature [C]
+   2208   0.008,                                                   !- Maximum Heating Supply Air Humidity Ratio [kg-H20/kg-air]
+   2209   0.009,                                                   !- Minimum Cooling Supply Air Humidity Ratio [kg-H20/kg-air]
+   2210   NoLimit,                                                 !- Heating Limit
+   2211   ,                                                        !- Maximum Heating Air Flow Rate {m3/s}
+   2212   ,                                                        !- Maximum Sensible Heating Capacity {m3/s}
+   2213   NoLimit,                                                 !- Cooling Limit
+   2214   ,                                                        !- Maximum Cooling Air Flow Rate {m3/s}
+   2215   ,                                                        !- Maximum Total Cooling Capacity {m3/s}
+   2216   ,                                                        !- Heating Availability Schedule Name
+   2217   ,                                                        !- Cooling Availability Schedule Name
+   2218   ConstantSensibleHeatRatio,                               !- Dehumidification Control Type
+   2219   .7,                                                      !- Cooling Sensible Heat Ratio
+   2220   ConstantSupplyHumidityRatio,                             !- Humidification Control Type
+   2221   ,                                                        !- Design Specification Outdoor Air Object Name
+   2222   ,                                                        !- Outdoor Air Inlet Node Name
+   2223   None,                                                    !- Demand Controlled Ventilation Type
+   2224   NoEconomizer,                                            !- Outdoor Air Economizer Type
+   2225   None,                                                    !- Heat Recovery Type
+   2226   .7,                                                      !- Sensible Heat Recovery Effectiveness
+   2227   .65;                                                     !- Latent Heat Recovery Effectiveness
+   2228 Output:Table:Monthly,
+   2229   Building Energy Performance - Electricity,  !- Name
+   2230     2,                       !- Digits After Decimal
+   2231     InteriorLights:Electricity,  !- Variable or Meter 1 Name
+   2232     SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+   2233     ExteriorLights:Electricity,  !- Variable or Meter 2 Name
+   2234     SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+   2235     InteriorEquipment:Electricity,  !- Variable or Meter 3 Name
+   2236     SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+   2237     ExteriorEquipment:Electricity,  !- Variable or Meter 4 Name
+   2238     SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+   2239     Fans:Electricity,        !- Variable or Meter 5 Name
+   2240     SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+   2241     Pumps:Electricity,       !- Variable or Meter 6 Name
+   2242     SumOrAverage,            !- Aggregation Type for Variable or Meter 6
+   2243     Heating:Electricity,     !- Variable or Meter 7 Name
+   2244     SumOrAverage,            !- Aggregation Type for Variable or Meter 7
+   2245     Cooling:Electricity,     !- Variable or Meter 8 Name
+   2246     SumOrAverage,            !- Aggregation Type for Variable or Meter 8
+   2247     HeatRejection:Electricity,  !- Variable or Meter 9 Name
+   2248     SumOrAverage,            !- Aggregation Type for Variable or Meter 9
+   2249     Humidifier:Electricity,  !- Variable or Meter 10 Name
+   2250     SumOrAverage,            !- Aggregation Type for Variable or Meter 10
+   2251     HeatRecovery:Electricity,!- Variable or Meter 11 Name
+   2252     SumOrAverage,            !- Aggregation Type for Variable or Meter 11
+   2253     WaterSystems:Electricity,!- Variable or Meter 12 Name
+   2254     SumOrAverage,            !- Aggregation Type for Variable or Meter 12
+   2255     Cogeneration:Electricity,!- Variable or Meter 13 Name
+   2256     SumOrAverage;            !- Aggregation Type for Variable or Meter 13
+   2257 Output:Table:Monthly,
+   2258   Building Energy Performance - Natural Gas,  !- Name
+   2259     2,                       !- Digits After Decimal
+   2260     InteriorEquipment:Gas,   !- Variable or Meter 1 Name
+   2261     SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+   2262     ExteriorEquipment:Gas,   !- Variable or Meter 2 Name
+   2263     SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+   2264     Heating:Gas,             !- Variable or Meter 3 Name
+   2265     SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+   2266     Cooling:Gas,             !- Variable or Meter 4 Name
+   2267     SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+   2268     WaterSystems:Gas,        !- Variable or Meter 5 Name
+   2269     SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+   2270     Cogeneration:Gas,        !- Variable or Meter 6 Name
+   2271     SumOrAverage;            !- Aggregation Type for Variable or Meter 6
+   2272 Output:Table:Monthly,
+   2273   Building Energy Performance - District Heating,  !- Name
+   2274     2,                       !- Digits After Decimal
+   2275     InteriorLights:DistrictHeating,  !- Variable or Meter 1 Name
+   2276     SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+   2277     ExteriorLights:DistrictHeating,  !- Variable or Meter 2 Name
+   2278     SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+   2279     InteriorEquipment:DistrictHeating,  !- Variable or Meter 3 Name
+   2280     SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+   2281     ExteriorEquipment:DistrictHeating,  !- Variable or Meter 4 Name
+   2282     SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+   2283     Fans:DistrictHeating,        !- Variable or Meter 5 Name
+   2284     SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+   2285     Pumps:DistrictHeating,       !- Variable or Meter 6 Name
+   2286     SumOrAverage,            !- Aggregation Type for Variable or Meter 6
+   2287     Heating:DistrictHeating,     !- Variable or Meter 7 Name
+   2288     SumOrAverage,            !- Aggregation Type for Variable or Meter 7
+   2289     Cooling:DistrictHeating,     !- Variable or Meter 8 Name
+   2290     SumOrAverage,            !- Aggregation Type for Variable or Meter 8
+   2291     HeatRejection:DistrictHeating,  !- Variable or Meter 9 Name
+   2292     SumOrAverage,            !- Aggregation Type for Variable or Meter 9
+   2293     Humidifier:DistrictHeating,  !- Variable or Meter 10 Name
+   2294     SumOrAverage,            !- Aggregation Type for Variable or Meter 10
+   2295     HeatRecovery:DistrictHeating,!- Variable or Meter 11 Name
+   2296     SumOrAverage,            !- Aggregation Type for Variable or Meter 11
+   2297     WaterSystems:DistrictHeating,!- Variable or Meter 12 Name
+   2298     SumOrAverage,            !- Aggregation Type for Variable or Meter 12
+   2299     Cogeneration:DistrictHeating,!- Variable or Meter 13 Name
+   2300     SumOrAverage;            !- Aggregation Type for Variable or Meter 13
+   2301 Output:Table:Monthly,
+   2302   Building Energy Performance - District Cooling,  !- Name
+   2303     2,                       !- Digits After Decimal
+   2304     InteriorLights:DistrictCooling,  !- Variable or Meter 1 Name
+   2305     SumOrAverage,            !- Aggregation Type for Variable or Meter 1
+   2306     ExteriorLights:DistrictCooling,  !- Variable or Meter 2 Name
+   2307     SumOrAverage,            !- Aggregation Type for Variable or Meter 2
+   2308     InteriorEquipment:DistrictCooling,  !- Variable or Meter 3 Name
+   2309     SumOrAverage,            !- Aggregation Type for Variable or Meter 3
+   2310     ExteriorEquipment:DistrictCooling,  !- Variable or Meter 4 Name
+   2311     SumOrAverage,            !- Aggregation Type for Variable or Meter 4
+   2312     Fans:DistrictCooling,        !- Variable or Meter 5 Name
+   2313     SumOrAverage,            !- Aggregation Type for Variable or Meter 5
+   2314     Pumps:DistrictCooling,       !- Variable or Meter 6 Name
+   2315     SumOrAverage,            !- Aggregation Type for Variable or Meter 6
+   2316     Heating:DistrictCooling,     !- Variable or Meter 7 Name
+   2317     SumOrAverage,            !- Aggregation Type for Variable or Meter 7
+   2318     Cooling:DistrictCooling,     !- Variable or Meter 8 Name
+   2319     SumOrAverage,            !- Aggregation Type for Variable or Meter 8
+   2320     HeatRejection:DistrictCooling,  !- Variable or Meter 9 Name
+   2321     SumOrAverage,            !- Aggregation Type for Variable or Meter 9
+   2322     Humidifier:DistrictCooling,  !- Variable or Meter 10 Name
+   2323     SumOrAverage,            !- Aggregation Type for Variable or Meter 10
+   2324     HeatRecovery:DistrictCooling,!- Variable or Meter 11 Name
+   2325     SumOrAverage,            !- Aggregation Type for Variable or Meter 11
+   2326     WaterSystems:DistrictCooling,!- Variable or Meter 12 Name
+   2327     SumOrAverage,            !- Aggregation Type for Variable or Meter 12
+   2328     Cogeneration:DistrictCooling,!- Variable or Meter 13 Name
+   2329     SumOrAverage;            !- Aggregation Type for Variable or Meter 13
+   2330 Output:Table:Monthly,
+   2331   Building Energy Performance - Electricity Peak Demand,  !- Name
+   2332     2,                       !- Digits After Decimal
+   2333     Electricity:Facility,  !- Variable or Meter 1 Name
+   2334     Maximum,            !- Aggregation Type for Variable or Meter 1
+   2335     InteriorLights:Electricity,  !- Variable or Meter 1 Name
+   2336     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 1
+   2337     ExteriorLights:Electricity,  !- Variable or Meter 2 Name
+   2338     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 2
+   2339     InteriorEquipment:Electricity,  !- Variable or Meter 3 Name
+   2340     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 3
+   2341     ExteriorEquipment:Electricity,  !- Variable or Meter 4 Name
+   2342     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 4
+   2343     Fans:Electricity,        !- Variable or Meter 5 Name
+   2344     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 5
+   2345     Pumps:Electricity,       !- Variable or Meter 6 Name
+   2346     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 6
+   2347     Heating:Electricity,     !- Variable or Meter 7 Name
+   2348     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 7
+   2349     Cooling:Electricity,     !- Variable or Meter 8 Name
+   2350     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 8
+   2351     HeatRejection:Electricity,  !- Variable or Meter 9 Name
+   2352     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 9
+   2353     Humidifier:Electricity,  !- Variable or Meter 10 Name
+   2354     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 10
+   2355     HeatRecovery:Electricity,!- Variable or Meter 11 Name
+   2356     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 11
+   2357     WaterSystems:Electricity,!- Variable or Meter 12 Name
+   2358     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 12
+   2359     Cogeneration:Electricity,!- Variable or Meter 13 Name
+   2360     ValueWhenMaximumOrMinimum;            !- Aggregation Type for Variable or Meter 13
+   2361 Output:Table:Monthly,
+   2362   Building Energy Performance - Natural Gas Peak Demand,  !- Name
+   2363     2,                       !- Digits After Decimal
+   2364     Gas:Facility,  !- Variable or Meter 1 Name
+   2365     Maximum,            !- Aggregation Type for Variable or Meter 1
+   2366     InteriorEquipment:Gas,   !- Variable or Meter 1 Name
+   2367     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 1
+   2368     ExteriorEquipment:Gas,   !- Variable or Meter 2 Name
+   2369     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 2
+   2370     Heating:Gas,             !- Variable or Meter 3 Name
+   2371     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 3
+   2372     Cooling:Gas,             !- Variable or Meter 4 Name
+   2373     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 4
+   2374     WaterSystems:Gas,        !- Variable or Meter 5 Name
+   2375     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 5
+   2376     Cogeneration:Gas,        !- Variable or Meter 6 Name
+   2377     ValueWhenMaximumOrMinimum;            !- Aggregation Type for Variable or Meter 6
+   2378 Output:Table:Monthly,
+   2379   Building Energy Performance - District Heating Peak Demand,  !- Name
+   2380     2,                       !- Digits After Decimal
+   2381     DistrictHeating:Facility,  !- Variable or Meter 1 Name
+   2382     Maximum,            !- Aggregation Type for Variable or Meter 1
+   2383     InteriorLights:DistrictHeating,  !- Variable or Meter 1 Name
+   2384     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 1
+   2385     ExteriorLights:DistrictHeating,  !- Variable or Meter 2 Name
+   2386     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 2
+   2387     InteriorEquipment:DistrictHeating,  !- Variable or Meter 3 Name
+   2388     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 3
+   2389     ExteriorEquipment:DistrictHeating,  !- Variable or Meter 4 Name
+   2390     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 4
+   2391     Fans:DistrictHeating,        !- Variable or Meter 5 Name
+   2392     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 5
+   2393     Pumps:DistrictHeating,       !- Variable or Meter 6 Name
+   2394     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 6
+   2395     Heating:DistrictHeating,     !- Variable or Meter 7 Name
+   2396     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 7
+   2397     Cooling:DistrictHeating,     !- Variable or Meter 8 Name
+   2398     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 8
+   2399     HeatRejection:DistrictHeating,  !- Variable or Meter 9 Name
+   2400     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 9
+   2401     Humidifier:DistrictHeating,  !- Variable or Meter 10 Name
+   2402     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 10
+   2403     HeatRecovery:DistrictHeating,!- Variable or Meter 11 Name
+   2404     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 11
+   2405     WaterSystems:DistrictHeating,!- Variable or Meter 12 Name
+   2406     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 12
+   2407     Cogeneration:DistrictHeating,!- Variable or Meter 13 Name
+   2408     ValueWhenMaximumOrMinimum;            !- Aggregation Type for Variable or Meter 13
+   2409 Output:Table:Monthly,
+   2410   Building Energy Performance - District Cooling Peak Demand,  !- Name
+   2411     2,                       !- Digits After Decimal
+   2412     DistrictCooling:Facility,  !- Variable or Meter 1 Name
+   2413     Maximum,            !- Aggregation Type for Variable or Meter 1
+   2414     InteriorLights:DistrictCooling,  !- Variable or Meter 1 Name
+   2415     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 1
+   2416     ExteriorLights:DistrictCooling,  !- Variable or Meter 2 Name
+   2417     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 2
+   2418     InteriorEquipment:DistrictCooling,  !- Variable or Meter 3 Name
+   2419     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 3
+   2420     ExteriorEquipment:DistrictCooling,  !- Variable or Meter 4 Name
+   2421     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 4
+   2422     Fans:DistrictCooling,        !- Variable or Meter 5 Name
+   2423     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 5
+   2424     Pumps:DistrictCooling,       !- Variable or Meter 6 Name
+   2425     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 6
+   2426     Heating:DistrictCooling,     !- Variable or Meter 7 Name
+   2427     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 7
+   2428     Cooling:DistrictCooling,     !- Variable or Meter 8 Name
+   2429     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 8
+   2430     HeatRejection:DistrictCooling,  !- Variable or Meter 9 Name
+   2431     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 9
+   2432     Humidifier:DistrictCooling,  !- Variable or Meter 10 Name
+   2433     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 10
+   2434     HeatRecovery:DistrictCooling,!- Variable or Meter 11 Name
+   2435     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 11
+   2436     WaterSystems:DistrictCooling,!- Variable or Meter 12 Name
+   2437     ValueWhenMaximumOrMinimum,            !- Aggregation Type for Variable or Meter 12
+   2438     Cogeneration:DistrictCooling,!- Variable or Meter 13 Name
+   2439     ValueWhenMaximumOrMinimum;            !- Aggregation Type for Variable or Meter 13
+   2440     Output:Meter,Electricity:Facility,Timestep; !- [J]
+   2441     Output:Meter,Gas:Facility,Timestep; !- [J]
+   2442     Output:Meter,DistrictCooling:Facility,Timestep; !- [J]
+   2443     Output:Meter,DistrictHeating:Facility,Timestep; !- [J]
+  Processing Input Data File (in.idf) -- Complete
+  Maximum number of Alpha IDF Args=          29
+  Maximum number of Numeric IDF Args=          31
+  Number of IDF "Lines"=         211
+  Number of Defaulted Fields=          42
+  Number of Fields with Defaults=         283
+  Number of Autosized Fields=           0
+  Number of Autosizable Fields =           4
+  Number of Autocalculated Fields=          18
+  Number of Autocalculatable Fields =          18
+ Getting object=OUTPUT:SQLITE
+ Getting object=PROGRAMCONTROL
+ Getting object=VERSION
+ Getting object=HEATBALANCEALGORITHM
+ Getting object=TIMESTEP
+ Getting object=CONVERGENCELIMITS
+ Getting object=OUTPUTCONTROL:REPORTINGTOLERANCES
+ Getting object=SIMULATIONCONTROL
+ Getting object=OUTPUT:VARIABLEDICTIONARY
+ Getting object=DESIGNSPECIFICATION:OUTDOORAIR
+ Getting object=SIZING:PARAMETERS
+ Getting object=RUNPERIOD
+ Getting object=RUNPERIODCONTROL:DAYLIGHTSAVINGTIME
+ Getting object=SITE:LOCATION
+ Getting object=OUTPUT:VARIABLE
+ Getting object=SCHEDULE:COMPACT
+  Processing Schedule Input -- Start
+ Getting object=SCHEDULETYPELIMITS
+ Getting object=SCHEDULE:DAY:INTERVAL
+ Getting object=SCHEDULE:WEEK:DAILY
+ Getting object=SCHEDULE:YEAR
+ Getting object=SCHEDULE:CONSTANT
+  Processing Schedule Input -- Complete
+ Getting object=BUILDING
+ Getting object=SURFACECONVECTIONALGORITHM:INSIDE
+ Getting object=SURFACECONVECTIONALGORITHM:OUTSIDE
+ Getting object=ZONEAIRHEATBALANCEALGORITHM
+ Getting object=MATERIAL
+ Getting object=MATERIAL:NOMASS
+ Getting object=MATERIAL:AIRGAP
+ Getting object=WINDOWMATERIAL:GLAZING
+ Getting object=WINDOWMATERIAL:GAS
+ Getting object=CONSTRUCTION
+ Getting object=ZONE
+ Getting object=ZONELIST
+ Getting object=GLOBALGEOMETRYRULES
+ Getting object=BUILDINGSURFACE:DETAILED
+ Getting object=FENESTRATIONSURFACE:DETAILED
+ Getting object=PEOPLE
+ Getting object=LIGHTS
+ Getting object=ELECTRICEQUIPMENT
+ Getting object=SHADOWCALCULATION
+ Getting object=ZONEINFILTRATION:DESIGNFLOWRATE
+ Getting object=ZONEVENTILATION:DESIGNFLOWRATE
+ Getting object=ZONECONTROL:THERMOSTAT
+ Getting object=THERMOSTATSETPOINT:DUALSETPOINT
+ Getting object=ZONEHVAC:EQUIPMENTCONNECTIONS
+ Getting object=ZONEHVAC:EQUIPMENTLIST
+ Getting object=ZONEHVAC:IDEALLOADSAIRSYSTEM
+ Getting object=OUTPUT:METER
+ Getting object=LIFECYCLECOST:PARAMETERS
+ Getting object=LIFECYCLECOST:USEPRICEESCALATION
+ Getting object=OUTPUT:TABLE:MONTHLY
+ Getting object=OUTPUTCONTROL:TABLE:STYLE
+ Getting object=OUTPUT:TABLE:SUMMARYREPORTS
+ MonthlyInputCount=           8
+ sizeMonthlyInput=          25
+ MonthlyFieldSetInputCount=          94
+ sizeMonthlyFieldSetInput=         100
+ MonthlyTablesCount=           6
+ MonthlyColumnsCount=          81
+ sizeReportName=         100
+ numReportName=          12
+ sizeSubTable=         100
+ numSubTable=          54
+ sizeColumnTag=         400
+ numColumnTag=         306
+ sizeTableEntry=         600
+ numTableEntry=         596
+ sizeCompSizeTableEntry=           0
+ numCompSizeTableEntry=           0
+ NumOfRVariable=         934
+ NumOfRVariable(Total)=         934
+ NumOfRVariable(Actual)=          23
+ NumOfRVariable(Summed)=          13
+ NumOfRVariable(Meter)=          13
+ NumOfIVariable=          61
+ NumOfIVariable(Total)=          61
+ NumOfIVariable(Actual)=           0
+ NumOfIVariable(Summed)=           0
+ MaxRVariable=        1000
+ MaxIVariable=          10
+ NumEnergyMeters=          36
+ NumVarMeterArrays=          13
+ maxUniqueKeyCount=        1500
+ maxNumberOfFigures=           0
+ MAXHCArrayBounds=          10
+ MaxVerticesPerSurface=           4
+ NumReportList=         500
+ InstMeterCacheSize=        1000
+ ClippingAlgorithm=SutherlandHodgman
+ MonthlyFieldSetInputCount=          94
+ NumConsideredOutputVariables=          55
+ MaxConsideredOutputVariables=          55
+ numActuatorsUsed=           0
+ numEMSActuatorsAvailable=           0
+ maxEMSActuatorsAvailable=           0
+ numInternalVariablesUsed=           0
+ numEMSInternalVarsAvailable=           0
+ maxEMSInternalVarsAvailable=           0
+ NumOfNodeConnections=           4
+ MaxNumOfNodeConnections=        1000

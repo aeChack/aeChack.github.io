@@ -1,0 +1,990 @@
+[openstudio.project.WorkflowRecord] <1> Unable to load workflow from RunManager using key a016a70560747abe1c0a50b01cb2a7bf. Returning empty Workflow.
+[openstudio.project.WorkflowRecord] <1> Unable to load workflow from RunManager using key a016a70560747abe1c0a50b01cb2a7bf. Returning empty Workflow.
+[openstudio.project.WorkflowRecord] <1> Unable to load workflow from RunManager using key a016a70560747abe1c0a50b01cb2a7bf. Returning empty Workflow.
+[openstudio.runmanager.Workflow] <-2> creating workflow
+[openstudio.LocalLibraryController] <-2> Creating LocalLibraryController with base app 0x7fff5220da28
+[utilities.bcl.BCLMeasure] <-2> Loading measures in path: /Applications/OpenStudio 1.0.6/OpenStudio.app/Contents/share/openstudio/pat/Measures/
+[utilities.bcl.BCLMeasure] <-2> Error Loading measures in path: /Applications/OpenStudio 1.0.6/OpenStudio.app/Contents/share/openstudio/pat/Measures/
+[utilities.bcl.BCLMeasure] <-2> Loading measures in path: /Volumes/OSXData/Users/alan/OpenStudio/Measures
+[openstudio.VariablesList] <-2> Found variableName: Zone Outdoor Air Drybulb Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Outdoor Air Wetbulb Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Outdoor Air Wind Speed
+[openstudio.VariablesList] <-2> Found variableName: Zone Total Internal Radiant Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Total Internal Visible Radiation Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Total Internal Convective Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Total Internal Latent Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Total Internal Total Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone People Occupant Count
+[openstudio.VariablesList] <-2> Found variableName: Zone People Radiant Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone People Convective Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone People Sensible Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone People Latent Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone People Total Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Lights Electric Power
+[openstudio.VariablesList] <-2> Found variableName: Zone Lights Radiant Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Lights Visible Radiation Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Lights Convective Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Lights Return Air Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Lights Total Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Lights Electric Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Radiant Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Convective Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Latent Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Lost Heat Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Total Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Electric Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Electric Power
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Radiant Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Latent Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Lost Heat Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Total Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Electric Equipment Electric Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Windows Total Transmitted Solar Radiation Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Exterior Windows Total Transmitted Beam Solar Radiation Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Interior Windows Total Transmitted Beam Solar Radiation Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Exterior Windows Total Transmitted Diffuse Solar Radiation Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Interior Windows Total Transmitted Diffuse Solar Radiation Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Windows Total Heat Gain Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Windows Total Heat Loss Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Windows Total Transmitted Solar Radiation Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Exterior Windows Total Transmitted Beam Solar Radiation Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Interior Windows Total Transmitted Beam Solar Radiation Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Exterior Windows Total Transmitted Diffuse Solar Radiation Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Interior Windows Total Transmitted Diffuse Solar Radiation Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Windows Total Heat Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Windows Total Heat Loss Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mean Radiant Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Mean Air Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Operative Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Mean Air Humidity Ratio
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Heat Balance Internal Convective Heat Gain Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Heat Balance Surface Convection Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Heat Balance Interzone Air Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Heat Balance Outdoor Air Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Heat Balance System Air Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Heat Balance Air Energy Storage Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Sensible Heat Loss Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Sensible Heat Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Sensible Heat Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Latent Heat Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Total Heat Loss Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Total Heat Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Current Density Volume Flow Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Standard Density Volume Flow Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Current Density Volume
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Standard Density Volume
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Mass
+[openstudio.VariablesList] <-2> Found variableName: Zone Infiltration Air Change Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Air System Sensible Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Air System Sensible Cooling Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Air System Sensible Heating Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Air System Sensible Cooling Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Thermostat Air Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Humidity Ratio
+[openstudio.VariablesList] <-2> Found variableName: Zone Air Relative Humidity
+[openstudio.VariablesList] <-2> Found variableName: Zone Predicted Sensible Load to Setpoint Heat Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Predicted Sensible Load to Heating Setpoint Heat Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Predicted Sensible Load to Cooling Setpoint Heat Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Predicted Moisture Load Moisture Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Predicted Moisture Load to Humidifying Setpoint Moisture Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Predicted Moisture Load to Dehumidifying Setpoint Moisture Transfer Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Thermostat Heating Setpoint Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Thermostat Cooling Setpoint Temperature
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation No Load Heat Removal Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Cooling Load Increase Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Cooling Load Increase Energy Due to Overheating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Cooling Load Decrease Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation No Load Heat Addition Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation No Load Heat Removal Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Cooling Load Increase Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Cooling Load Increase Energy Due to Overheating Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Cooling Load Decrease Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation No Load Heat Addition Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Heating Load Increase Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Heating Load Increase Energy Due to Overcooling Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Heating Load Decrease Energy
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Mass Flow Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Mass
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Standard Density Volume Flow Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Standard Density Volume
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Current Density Volume Flow Rate
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Current Density Volume
+[openstudio.VariablesList] <-2> Found variableName: Zone Mechanical Ventilation Air Changes per Hour
+[openstudio.VariablesList] <-2> Found variableName: Zone Thermostat Control Type
+[openstudio.VariablesList] <-2> Found variableName: People Occupant Count
+[openstudio.VariablesList] <-2> Found variableName: People Radiant Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: People Convective Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: People Sensible Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: People Latent Gain Energy
+[openstudio.VariablesList] <-2> Found variableName: People Total Heating Energy
+[openstudio.VariablesList] <-2> Found variableName: People Air Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Inside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Outside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Inside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Outside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Inside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Outside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Inside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Outside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Inside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Outside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Inside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Outside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Inside Face Temperature
+[openstudio.VariablesList] <-2> Found variableName: Surface Outside Face Temperature
+[openstudio.VariablesList] <-2> Creating VariableListItem for: People Air Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: People Convective Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: People Latent Gain Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: People Occupant Count
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: People Radiant Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: People Sensible Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: People Total Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Surface Inside Face Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Surface Outside Face Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Heat Balance Air Energy Storage Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Heat Balance Internal Convective Heat Gain Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Heat Balance Interzone Air Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Heat Balance Outdoor Air Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Heat Balance Surface Convection Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Heat Balance System Air Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Humidity Ratio
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Relative Humidity
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air System Sensible Cooling Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air System Sensible Cooling Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air System Sensible Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air System Sensible Heating Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Air Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Electric Equipment Convective Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Electric Equipment Electric Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Electric Equipment Electric Power
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Electric Equipment Latent Gain Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Electric Equipment Lost Heat Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Electric Equipment Radiant Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Electric Equipment Total Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Exterior Windows Total Transmitted Beam Solar Radiation Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Exterior Windows Total Transmitted Beam Solar Radiation Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Exterior Windows Total Transmitted Diffuse Solar Radiation Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Air Change Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Current Density Volume
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Current Density Volume Flow Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Latent Heat Gain Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Mass
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Sensible Heat Gain Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Sensible Heat Loss Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Standard Density Volume
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Standard Density Volume Flow Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Total Heat Gain Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Infiltration Total Heat Loss Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Interior Windows Total Transmitted Beam Solar Radiation Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Interior Windows Total Transmitted Beam Solar Radiation Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Interior Windows Total Transmitted Diffuse Solar Radiation Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Lights Convective Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Lights Electric Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Lights Electric Power
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Lights Radiant Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Lights Return Air Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Lights Total Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Lights Visible Radiation Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mean Air Humidity Ratio
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mean Air Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mean Radiant Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Air Changes per Hour
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Cooling Load Decrease Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Cooling Load Increase Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Cooling Load Increase Energy Due to Overheating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Current Density Volume
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Current Density Volume Flow Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Heating Load Decrease Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Heating Load Increase Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Heating Load Increase Energy Due to Overcooling Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Mass
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Mass Flow Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation No Load Heat Addition Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation No Load Heat Removal Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Standard Density Volume
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Mechanical Ventilation Standard Density Volume Flow Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Operative Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Outdoor Air Drybulb Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Outdoor Air Wetbulb Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Outdoor Air Wind Speed
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone People Convective Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone People Latent Gain Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone People Occupant Count
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone People Radiant Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone People Sensible Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone People Total Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Predicted Moisture Load Moisture Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Predicted Moisture Load to Dehumidifying Setpoint Moisture Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Predicted Moisture Load to Humidifying Setpoint Moisture Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Predicted Sensible Load to Cooling Setpoint Heat Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Predicted Sensible Load to Heating Setpoint Heat Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Predicted Sensible Load to Setpoint Heat Transfer Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Thermostat Air Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Thermostat Control Type
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Thermostat Cooling Setpoint Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Thermostat Heating Setpoint Temperature
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Total Internal Convective Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Total Internal Latent Gain Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Total Internal Radiant Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Total Internal Total Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Total Internal Visible Radiation Heating Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Windows Total Heat Gain Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Windows Total Heat Gain Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Windows Total Heat Loss Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Windows Total Heat Loss Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Windows Total Transmitted Solar Radiation Energy
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> Creating VariableListItem for: Zone Windows Total Transmitted Solar Radiation Rate
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[Qt] <0> Object::connect: No such slot openstudio::RunTabController::saveDatabase(const openstudio::path &)
+[Qt] <0> QLayout: Attempting to add QLayout "" to openstudio::ResultsView "", which already has a layout
+[Qt] <0> QLayout: Attempting to add QLayout "" to openstudio::ResultsView "", which already has a layout
+[openstudio::ResultsTabController] <-2> searchForExistingResults /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run
+[openstudio::ResultsTabView] <-2> searchForExistingResults /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run
+[openstudio::ResultsView] <-2> Looking for existing results in: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run
+[openstudio::ResultsView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio.energyplus.SqlFile] <0> Trying unsupported EnergyPlus version 8.0
+[Qt] <0> Object::connect: No such signal openstudio::ScriptsTabController::updateRubyInterpreterWarning()
+[Qt] <0> Object::connect: No such signal openstudio::ScriptsTabController::toolsUpdated()
+[Qt] <0> Object::connect: No such signal openstudio::ScriptsTabController::updateRubyInterpreterWarning()
+[openstudio.openstudio_lib.MainRightColumnController] <-2> Setting new edit widget: 0x600000e75100
+[openstudio.openstudio_lib.MainRightColumnController] <-2> Removing old edit widget: 0x600000e75100
+[openstudio.openstudio_lib.MainRightColumnController] <-2> Setting new edit widget: 0x600000e75100
+[openstudio.openstudio_lib.MainRightColumnController] <-2> Removing old edit widget: 0x600000e75100
+[openstudio::RunView] <-2> playButtonClicked 1
+[openstudio.runmanager.Workflow] <-2> Creating workflow with outdir /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run infile /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm epwlocation 
+[openstudio.runmanager.Workflow] <-2> creating workflow
+[openstudio.runmanager.Workflow] <-2> Workflow contains file /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm
+[openstudio.runmanager.NormalizeURLs] <-2> Analyzing file for URLs to update /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm
+[openstudio.runmanager.NormalizeURLs] <-2> time to load idf: 0.016046
+[openstudio.runmanager.NormalizeURLs] <-2> Successfully loaded idf file into workspace containing 228 objects
+[utilities.idf.Workspace] <-2> Url found in file: file:files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[utilities.idf.Workspace] <-2> Url is relative or 'file'
+[utilities.idf.Workspace] <-2> Source URL:  for original URL: file:files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[utilities.idf.Workspace] <1> URL Found in IDF: file:files/USA_NY_New.York-Central.Park.725033_TMY3.epw but no source could be located.
+[openstudio.runmanager.NormalizeURLs] <-2> time to locate URL's: 0.000177
+[openstudio.runmanager.NormalizeURLs] <-1> No URLs found in input
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {65e11fe9-d270-40c1-9b24-5ac81f5bfd69} Null Job
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {f2590e16-f907-48a0-9e35-a78c07e751c0} ModelToIdf
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {5d383ec6-9e14-49ef-893c-81bccf7a1c87} ExpandObjects
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {80af8258-2fb2-4f0b-af0b-ebf9da5e1fed} EnergyPlusPreProcess
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {82d96f29-774f-4591-a895-f6f9fe4fc81b} EnergyPlus
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {c46a97e5-d000-497c-b79c-de7eeb79cbeb} OpenStudioPostProcess
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm
+[openstudio.runmanager.RunManager] <-1> RunManager queue paused state changed 0
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {65e11fe9-d270-40c1-9b24-5ac81f5bfd69} Null Job
+[openstudio.runmanager.Null] <-1> Null starting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {65e11fe9-d270-40c1-9b24-5ac81f5bfd69} Null Job
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {f2590e16-f907-48a0-9e35-a78c07e751c0} ModelToIdf
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ModelToIdf] <-1> ModelToIdf starting, filename: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm
+[openstudio.runmanager.ModelToIdf] <-1> ModelToIdf starting, outdir: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {65e11fe9-d270-40c1-9b24-5ac81f5bfd69}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {65e11fe9-d270-40c1-9b24-5ac81f5bfd69} 2013-Nov-09 12:11:54
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {65e11fe9-d270-40c1-9b24-5ac81f5bfd69}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {65e11fe9-d270-40c1-9b24-5ac81f5bfd69}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {65e11fe9-d270-40c1-9b24-5ac81f5bfd69}
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {65e11fe9-d270-40c1-9b24-5ac81f5bfd69}
+[openstudio.osversion.VersionTranslator] <-2> Starting translation from Version 1.0.6.
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.osversion.VersionTranslator] <-2> Initial model has 228 objects.
+[openstudio.osversion.VersionTranslator] <-2> Final model has 228 objects in IDF form.
+[utilities.idf.Workspace] <-2> Workspace::isValid called.
+[openstudio.osversion.VersionTranslator] <-2> Final model has 228 objects in Model form.
+[openstudio.runmanager.ModelToIdf] <-2> Looking for weather file at ModelObject specified location: files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[openstudio.runmanager.ModelToIdf] <-2> Completed weatherfile location: files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[openstudio.runmanager.ModelToIdf] <-2> Attempting to use OSM base path to find weather file
+[openstudio.runmanager.ModelToIdf] <-2> Attempting to use OSM parent path / resources to find weather file
+[openstudio.runmanager.ModelToIdf] <-2> Final selected weatherFile: file:///var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0/in.idf
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {f2590e16-f907-48a0-9e35-a78c07e751c0}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {f2590e16-f907-48a0-9e35-a78c07e751c0} 2013-Nov-09 12:11:54
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {f2590e16-f907-48a0-9e35-a78c07e751c0}
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {5d383ec6-9e14-49ef-893c-81bccf7a1c87} ExpandObjects
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {f2590e16-f907-48a0-9e35-a78c07e751c0}
+[openstudio.runmanager.ToolBasedJob] <-1> Starting ToolBasedJob: {5d383ec6-9e14-49ef-893c-81bccf7a1c87}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {f2590e16-f907-48a0-9e35-a78c07e751c0}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile in.idf
+[openstudio.runmanager.RunManager] <-2> Persisting RequiredFile file:///var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to in.epw
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {f2590e16-f907-48a0-9e35-a78c07e751c0}
+[openstudio.runmanager.ToolBasedJob] <-1> Starting Tool: expandobjects
+[openstudio.runmanager.WeatherFileFinder] <-2> Location name field from IDF: Site 1
+[openstudio.runmanager.ToolBasedJob] <-1> Requesting Tool: expandobjects version: 8.0.-
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.Tools] <-2> getTool called: expandobjects 8.0.-
+[openstudio.runmanager.Tools] <-2> total tools: 13
+[openstudio.runmanager.Tools] <-2> getAllByName returns 2
+[openstudio.runmanager.Tools] <-2> getAllByVersion returns 1
+[openstudio.runmanager.ToolBasedJob] <-1> Got Tool: expandobjects version: 8.0.0
+[openstudio.runmanager.LocalProcess] <-1> Creating LocalProcess
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0/in.idf to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/in.idf
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/in.epw
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /Applications/EnergyPlus-8-0-0/Energy+.idd to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/Energy+.idd
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.LocalProcess] <-2> Setting working directory: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0
+[openstudio.runmanager.LocalProcess] <1> Starting LocalProcess: /Applications/EnergyPlus-8-0-0/ExpandObjects
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processStarted: {5d383ec6-9e14-49ef-893c-81bccf7a1c87}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processFinished: {5d383ec6-9e14-49ef-893c-81bccf7a1c87} 0 0
+[openstudio.runmanager.ToolBasedJob] <-2> No osresult file found at: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/result.ossr
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processFinished, success: Success
+[openstudio.runmanager.ToolBasedJob] <-2> Last Tool Completed: {5d383ec6-9e14-49ef-893c-81bccf7a1c87}
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {80af8258-2fb2-4f0b-af0b-ebf9da5e1fed} EnergyPlusPreProcess
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/Energy+.idd
+[openstudio.runmanager.EnergyPlusPreProcessJob] <-1> EnergyPlusPreProcess starting, outdir: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/expanded.idf
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/in.epw
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/in.idf
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/stderr
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/stdout
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {5d383ec6-9e14-49ef-893c-81bccf7a1c87}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {5d383ec6-9e14-49ef-893c-81bccf7a1c87} 2013-Nov-09 12:11:54
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {5d383ec6-9e14-49ef-893c-81bccf7a1c87}
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {5d383ec6-9e14-49ef-893c-81bccf7a1c87}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {5d383ec6-9e14-49ef-893c-81bccf7a1c87}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile expanded.idf
+[openstudio.runmanager.RunManager] <-2> Persisting RequiredFile file:///var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to in.epw
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile stdout
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {5d383ec6-9e14-49ef-893c-81bccf7a1c87}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[utilities.idf.WorkspaceObject] <0> Object of type 'Schedule:Compact' and named 'HVACTemplate-Always 4', points to an object named HVACTemplate Any Number from field 1, but that object cannot be located.
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0/out.idf
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {80af8258-2fb2-4f0b-af0b-ebf9da5e1fed}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {80af8258-2fb2-4f0b-af0b-ebf9da5e1fed} 2013-Nov-09 12:11:54
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {80af8258-2fb2-4f0b-af0b-ebf9da5e1fed}
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {80af8258-2fb2-4f0b-af0b-ebf9da5e1fed}
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {82d96f29-774f-4591-a895-f6f9fe4fc81b} EnergyPlus
+[openstudio.runmanager.ToolBasedJob] <-1> Starting ToolBasedJob: {82d96f29-774f-4591-a895-f6f9fe4fc81b}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {80af8258-2fb2-4f0b-af0b-ebf9da5e1fed}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile out.idf
+[openstudio.runmanager.RunManager] <-2> Persisting RequiredFile file:///var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to in.epw
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {80af8258-2fb2-4f0b-af0b-ebf9da5e1fed}
+[openstudio.runmanager.ToolBasedJob] <-1> Starting Tool: energyplus
+[openstudio.runmanager.WeatherFileFinder] <-2> Location name field from IDF: Site 1
+[openstudio.runmanager.ToolBasedJob] <-1> Requesting Tool: energyplus version: 8.0.-
+[openstudio.runmanager.Tools] <-2> getTool called: energyplus 8.0.-
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.Tools] <-2> total tools: 13
+[openstudio.runmanager.Tools] <-2> getAllByName returns 2
+[openstudio.runmanager.Tools] <-2> getAllByVersion returns 1
+[openstudio.runmanager.ToolBasedJob] <-1> Got Tool: energyplus version: 8.0.0
+[openstudio.runmanager.LocalProcess] <-1> Creating LocalProcess
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0/out.idf to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/in.idf
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/in.epw
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /Applications/EnergyPlus-8-0-0/Energy+.idd to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/Energy+.idd
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.LocalProcess] <-2> Setting working directory: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0
+[openstudio.runmanager.LocalProcess] <1> Starting LocalProcess: /Applications/EnergyPlus-8-0-0/EnergyPlus
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processStarted: {82d96f29-774f-4591-a895-f6f9fe4fc81b}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processFinished: {82d96f29-774f-4591-a895-f6f9fe4fc81b} 0 0
+[openstudio.runmanager.ToolBasedJob] <-2> Setting error file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.err
+[openstudio.runmanager.ToolBasedJob] <-2> No osresult file found at: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/result.ossr
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processFinished, success: Success
+[openstudio.runmanager.ToolBasedJob] <-2> Last Tool Completed: {82d96f29-774f-4591-a895-f6f9fe4fc81b}
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {c46a97e5-d000-497c-b79c-de7eeb79cbeb} OpenStudioPostProcess
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/Energy+.idd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/Energy+.ini
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.audit
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.bnd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.eio
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.end
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.err
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.eso
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.mdd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.mtd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.mtr
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.rdd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.shd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplustbl.htm
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/in.epw
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/in.idf
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/sqlite.err
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/stderr
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/stdout
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {82d96f29-774f-4591-a895-f6f9fe4fc81b}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {82d96f29-774f-4591-a895-f6f9fe4fc81b} 2013-Nov-09 12:11:54
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {82d96f29-774f-4591-a895-f6f9fe4fc81b}
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {82d96f29-774f-4591-a895-f6f9fe4fc81b}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {82d96f29-774f-4591-a895-f6f9fe4fc81b}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile Energy+.ini
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.audit
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.bnd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.eio
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.end
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.err
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.eso
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.mdd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.mtd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.mtr
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.rdd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.shd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.sql
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplustbl.htm
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile sqlite.err
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile stderr
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile stdout
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {82d96f29-774f-4591-a895-f6f9fe4fc81b}
+[openstudio.runmanager.OpenStudioPostProcessJob] <-1> OpenStudioPostProcess starting, filename: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql
+[openstudio.runmanager.OpenStudioPostProcessJob] <-1> OpenStudioPostProcess starting, outdir: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.energyplus.SqlFile] <-2> Dictionary Built
+[openstudio.runmanager.OpenStudioPostProcessJob] <-2> Extracting attributes from model::Building.
+[openstudio.runmanager.OpenStudioPostProcessJob] <-2> Extracting attributes from model::Facility.
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0/report.xml
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {c46a97e5-d000-497c-b79c-de7eeb79cbeb}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {c46a97e5-d000-497c-b79c-de7eeb79cbeb} 2013-Nov-09 12:12:05
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {c46a97e5-d000-497c-b79c-de7eeb79cbeb}
+[openstudio::RunView] <-2> Tree finished, status is: Finished
+[openstudio::RunView] <-2> Tree finished, error getting radout.sql file: getLastByFilename: FileInfo not found: radout.sql
+[openstudio::RunView] <-2> Emitting results generated for sqlfile: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql and radiance file 
+[openstudio::ResultsTabController] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio::ResultsTabView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio::ResultsView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio.energyplus.SqlFile] <-2> Dictionary Built
+[saveModelTempDir] <-2> Copying /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources to /Volumes/OSXData/Users/alan/Documents/aeChack/aeChack
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0'
+[copyDir] <-1> Creating directory named = '5-OpenStudioPostProcess-0' in parentDstDir = '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[openstudio.runmanager.RunManager] <-1> RunManager queue paused state changed 1
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {c46a97e5-d000-497c-b79c-de7eeb79cbeb}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {c46a97e5-d000-497c-b79c-de7eeb79cbeb}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile report.xml
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {c46a97e5-d000-497c-b79c-de7eeb79cbeb}
+[openstudio::RunView] <-2> Tree finished, status is: Finished
+[openstudio::RunView] <-2> Tree finished, error getting radout.sql file: getLastByFilename: FileInfo not found: radout.sql
+[openstudio::RunView] <-2> Emitting results generated for sqlfile: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql and radiance file 
+[openstudio::ResultsTabController] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio::ResultsTabView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio::ResultsView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio.energyplus.SqlFile] <-2> Dictionary Built
+[saveModelTempDir] <-2> Copying /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources to /Volumes/OSXData/Users/alan/Documents/aeChack/aeChack
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[openstudio.openstudio_lib.MainRightColumnController] <-2> Setting new edit widget: 0x600000e75100
+[openstudio.openstudio_lib.MainRightColumnController] <-2> Removing old edit widget: 0x600000e75100
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> onRemoved OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> onRemoved OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 0
+[openstudio.VariablesList] <-2> onRemoved OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[openstudio.VariableListItem] <-2> onOffClicked 1
+[openstudio.VariablesList] <-2> onAdded: OS_Output_Variable
+[saveModel] <-2> Saved model to '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm'
+[saveModelTempDir] <-2> Copying /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources to /Volumes/OSXData/Users/alan/Documents/aeChack/aeChack
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[openstudio::RunView] <-2> playButtonClicked 1
+[openstudio.runmanager.Workflow] <-2> Creating workflow with outdir /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run infile /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm epwlocation 
+[openstudio.runmanager.Workflow] <-2> creating workflow
+[openstudio.runmanager.Workflow] <-2> Workflow contains file /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm
+[openstudio.runmanager.NormalizeURLs] <-2> Analyzing file for URLs to update /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm
+[openstudio.runmanager.NormalizeURLs] <-2> time to load idf: 0.016413
+[openstudio.runmanager.NormalizeURLs] <-2> Successfully loaded idf file into workspace containing 234 objects
+[utilities.idf.Workspace] <-2> Url found in file: file:files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[utilities.idf.Workspace] <-2> Url is relative or 'file'
+[utilities.idf.Workspace] <-2> Source URL:  for original URL: file:files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[utilities.idf.Workspace] <1> URL Found in IDF: file:files/USA_NY_New.York-Central.Park.725033_TMY3.epw but no source could be located.
+[openstudio.runmanager.NormalizeURLs] <-2> time to locate URL's: 0.000141
+[openstudio.runmanager.NormalizeURLs] <-1> No URLs found in input
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {39931121-4251-45de-ba58-d07d8be7c60b} Null Job
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {288c29d0-319e-4271-968e-a128a7eae3a6} ModelToIdf
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {f78de522-bed0-472a-b583-3534d5fd3ac3} ExpandObjects
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {a5aec76e-a716-4f10-a807-b0a68c14a014} EnergyPlusPreProcess
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {2b4f952a-632b-4b90-be4c-330a109b7047} EnergyPlus
+[openstudio.runmanager.RunManager] <-1> Enqueing Job: {e7ffe272-359a-4988-ac42-ae92de46faad} OpenStudioPostProcess
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm
+[openstudio.runmanager.RunManager] <-1> RunManager queue paused state changed 0
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {39931121-4251-45de-ba58-d07d8be7c60b} Null Job
+[openstudio.runmanager.Null] <-1> Null starting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {288c29d0-319e-4271-968e-a128a7eae3a6} ModelToIdf
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ModelToIdf] <-1> ModelToIdf starting, filename: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/in.osm
+[openstudio.runmanager.ModelToIdf] <-1> ModelToIdf starting, outdir: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {39931121-4251-45de-ba58-d07d8be7c60b}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {39931121-4251-45de-ba58-d07d8be7c60b} 2013-Nov-09 12:26:04
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {39931121-4251-45de-ba58-d07d8be7c60b}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {39931121-4251-45de-ba58-d07d8be7c60b}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {39931121-4251-45de-ba58-d07d8be7c60b}
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {39931121-4251-45de-ba58-d07d8be7c60b}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.osversion.VersionTranslator] <-2> Starting translation from Version 1.0.6.
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.osversion.VersionTranslator] <-2> Initial model has 234 objects.
+[openstudio.osversion.VersionTranslator] <-2> Final model has 234 objects in IDF form.
+[utilities.idf.Workspace] <-2> Workspace::isValid called.
+[openstudio.osversion.VersionTranslator] <-2> Final model has 234 objects in Model form.
+[openstudio.runmanager.ModelToIdf] <-2> Looking for weather file at ModelObject specified location: files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[openstudio.runmanager.ModelToIdf] <-2> Completed weatherfile location: files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[openstudio.runmanager.ModelToIdf] <-2> Attempting to use OSM base path to find weather file
+[openstudio.runmanager.ModelToIdf] <-2> Attempting to use OSM parent path / resources to find weather file
+[openstudio.runmanager.ModelToIdf] <-2> Final selected weatherFile: file:///var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0/in.idf
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {288c29d0-319e-4271-968e-a128a7eae3a6}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {288c29d0-319e-4271-968e-a128a7eae3a6} 2013-Nov-09 12:26:04
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {288c29d0-319e-4271-968e-a128a7eae3a6}
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {f78de522-bed0-472a-b583-3534d5fd3ac3} ExpandObjects
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {288c29d0-319e-4271-968e-a128a7eae3a6}
+[openstudio.runmanager.ToolBasedJob] <-1> Starting ToolBasedJob: {f78de522-bed0-472a-b583-3534d5fd3ac3}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {288c29d0-319e-4271-968e-a128a7eae3a6}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile in.idf
+[openstudio.runmanager.RunManager] <-2> Persisting RequiredFile file:///var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to in.epw
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {288c29d0-319e-4271-968e-a128a7eae3a6}
+[openstudio.runmanager.ToolBasedJob] <-1> Starting Tool: expandobjects
+[openstudio.runmanager.WeatherFileFinder] <-2> Location name field from IDF: Site 1
+[openstudio.runmanager.ToolBasedJob] <-1> Requesting Tool: expandobjects version: 8.0.-
+[openstudio.runmanager.Tools] <-2> getTool called: expandobjects 8.0.-
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.Tools] <-2> total tools: 13
+[openstudio.runmanager.Tools] <-2> getAllByName returns 2
+[openstudio.runmanager.Tools] <-2> getAllByVersion returns 1
+[openstudio.runmanager.ToolBasedJob] <-1> Got Tool: expandobjects version: 8.0.0
+[openstudio.runmanager.LocalProcess] <-1> Creating LocalProcess
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0/in.idf to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/in.idf
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/in.epw
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /Applications/EnergyPlus-8-0-0/Energy+.idd to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/Energy+.idd
+[openstudio.runmanager.LocalProcess] <-2> Setting working directory: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0
+[openstudio.runmanager.LocalProcess] <1> Starting LocalProcess: /Applications/EnergyPlus-8-0-0/ExpandObjects
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processStarted: {f78de522-bed0-472a-b583-3534d5fd3ac3}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[utilities.time.Date] <1> Comparing Dates with improper base years
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processFinished: {f78de522-bed0-472a-b583-3534d5fd3ac3} 0 0
+[openstudio.runmanager.ToolBasedJob] <-2> No osresult file found at: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/result.ossr
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processFinished, success: Success
+[openstudio.runmanager.ToolBasedJob] <-2> Last Tool Completed: {f78de522-bed0-472a-b583-3534d5fd3ac3}
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {a5aec76e-a716-4f10-a807-b0a68c14a014} EnergyPlusPreProcess
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/Energy+.idd
+[openstudio.runmanager.EnergyPlusPreProcessJob] <-1> EnergyPlusPreProcess starting, outdir: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/expanded.idf
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/in.epw
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/in.idf
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/stderr
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0/stdout
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {f78de522-bed0-472a-b583-3534d5fd3ac3}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {f78de522-bed0-472a-b583-3534d5fd3ac3} 2013-Nov-09 12:26:04
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {f78de522-bed0-472a-b583-3534d5fd3ac3}
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {f78de522-bed0-472a-b583-3534d5fd3ac3}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {f78de522-bed0-472a-b583-3534d5fd3ac3}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile expanded.idf
+[openstudio.runmanager.RunManager] <-2> Persisting RequiredFile file:///var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to in.epw
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile stdout
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {f78de522-bed0-472a-b583-3534d5fd3ac3}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[utilities.idf.WorkspaceObject] <0> Object of type 'Schedule:Compact' and named 'HVACTemplate-Always 4', points to an object named HVACTemplate Any Number from field 1, but that object cannot be located.
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0/out.idf
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {a5aec76e-a716-4f10-a807-b0a68c14a014}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {a5aec76e-a716-4f10-a807-b0a68c14a014} 2013-Nov-09 12:26:05
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {a5aec76e-a716-4f10-a807-b0a68c14a014}
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {a5aec76e-a716-4f10-a807-b0a68c14a014}
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {2b4f952a-632b-4b90-be4c-330a109b7047} EnergyPlus
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {a5aec76e-a716-4f10-a807-b0a68c14a014}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile out.idf
+[openstudio.runmanager.ToolBasedJob] <-1> Starting ToolBasedJob: {2b4f952a-632b-4b90-be4c-330a109b7047}
+[openstudio.runmanager.RunManager] <-2> Persisting RequiredFile file:///var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to in.epw
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {a5aec76e-a716-4f10-a807-b0a68c14a014}
+[openstudio.runmanager.ToolBasedJob] <-1> Starting Tool: energyplus
+[openstudio.runmanager.WeatherFileFinder] <-2> Location name field from IDF: Site 1
+[openstudio.runmanager.ToolBasedJob] <-1> Requesting Tool: energyplus version: 8.0.-
+[openstudio.runmanager.Tools] <-2> getTool called: energyplus 8.0.-
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.Tools] <-2> total tools: 13
+[openstudio.runmanager.Tools] <-2> getAllByName returns 2
+[openstudio.runmanager.Tools] <-2> getAllByVersion returns 1
+[openstudio.runmanager.ToolBasedJob] <-1> Got Tool: energyplus version: 8.0.0
+[openstudio.runmanager.LocalProcess] <-1> Creating LocalProcess
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0/out.idf to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/in.idf
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files/USA_NY_New.York-Central.Park.725033_TMY3.epw to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/in.epw
+[openstudio.runmanager.LocalProcess] <-2> Copying required file from /Applications/EnergyPlus-8-0-0/Energy+.idd to /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/Energy+.idd
+[openstudio.runmanager.LocalProcess] <-2> Setting working directory: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0
+[openstudio.runmanager.LocalProcess] <1> Starting LocalProcess: /Applications/EnergyPlus-8-0-0/EnergyPlus
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processStarted: {2b4f952a-632b-4b90-be4c-330a109b7047}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processFinished: {2b4f952a-632b-4b90-be4c-330a109b7047} 0 0
+[openstudio.runmanager.ToolBasedJob] <-2> Setting error file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.err
+[openstudio.runmanager.ToolBasedJob] <-2> No osresult file found at: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/result.ossr
+[openstudio.runmanager.ToolBasedJob] <-2> ToolBasedJob processFinished, success: Success
+[openstudio.runmanager.ToolBasedJob] <-2> Last Tool Completed: {2b4f952a-632b-4b90-be4c-330a109b7047}
+[openstudio::RunView] <-2> Tree finished, status is: Waiting
+[openstudio.runmanager.RunManager] <-1> Starting job locally: {e7ffe272-359a-4988-ac42-ae92de46faad} OpenStudioPostProcess
+[openstudio.runmanager.OpenStudioPostProcessJob] <-1> OpenStudioPostProcess starting, filename: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql
+[openstudio.runmanager.OpenStudioPostProcessJob] <-1> OpenStudioPostProcess starting, outdir: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0
+[openstudio.energyplus.SqlFile] <-2> Dictionary Built
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/Energy+.idd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/Energy+.ini
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.audit
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.bnd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.eio
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.end
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.err
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.eso
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.mdd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.mtd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.mtr
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.rdd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.shd
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplustbl.htm
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/in.epw
+[openstudio.runmanager.Job_Impl] <-2> standardClean: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/in.idf
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/sqlite.err
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/stderr
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/stdout
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {2b4f952a-632b-4b90-be4c-330a109b7047}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {2b4f952a-632b-4b90-be4c-330a109b7047} 2013-Nov-09 12:26:05
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {2b4f952a-632b-4b90-be4c-330a109b7047}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {2b4f952a-632b-4b90-be4c-330a109b7047}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {2b4f952a-632b-4b90-be4c-330a109b7047}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile Energy+.ini
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.audit
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.bnd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.eio
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.end
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.err
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.eso
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.mdd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.mtd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.mtr
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.rdd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.shd
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplusout.sql
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile eplustbl.htm
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile sqlite.err
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile stderr
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile stdout
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {2b4f952a-632b-4b90-be4c-330a109b7047}
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio::RunView] <-2> Tree finished, status is: Running
+[openstudio.runmanager.OpenStudioPostProcessJob] <-2> Extracting attributes from model::Building.
+[openstudio.runmanager.OpenStudioPostProcessJob] <-2> Extracting attributes from model::Facility.
+[openstudio.runmanager.Job_Impl] <-2> standardClean skipping output file: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0/report.xml
+[openstudio.runmanager.Job_Impl] <-2> Emitting job finished: {e7ffe272-359a-4988-ac42-ae92de46faad}
+[openstudio.runmanager.Job_Impl] <-2> Date converted: {e7ffe272-359a-4988-ac42-ae92de46faad} 2013-Nov-09 12:26:18
+[openstudio.runmanager.Job_Impl] <-2> Done Emitting job finished: {e7ffe272-359a-4988-ac42-ae92de46faad}
+[openstudio::RunView] <-2> Tree finished, status is: Finished
+[openstudio::RunView] <-2> Tree finished, error getting radout.sql file: getLastByFilename: FileInfo not found: radout.sql
+[openstudio::RunView] <-2> Emitting results generated for sqlfile: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql and radiance file 
+[openstudio::ResultsTabController] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio::ResultsTabView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio::ResultsView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio.energyplus.SqlFile] <-2> Dictionary Built
+[saveModelTempDir] <-2> Copying /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources to /Volumes/OSXData/Users/alan/Documents/aeChack/aeChack
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[openstudio.runmanager.RunManager] <-1> RunManager queue paused state changed 1
+[openstudio.runmanager.RunManager] <-2> Persisting job status for {e7ffe272-359a-4988-ac42-ae92de46faad}
+[openstudio.runmanager.RunManager] <-2> Deleted previous data job status for {e7ffe272-359a-4988-ac42-ae92de46faad}
+[openstudio.runmanager.RunManager] <-2> Persisting JobFile report.xml
+[openstudio.runmanager.RunManager] <-2> Done persisting job, committing {e7ffe272-359a-4988-ac42-ae92de46faad}
+[openstudio::RunView] <-2> Tree finished, status is: Finished
+[openstudio::RunView] <-2> Tree finished, error getting radout.sql file: getLastByFilename: FileInfo not found: radout.sql
+[openstudio::RunView] <-2> Emitting results generated for sqlfile: /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql and radiance file 
+[openstudio::ResultsTabController] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio::ResultsTabView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio::ResultsView] <-2> resultsGenerated /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0/eplusout.sql 
+[openstudio.energyplus.SqlFile] <-2> Dictionary Built
+[saveModelTempDir] <-2> Copying /var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources to /Volumes/OSXData/Users/alan/Documents/aeChack/aeChack
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/0-Null' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/0-Null'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/1-ModelToIdf-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/1-ModelToIdf-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/2-ExpandObjects-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/2-ExpandObjects-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/3-EnergyPlusPreProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/3-EnergyPlusPreProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/4-EnergyPlus-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/4-EnergyPlus-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/run/5-OpenStudioPostProcess-0' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/run/5-OpenStudioPostProcess-0'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/scripts' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/scripts'
+[copyDir] <-1> copyDir '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files' to '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files'
+[synchDirStructures] <-1> Synching destination '/Volumes/OSXData/Users/alan/Documents/aeChack/aeChack/files' with source '/var/folders/wt/fyky4ll556sg2ydckfl03twc0000gn/T/qt_temp.w88967/resources/files'
