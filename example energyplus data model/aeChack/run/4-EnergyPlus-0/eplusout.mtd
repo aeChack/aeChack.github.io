@@ -1,0 +1,196 @@
+
+ Meters for 6,THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE LIGHTSINST:Lights Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:THERMALZONE01 [J]
+  OnMeter=InteriorLights:Electricity [J]
+  OnMeter=InteriorLights:Electricity:Zone:THERMALZONE01 [J]
+  OnMeter=Lights:InteriorLights:Electricity [J]
+
+ Meters for 67,THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE ELECINST:Electric Equipment Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:THERMALZONE01 [J]
+  OnMeter=InteriorEquipment:Electricity [J]
+  OnMeter=InteriorEquipment:Electricity:Zone:THERMALZONE01 [J]
+  OnMeter=ElectricEquipment:InteriorEquipment:Electricity [J]
+
+ Meters for 105,THERMALZONE01:Zone Ventilation Fan Electric Energy [J]
+  OnMeter=Electricity:Facility [J]
+  OnMeter=Electricity:Building [J]
+  OnMeter=Electricity:Zone:THERMALZONE01 [J]
+  OnMeter=Fans:Electricity [J]
+  OnMeter=Fans:Electricity:Zone:THERMALZONE01 [J]
+  OnMeter=Ventilation (simple):Fans:Electricity [J]
+
+ Meters for 136,THERMALZONE01:Zone Air System Sensible Heating Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:THERMALZONE01 [J]
+  OnMeter=Heating:EnergyTransfer [J]
+  OnMeter=Heating:EnergyTransfer:Zone:THERMALZONE01 [J]
+
+ Meters for 187,THERMALZONE01:Zone Air System Sensible Cooling Energy [J]
+  OnMeter=EnergyTransfer:Facility [J]
+  OnMeter=EnergyTransfer:Building [J]
+  OnMeter=EnergyTransfer:Zone:THERMALZONE01 [J]
+  OnMeter=Cooling:EnergyTransfer [J]
+  OnMeter=Cooling:EnergyTransfer:Zone:THERMALZONE01 [J]
+
+ Meters for 211,THERMALZONE01ZONEHVAC:IDEALLOADSAIRSYSTEM:Zone Ideal Loads Supply Air Total Heating Energy [J]
+  OnMeter=DistrictHeating:Facility [J]
+  OnMeter=DistrictHeating:HVAC [J]
+  OnMeter=Heating:DistrictHeating [J]
+
+ Meters for 242,THERMALZONE01ZONEHVAC:IDEALLOADSAIRSYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy [J]
+  OnMeter=DistrictCooling:Facility [J]
+  OnMeter=DistrictCooling:HVAC [J]
+  OnMeter=Cooling:DistrictCooling [J]
+
+ Meters for 273,Whole Building:Facility Total Purchased Electric Energy [J]
+  OnMeter=ElectricityPurchased:Facility [J]
+  OnMeter=ElectricityPurchased:Plant [J]
+  OnMeter=Cogeneration:ElectricityPurchased [J]
+
+ Meters for 304,Whole Building:Facility Total Surplus Electric Energy [J]
+  OnMeter=ElectricitySurplusSold:Facility [J]
+  OnMeter=ElectricitySurplusSold:Plant [J]
+  OnMeter=Cogeneration:ElectricitySurplusSold [J]
+
+ Meters for 335,Whole Building:Facility Net Purchased Electric Energy [J]
+  OnMeter=ElectricityNet:Facility [J]
+  OnMeter=ElectricityNet:Plant [J]
+  OnMeter=Cogeneration:ElectricityNet [J]
+
+ Meters for 366,Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 387,Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ Meters for 388,Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass [kg]
+  OnMeter=Carbon Equivalent:Facility [kg]
+  OnMeter=CarbonEquivalentEmissions:Carbon Equivalent [kg]
+
+ For Meter=Electricity:Facility [J], ResourceType=Electricity, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE LIGHTSINST:Lights Electric Energy
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE ELECINST:Electric Equipment Electric Energy
+  THERMALZONE01:Zone Ventilation Fan Electric Energy
+
+ For Meter=Electricity:Building [J], ResourceType=Electricity, Group=Building, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE LIGHTSINST:Lights Electric Energy
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE ELECINST:Electric Equipment Electric Energy
+  THERMALZONE01:Zone Ventilation Fan Electric Energy
+
+ For Meter=Electricity:Zone:THERMALZONE01 [J], ResourceType=Electricity, Group=Zone, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE LIGHTSINST:Lights Electric Energy
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE ELECINST:Electric Equipment Electric Energy
+  THERMALZONE01:Zone Ventilation Fan Electric Energy
+
+ For Meter=InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE LIGHTSINST:Lights Electric Energy
+
+ For Meter=InteriorLights:Electricity:Zone:THERMALZONE01 [J], ResourceType=Electricity, EndUse=InteriorLights, Group=Zone, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE LIGHTSINST:Lights Electric Energy
+
+ For Meter=Lights:InteriorLights:Electricity [J], ResourceType=Electricity, EndUse=InteriorLights, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE LIGHTSINST:Lights Electric Energy
+
+ For Meter=InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE ELECINST:Electric Equipment Electric Energy
+
+ For Meter=InteriorEquipment:Electricity:Zone:THERMALZONE01 [J], ResourceType=Electricity, EndUse=InteriorEquipment, Group=Zone, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE ELECINST:Electric Equipment Electric Energy
+
+ For Meter=ElectricEquipment:InteriorEquipment:Electricity [J], ResourceType=Electricity, EndUse=InteriorEquipment, contents are:
+  THERMALZONE01 ASHRAE 189.1-2009 CLIMATEZONE 4-8 MEDIUMOFFICE ELECINST:Electric Equipment Electric Energy
+
+ For Meter=Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  THERMALZONE01:Zone Ventilation Fan Electric Energy
+
+ For Meter=Fans:Electricity:Zone:THERMALZONE01 [J], ResourceType=Electricity, EndUse=Fans, Group=Zone, contents are:
+  THERMALZONE01:Zone Ventilation Fan Electric Energy
+
+ For Meter=Ventilation (simple):Fans:Electricity [J], ResourceType=Electricity, EndUse=Fans, contents are:
+  THERMALZONE01:Zone Ventilation Fan Electric Energy
+
+ For Meter=EnergyTransfer:Facility [J], ResourceType=EnergyTransfer, contents are:
+  THERMALZONE01:Zone Air System Sensible Heating Energy
+  THERMALZONE01:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Building [J], ResourceType=EnergyTransfer, Group=Building, contents are:
+  THERMALZONE01:Zone Air System Sensible Heating Energy
+  THERMALZONE01:Zone Air System Sensible Cooling Energy
+
+ For Meter=EnergyTransfer:Zone:THERMALZONE01 [J], ResourceType=EnergyTransfer, Group=Zone, contents are:
+  THERMALZONE01:Zone Air System Sensible Heating Energy
+  THERMALZONE01:Zone Air System Sensible Cooling Energy
+
+ For Meter=Heating:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Heating, contents are:
+  THERMALZONE01:Zone Air System Sensible Heating Energy
+
+ For Meter=Heating:EnergyTransfer:Zone:THERMALZONE01 [J], ResourceType=EnergyTransfer, EndUse=Heating, Group=Zone, contents are:
+  THERMALZONE01:Zone Air System Sensible Heating Energy
+
+ For Meter=Cooling:EnergyTransfer [J], ResourceType=EnergyTransfer, EndUse=Cooling, contents are:
+  THERMALZONE01:Zone Air System Sensible Cooling Energy
+
+ For Meter=Cooling:EnergyTransfer:Zone:THERMALZONE01 [J], ResourceType=EnergyTransfer, EndUse=Cooling, Group=Zone, contents are:
+  THERMALZONE01:Zone Air System Sensible Cooling Energy
+
+ For Meter=DistrictHeating:Facility [J], ResourceType=DistrictHeating, contents are:
+  THERMALZONE01ZONEHVAC:IDEALLOADSAIRSYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+
+ For Meter=DistrictHeating:HVAC [J], ResourceType=DistrictHeating, Group=HVAC, contents are:
+  THERMALZONE01ZONEHVAC:IDEALLOADSAIRSYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+
+ For Meter=Heating:DistrictHeating [J], ResourceType=DistrictHeating, EndUse=Heating, contents are:
+  THERMALZONE01ZONEHVAC:IDEALLOADSAIRSYSTEM:Zone Ideal Loads Supply Air Total Heating Energy
+
+ For Meter=DistrictCooling:Facility [J], ResourceType=DistrictCooling, contents are:
+  THERMALZONE01ZONEHVAC:IDEALLOADSAIRSYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+
+ For Meter=DistrictCooling:HVAC [J], ResourceType=DistrictCooling, Group=HVAC, contents are:
+  THERMALZONE01ZONEHVAC:IDEALLOADSAIRSYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+
+ For Meter=Cooling:DistrictCooling [J], ResourceType=DistrictCooling, EndUse=Cooling, contents are:
+  THERMALZONE01ZONEHVAC:IDEALLOADSAIRSYSTEM:Zone Ideal Loads Supply Air Total Cooling Energy
+
+ For Meter=ElectricityPurchased:Facility [J], ResourceType=ElectricityPurchased, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricityPurchased:Plant [J], ResourceType=ElectricityPurchased, Group=Plant, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityPurchased [J], ResourceType=ElectricityPurchased, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Purchased Electric Energy
+
+ For Meter=ElectricitySurplusSold:Facility [J], ResourceType=ElectricitySurplusSold, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricitySurplusSold:Plant [J], ResourceType=ElectricitySurplusSold, Group=Plant, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=Cogeneration:ElectricitySurplusSold [J], ResourceType=ElectricitySurplusSold, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Total Surplus Electric Energy
+
+ For Meter=ElectricityNet:Facility [J], ResourceType=ElectricityNet, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=ElectricityNet:Plant [J], ResourceType=ElectricityNet, Group=Plant, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=Cogeneration:ElectricityNet [J], ResourceType=ElectricityNet, EndUse=Cogeneration, contents are:
+  Whole Building:Facility Net Purchased Electric Energy
+
+ For Meter=Carbon Equivalent:Facility [kg], ResourceType=Carbon Equivalent, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
+
+ For Meter=CarbonEquivalentEmissions:Carbon Equivalent [kg], ResourceType=Carbon Equivalent, EndUse=CarbonEquivalentEmissions, contents are:
+  Site:Environmental Impact Total N2O Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CH4 Emissions Carbon Equivalent Mass
+  Site:Environmental Impact Total CO2 Emissions Carbon Equivalent Mass
