@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang=en>
 <head>
-<title></title>
+<title>Warm-Up #1</title>
 <meta charset=utf-8>
 <meta name=viewport content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
 </head>
@@ -11,10 +11,6 @@
 <script src = http://mrdoob.github.com/three.js/examples/js/controls/TrackballControls.js> </script>
 <script src = http://mrdoob.github.com/three.js/examples/js/libs/stats.min.js ></script>
 
-<script src = ../../../git-repos/three.js/examples/js/Detector.js ></script>
-<script src = ../../../git-repos/three.js/build/three.min.js ></script>
-<script src = ../../../git-repos/three.js/examples/js/controls/TrackballControls.js ></script>
-<script src = ../../../git-repos/three.js/examples/js/libs/stats.min.js ></script>
 <script>
 	if ( ! Detector.webgl ) { Detector.addGetWebGLMessage(); }
 
@@ -39,7 +35,7 @@
 		document.body.appendChild( info );
 		// info.style.cssText = 'margin 0 0 0 100px: auto; position: absolute; top: 0px; width: 100% ';
 		info.style.cssText = 'position: absolute; width: 100%; ';
-		info.innerHTML = info.txt = '<h1>boilerplate</h1>' +
+		info.innerHTML = info.txt = '<h1>Warm-Up #1 ~ Cube with sub-divisions</h1>' +
 			'x:<input type="range" id="spin" min="-50" max="50" onchange="group.position.x=this.value;" step="1" value="' + group.position.x + '" > ' +
 			'y:<input type="range" id="spin" min="-50" max="50" onchange="group.position.y=this.value;" step="1" value="' + group.position.y + '" > ' +
 			'z:<input type="range" id="spin" min="-50" max="50" onchange="group.position.z=this.value;" step="1" value="' + group.position.z + '" > ' +
@@ -85,9 +81,9 @@
 		scene.add( light );
 
  		light = new THREE.DirectionalLight( 0xffffff, 1 );
-		light.position.set( 0, 200, 0 );
+		light.position.set( 50, 200, 50 );
 		light.castShadow = true;
-		light.shadowMapWidth = light.shadowMaHeight = 1024;
+		light.shadowMapWidth = light.shadowMapHeight = 1024;
 
 		var d = 55;
 		light.shadowCameraLeft = -d;
@@ -108,22 +104,23 @@
 // Assets
 		material = new THREE.MeshBasicMaterial( {color: Math.random() * 0xffffff } );
 		geometry = new THREE.CubeGeometry( 100, 3, 100 );
-		// geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
 		mesh = new THREE.Mesh( geometry, material );
 		mesh.castShadow = true;
 		mesh.receiveShadow = true;
 		scene.add( mesh );
 
-		geometry = new THREE.CubeGeometry( 10, 100, 10 );
+		geometry = new THREE.CubeGeometry( 30, 60, 30, 10, 20, 10 );
 		material = new THREE.MeshNormalMaterial();
+		material = new THREE.MeshPhongMaterial( { color: 0xffffff, ambient: 0x888888, opacity: 0.8, specular: 0x888888, shininess: 200, transparent: true, wireframe: true } )
 		mesh = new THREE.Mesh( geometry, material );
+		mesh.position.set( 0, 30, 0 )
 		mesh.castShadow = true;
 		mesh.receiveShadow = true;
-		scene.add( mesh );
-
+		group.add( mesh );
+/*
 		geometry = new THREE.CubeGeometry( 10, 10, 10 );
 		colorful( colors, 100);
-		var texture = THREE.ImageUtils.loadTexture( "../textures/cel-shade-64.png" );
+		var texture = THREE.ImageUtils.loadTexture( "cel-shade-64.png" );
 		for ( var i = 0; i < 100; i++) {
 			material = [
 				new THREE.MeshPhongMaterial( { map: texture, side: THREE.DoubleSide, transparent: true } ),
@@ -145,6 +142,7 @@
 			// cube.material.color.setHSL( colors[i], 0.7, 0.5 );
 			// group.add( cube );
 		}
+*/		
 		scene.add( group );
 	}
 
