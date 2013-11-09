@@ -1,177 +1,52 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang=en>
 <head>
-<title></title>
+<title>aeChack</title>
 <meta charset=utf-8>
-<meta name=viewport content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
+<meta name=author content='Theo Armour'>
 </head>
 <body>
-<script src = http://mrdoob.github.com/three.js/examples/js/Detector.js ></script>
-<script src = http://mrdoob.github.com/three.js/build/three.min.js ></script>
-<script src = http://mrdoob.github.com/three.js/examples/js/controls/TrackballControls.js> </script>
-<script src = http://mrdoob.github.com/three.js/examples/js/libs/stats.min.js ></script>
+<script src=http://jaanga.github.io/libs/md/showdown.js ></script>
+<script src='r2/doc-browser.js' ></script>
 
-<script src = ../../../git-repos/three.js/examples/js/Detector.js ></script>
-<script src = ../../../git-repos/three.js/build/three.min.js ></script>
-<script src = ../../../git-repos/three.js/examples/js/controls/TrackballControls.js ></script>
-<script src = ../../../git-repos/three.js/examples/js/libs/stats.min.js ></script>
-<script>
-	if ( ! Detector.webgl ) { Detector.addGetWebGLMessage(); }
-
-	var renderer, scene, camera, controls, stats;
-	var cube, plane, colors = [];
-	var group = new THREE.Object3D();
-	var info;
-
-	init();
-	animate();
-
-	function init() {
-		var css, light, geometry, material, mesh;
+	<div id=txt >
 	
-		css = document.body.appendChild( document.createElement('style') );
-		css.innerHTML = 'body {background-color: transparent; font: 600 12pt monospace; margin: 0; overflow: hidden; text-align: center; }' +
-			'a { color: #f00; text-decoration: none;}  ' +
-			'button, input[type=range] { -webkit-appearance: none; background-color: silver; height:20px; opacity: 0.5; width: 80px;}' +
-			'input[type="range"]::-webkit-slider-thumb {-webkit-appearance: none; background-color: #666; opacity: 0.5; width: 10px; height: 26px; }' ;
-
-		info = document.createElement( 'div' );
-		document.body.appendChild( info );
-		// info.style.cssText = 'margin 0 0 0 100px: auto; position: absolute; top: 0px; width: 100% ';
-		info.style.cssText = 'position: absolute; width: 100%; ';
-		info.innerHTML = info.txt = '<h1>boilerplate</h1>' +
-			'x:<input type="range" id="spin" min="-50" max="50" onchange="group.position.x=this.value;" step="1" value="' + group.position.x + '" > ' +
-			'y:<input type="range" id="spin" min="-50" max="50" onchange="group.position.y=this.value;" step="1" value="' + group.position.y + '" > ' +
-			'z:<input type="range" id="spin" min="-50" max="50" onchange="group.position.z=this.value;" step="1" value="' + group.position.z + '" > ' +
-			'<button onclick="console.log( scene );" >test</button> ' +
-		'';
-
-		stats = new Stats();
-		stats.domElement.style.cssText = 'position: absolute; top: 0px; zIndex: 100; ';
-		document.body.appendChild( stats.domElement );
-		
-		scene = new THREE.Scene();
-		if ( ! Detector.webgl ) {
-			renderer = new THREE.CanvasRenderer( { antialias: true } );
-		} else {
-			renderer = new THREE.WebGLRenderer( { antialias: true } );
-		}
-		renderer.setSize( window.innerWidth, window.innerHeight );
-		renderer.setClearColor(0xffffff, 1);
-		renderer.shadowMapEnabled = true;
-		document.body.appendChild( renderer.domElement );
-		
-		camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000 );
-		camera.position.set( -100, 100, 100 );
-		controls = new THREE.TrackballControls( camera, renderer.domElement );
-
-		window.addEventListener( 'resize', onWindowResize, false );
-
-// Lights
-		light = new THREE.AmbientLight( 0xffffff );
-		light.color.setHSL( 0.1, 0.5, 0.5 );
-		scene.add( light );
+		<h1>
+			<a href='' >aeChack</a>
+		</h1>
 				
-		light = new THREE.DirectionalLight( 0xffffff, 0.75 );
-		light.position.set( 1, 1, 1 ).normalize();
-		light.castShadow = true;
-//		light.shadowCameraVisible = true;
-		scene.add( light );
-
-		light = new THREE.DirectionalLight( 0xffffff, 0.75 );
-		light.position.set( -1, 1, -1 ).normalize();
-		light.castShadow = true;
-//		light.shadowCameraVisible = true;
-		scene.add( light );
-
- 		light = new THREE.DirectionalLight( 0xffffff, 1 );
-		light.position.set( 0, 200, 0 );
-		light.castShadow = true;
-		light.shadowMapWidth = light.shadowMaHeight = 1024;
-
-		var d = 55;
-		light.shadowCameraLeft = -d;
-		light.shadowCameraRight = d;
-		light.shadowCameraTop = d;
-		light.shadowCameraBottom = -d;
-
-		light.shadowCameraNear = 100;
-		light.shadowCameraFar = 300;
-//		light.shadowCameraVisible = true;
-		scene.add( light );		
-
-// Axes		
-        scene.add( new THREE.ArrowHelper( v(1, 0, 0), v(0, 0, 0), 100, 0xcc0000) );
-        scene.add( new THREE.ArrowHelper( v(0, 1, 0), v(0, 0, 0), 100, 0x00cc00) );
-        scene.add( new THREE.ArrowHelper( v(0, 0, 1), v(0, 0, 0), 100, 0x0000cc) );
-
-// Assets
-		material = new THREE.MeshBasicMaterial( {color: Math.random() * 0xffffff } );
-		geometry = new THREE.CubeGeometry( 100, 3, 100 );
-		// geometry.applyMatrix( new THREE.Matrix4().makeRotationX( - Math.PI / 2 ) );
-		mesh = new THREE.Mesh( geometry, material );
-		mesh.castShadow = true;
-		mesh.receiveShadow = true;
-		scene.add( mesh );
-
-		geometry = new THREE.CubeGeometry( 10, 100, 10 );
-		material = new THREE.MeshNormalMaterial();
-		mesh = new THREE.Mesh( geometry, material );
-		mesh.castShadow = true;
-		mesh.receiveShadow = true;
-		scene.add( mesh );
-
-		geometry = new THREE.CubeGeometry( 10, 10, 10 );
-		colorful( colors, 100);
-		var texture = THREE.ImageUtils.loadTexture( "../textures/cel-shade-64.png" );
-		for ( var i = 0; i < 100; i++) {
-			material = [
-				new THREE.MeshPhongMaterial( { map: texture, side: THREE.DoubleSide, transparent: true } ),
-				new THREE.MeshPhongMaterial( { color: 0xffffff, ambient: 0x888888, opacity: 0.8, specular: 0x888888, shininess: 200, transparent: true } )
-			]
-			material[1].color.setHSL( colors[i], 0.7, 0.5 );
-			cube = THREE.SceneUtils.createMultiMaterialObject( geometry, material);
+		<p id=intro >
+			<a href=JavaScript:DS.displayMarkdown('readme.md',intro); >aeChack Read Me on GitHub</a>
+		</p>
 			
-			// material = new THREE.MeshPhongMaterial( {  map: texture, opacity: 0.8, side: THREE.DoubleSide, transparent: true } );
-			// cube = new THREE.Mesh( geometry, material );
-			cube.position.set( 100 * Math.random() - 50, 100 * Math.random() - 50, 100 * Math.random() - 50 );
-			cube.rotation.set( Math.PI * Math.random(), Math.PI * Math.random(), Math.PI * Math.random() );
-			cube.receiveShadow = true;
-			cube.castShadow = true;
-			group.add( cube );
-			
-			// cube = cube.clone();			
-			// cube.material = new THREE.MeshPhongMaterial( {color: 0xfffff, ambient: 0x888888, opacity: 0.8, specular: 0x888888, shininess: 200, transparent: true} );
-			// cube.material.color.setHSL( colors[i], 0.7, 0.5 );
-			// group.add( cube );
-		}
-		scene.add( group );
-	}
+		<p>
+			A simple app for browsing files in Markdown format hosted on GitHub.
+		</p>	
+				
+		<p id=ab>
+			<a href=JavaScript:DS.displayMarkdown('test-folder-abc/readme.md',ab); >Test Folder ABC</a><br>
+			Iteration system wide engenders economies of scale, cross-media technology, presentation action items and life cycle replication.
+		</p>
 
-	function animate() {
-		requestAnimationFrame( animate );
-		controls.update();
-		renderer.render( scene, camera );
-		stats.update();
-	}
+		<p id=de>
+			<a href=JavaScript:DS.displayMarkdown('test-folder-def/readme.md',de); >Test Folder DEF</a><br>
+			Marketing teams input produce cross purposing in view of goal alignments due to knowledge paucity, necessitating workflow education and orientation. Media sourcing as an acquisition strategy is counterproductive in a internet environment in virtual component methodology. Imaging through ideals rather than real world branding, is a perilous undertaking with negative results. Branding strategies generating motion as activity without reproducible results is a ultimately futile effort if left in place.
+		</p>
 
-	function onWindowResize() {
-		windowHalfX = window.innerWidth / 2;
-		windowHalfY = window.innerHeight / 2;
-		camera.aspect = window.innerWidth / window.innerHeight;
-		camera.updateProjectionMatrix();
-		renderer.setSize( window.innerWidth, window.innerHeight );
-	}
+		<hr>
+		
+		<p>
+			<a href='https://github.com/aeChack/blob/master/license.md' target='_blank'>aeChack Copyright and License</a>
+		</p>
 	
-	function colorful( arr, count) {
-		var delta = 1.0 / count;
-		for (var i = 0; i < count; i++ ) {
-			arr.push( i *  delta );
-		}
-		return arr;
-	}	
+	</div>		
+
+<script>
+
+	DS.menu.innerHTML = txt.innerHTML;
+	txt.innerHTML = '';
+	DS.init( 'https://github.com/jaanga/libs/tree/gh-pages/db/','readme.md', intro );
 	
-	function v(x,y,z){ return new THREE.Vector3(x,y,z); } 
 </script>
 </body>
 </html>
