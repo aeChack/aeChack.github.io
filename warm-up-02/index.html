@@ -1,7 +1,7 @@
 ﻿<!doctype html>
 <html lang=en>
 <head>
-<title>Warm-Up #1</title>
+<title>Warm-Up #2</title>
 <meta charset=utf-8>
 <meta name=viewport content='width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0'>
 </head>
@@ -35,7 +35,7 @@
 		document.body.appendChild( info );
 		// info.style.cssText = 'margin 0 0 0 100px: auto; position: absolute; top: 0px; width: 100% ';
 		info.style.cssText = 'position: absolute; width: 100%; ';
-		info.innerHTML = info.txt = '<h1>Warm-Up #1 ~ Cube with sub-divisions</h1>' +
+		info.innerHTML = info.txt = '<h1>Warm-Up #2 ~ Polyline with sub-divisions</h1>' +
 			'x:<input type="range" id="spin" min="-50" max="50" onchange="group.position.x=this.value;" step="1" value="' + group.position.x + '" > ' +
 			'y:<input type="range" id="spin" min="-50" max="50" onchange="group.position.y=this.value;" step="1" value="' + group.position.y + '" > ' +
 			'z:<input type="range" id="spin" min="-50" max="50" onchange="group.position.z=this.value;" step="1" value="' + group.position.z + '" > ' +
@@ -111,12 +111,23 @@
 
 		geometry = new THREE.CubeGeometry( 30, 60, 30, 10, 20, 10 );
 		material = new THREE.MeshNormalMaterial();
-		material = new THREE.MeshPhongMaterial( { color: 0xffffff, ambient: 0x888888, opacity: 0.8, specular: 0x888888, shininess: 200, transparent: true, wireframe: true } )
+		material = new THREE.MeshPhongMaterial( { color: 0xffffff, ambient: 0x888888, opacity: 0.8, specular: 0x888888, shininess: 200, side: THREE.DoubleSide, transparent: true, wireframe: true } )
 		mesh = new THREE.Mesh( geometry, material );
-		mesh.position.set( 0, 30, 0 )
+		mesh.position.set( 0, -50, 0 )
 		mesh.castShadow = true;
 		mesh.receiveShadow = true;
-		group.add( mesh );
+		//group.add( mesh );
+		
+		shape = new THREE.Shape();
+		shape.fromPoints( [ v2(0, 0), v2(20, 30), v2(0, 80), v2(-20, 20), v2(-20, 0) ] );
+		
+		geometry = shape.extrude( { amount: 40, bevelEnabled: false, curveSegments: 10, steps: 10 } );
+		geometry.applyMatrix( new THREE.Matrix4().makeRotationX( -0.5 * Math.PI ) );
+		mesh = new THREE.Mesh( geometry, material );
+		mesh.position.set( 0, 0, 50 );
+		mesh.castShadow = true;
+		mesh.receiveShadow = true;
+        group.add( mesh );	
 /*
 		geometry = new THREE.CubeGeometry( 10, 10, 10 );
 		colorful( colors, 100);
@@ -170,6 +181,7 @@
 	}	
 	
 	function v(x,y,z){ return new THREE.Vector3(x,y,z); } 
+	function v2( x, y ){ return new THREE.Vector2( x, y ); }
 </script>
 </body>
 </html>
