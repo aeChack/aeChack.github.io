@@ -14,14 +14,15 @@
 	// building footprint points - should come from the JSON file
 	var numOfFloors = 5;
 	var basePts = [[0,0,0],[1,4,0],[3,4,0],[3,0,0]];
-	var floorHeight = 10; //feet
+	var floorHeight = 8; //feet
 	
 	// generate the test points
 	var allTestPts = [];
 	var allTestVectors = [];
 	var gridSize = 1; //feet
+	var meshDict = {};
 
-	function generateTestPts(startPt, endPt, gridSize, floorHeight, numOfFloors){
+	function generateTestPts(startPt, endPt, gridSize, floorHeight, numOfFloors, meshDict, faceCount){
 		// console.log(numOfFloors);
 		// this function generate test points for a surface
 		var testPts = [];
@@ -46,27 +47,33 @@
 		// console.log("number of segments" + numSegments);
 		for (var zz=0; zz < numOfFloors; zz++){
 			// console.log("floor number " + numOfFloors);
+			meshDict[faceCount][zz] = []
 			for(var i =0; i < numSegments; i++){
 				// console.log(i);
 				var testPt = new THREE.Vector3(startPt[0] + (xDistance * i) , startPt[1] + (yDistance * i), zz * floorHeight);   
 				testPt.add(normalVector);
 				testPts.push(testPt);
+				meshDict[faceCount][zz] = testPts;
 				testVectors.push(normalVector);
 			}
 		}
 		// console.log(testPts);
-		return [testPts, testVectors]
+		return [testPts, testVectors, normalVector, meshDict]
 	}
 
 	// generating test points for the wall
+	var faceVectors = [];
 
 	for (var ptCount =0; ptCount < basePts.length; ptCount++){
 		var res = [];
 		var pts =[];
 		var normals = [];
-		res = generateTestPts(basePts[ptCount%basePts.length], basePts[(ptCount + 1)%basePts.length], gridSize, floorHeight, numOfFloors);
+		meshDict[ptCount] = {}; //add a dictionary for the surface
+		res = generateTestPts(basePts[ptCount%basePts.length], basePts[(ptCount + 1)%basePts.length], gridSize, floorHeight, numOfFloors, meshDict, ptCount);
 		pts = res[0];
 		normals = res[1];
+		faceVectors.push(res[2]);
+		meshDict = res[3];
 		for (var testPtsCount =0; testPtsCount<pts.length; testPtsCount++){
 			// console.log(pts[testPtsCount])
 			allTestPts.push(pts[testPtsCount]);
@@ -138,9 +145,56 @@
 		}
 	}
 
-	console.log(radiationResults);
+	//console.log(radiationResults);
 	// generate the mesh back for visualization =)
 
+	var geometry = new THREE.Geometry();
+	var duplicatedResults = [];
+
+	function createMeshFace(geometry, meshVertices){
+		geometry.vertices.push(meshVertices[0]);
+		geometry.vertices.push(meshVertices[1]);
+		geometry.vertices.push(meshVertices[2]);
+		geometry.vertices.push(meshVertices[3]);
+		geometry.faces.push( new THREE.Face3( 0, 1, 2) );
+		geometry.faces.push( new THREE.Face3( 2, 1, 3) );
+		return geometry;
+	}
+
+	var meshFaceCount = Object.keys(meshDict).length;
+	var ptNumber = 0;
+	for (var meshFaceNumber = 0; meshFaceNumber<meshFaceCount; meshFaceNumber++){		
+		var rowCount = Object.keys(meshDict[meshFaceNumber]).length;
+		for (var rowNumber = 0; rowNumber<rowCount-1; rowNumber++){
+			
+			// send the vertices to generate mesh surfaces
+			var pointsInThisRow = meshDict[meshFaceNumber][rowNumber];
+			var pointsInNextRow = meshDict[meshFaceNumber][rowNumber + 1];
+
+			for (ptCount=0; ptCount<pointsInThisRow.length - 1; ptCount++){
+				// console.log(ptCount);
+				var vertices = [[pointsInThisRow][ptCount], [pointsInThisRow][ptCount + 1], [pointsInNextRow][ptCount], [pointsInNextRow + 1][ptCount + 1]];
+				// find related results and generate color or append to the list for now
+				var ver0IDRES = radiationResults[ptNumber];
+				var ver1IDRES = radiationResults[ptNumber + 1];
+				var ver2IDRES = radiationResults[ptNumber + pointsInThisRow.length];
+				var ver3IDRES = radiationResults[ptNumber + pointsInThisRow.length + 1];
+				// this is stupid by I don't know who to extend to a list in JS
+				duplicatedResults.push(ver0IDRES);
+				duplicatedResults.push(ver1IDRES);
+				duplicatedResults.push(ver2IDRES);
+				//duplicatedResults.push(ver2IDRES);
+				//duplicatedResults.push(ver1IDRES);
+				duplicatedResults.push(ver3IDRES);				
+				geometry = createMeshFace(geometry, [vertices]);
+				ptNumber += 1;
+			}
+
+		}
+	}
+
+    // console.log(geometry);
+    // console.log(duplicatedResults.length);
 
 </script>
 
