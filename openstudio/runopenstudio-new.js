@@ -219,36 +219,6 @@ function addExampleConstructions(model)
   exteriorSubSurfaceConstructions.setTubularDaylightDiffuserConstruction(exteriorWindow);
   fenestrationMaterials.clear();
 
-  // Exterior Door
-
-  var f08_metal_surface = new openstudio.model.StandardOpaqueMaterial(model);
-  f08_metal_surface.setName("F08 Metal surface");
-  f08_metal_surface.setRoughness("Smooth");
-  f08_metal_surface.setThickness(0.0008);
-  f08_metal_surface.setThermalConductivity(45.28);
-  f08_metal_surface.setDensity(7824.0);
-  f08_metal_surface.setSpecificHeat(500.0);
-
-  opaqueMaterials.add(f08_metal_surface);
-
-  var i01_25mm_insulation_board = new openstudio.model.StandardOpaqueMaterial(model);
-  i01_25mm_insulation_board.setName("I02 25mm insulation board");
-  i01_25mm_insulation_board.setRoughness("MediumRough");
-  i01_25mm_insulation_board.setThickness(0.0254);
-  i01_25mm_insulation_board.setThermalConductivity(0.03);
-  i01_25mm_insulation_board.setDensity(43.0);
-  i01_25mm_insulation_board.setSpecificHeat(1210.0);
-
-  opaqueMaterials.add(i01_25mm_insulation_board);
-
-  var exteriorDoor = new openstudio.model.Construction(opaqueMaterials);
-  exteriorDoor.setName("Exterior Door");
-  // we shouldn't need to do this, something is not happening quite right with the layered construction inheritance hierarchy
-  openstudio.model.toLayeredConstruction(exteriorDoor).get().setInsulation(i02_50mm_insulation_board);
-  exteriorSubSurfaceConstructions.setDoorConstruction(exteriorDoor);
-  exteriorSubSurfaceConstructions.setOverheadDoorConstruction(exteriorDoor);
-  opaqueMaterials.clear();
-
   // Interior Window
 
   //fenestrationMaterials.add(clear_3mm);
