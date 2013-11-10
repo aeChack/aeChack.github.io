@@ -7,6 +7,8 @@ Entry for the AEC Hackathon 2013 held at Facebook HQ, Menlo Park CA
 
 ## Live demos
 
+[Warm-Up #6 ~ Export Three.js data to JSON]( http://aeChack.github.io/warm-up-06/threejs-export.html )
+
 [Warm-Up #5 ~ Save text to file in JavaScript]( http://aeChack.github.io/warm-up-05/fileSaver.html )
 
 [Warm-Up #4 ~ Find Object to object intersection]( http://aeChack.github.io/warm-up-04/object-to-object.html )
