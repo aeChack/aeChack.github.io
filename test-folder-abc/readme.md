@@ -1,6 +1,8 @@
 Project Hot Shots
 =======================
 
-Alan Jackson ~ Case-inc.cm ~ New York
-Mostapha
+Alan Jackson ~ ~ New York
+
+Mostapha Sadeghipour ~ New York
+
 Theo Armour ~ San Francisco and Paris
