@@ -268,6 +268,10 @@ function createGeometry(model)
 {
 	var polyline = require('/home/ubuntu/dev/aeChack.github.io/openstudio/polyline.json');
 
+	// add constructions
+	addExampleConstructions(model);
+	var defaultConstructionSet = openstudio.model.getDefaultConstructionSets(model).get(0);
+	
 	// set building story height
 	var floorHeight = 3.5;
 
@@ -310,7 +314,6 @@ function saveModel(model)
 function createModel()
 {
 	model = new openstudio.model.Model();
-	addExampleConstructions(model);
 	createGeometry(model);
 	saveModel(model);
 	return model 
