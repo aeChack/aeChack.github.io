@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang= "en">
+<head>
+<title>radiance simulation</title>
+</head>
+<body>
+
+<script src='http://mrdoob.github.com/three.js/examples/js/Detector.js'></script>
+<script src='http://mrdoob.github.com/three.js/build/three.min.js'></script>
+<script src='http://mrdoob.github.com/three.js/examples/js/controls/TrackballControls.js'></script>
+<script src='http://mrdoob.github.com/three.js/examples/js/libs/stats.min.js'></script>
+
+<script>
+	// building footprint points - should come from the JSON file
+	var numOfFloors = 5;
+	var basePts = [[0,0,0],[1,4,0],[3,4,0],[3,0,0]];
+	var floorHeight = 8; //feet
+	
+	// generate the test points
+	var allTestPts = [];
+	var allTestVectors = [];
+	var gridSize = 1; //feet
+	var meshDict = {};
+
+	function generateTestPts(startPt, endPt, gridSize, floorHeight, numOfFloors, meshDict, faceCount){
+		// console.log(numOfFloors);
+		// this function generate test points for a surface
+		var testPts = [];
+		var testVectors = [];
+		var disFromBase = 1/30; //feet!
+		// find the distance between the start and the end points
+		var distance = Math.sqrt(Math.pow(endPt[0]-startPt[0], 2) + Math.pow(endPt[1]-startPt[1], 2));
+		// find number of segments
+		var numSegments = parseInt(distance/gridSize);
+
+		var xDistance = (endPt[0]-startPt[0])/numSegments;
+		var yDistance = (endPt[1]-startPt[1])/numSegments;
+
+		// find normal of the surface
+		var lineVector = new THREE.Vector3(endPt[0]-startPt[0], endPt[1]-startPt[1], 0);
+		var zAxis = new THREE.Vector3(0, 0, 1);
+		var normalVector = new THREE.Vector3();
+		normalVector.crossVectors(lineVector, zAxis); 
+		normalVector.setLength(disFromBase);
+		
+		// generate the test points
+		// console.log("number of segments" + numSegments);
+		for (var zz=0; zz < numOfFloors; zz++){
+			// console.log("floor number " + numOfFloors);
+			meshDict[faceCount][zz] = []
+			for(var i =0; i < numSegments; i++){
+				// console.log(i);
+				var testPt = new THREE.Vector3(startPt[0] + (xDistance * i) , startPt[1] + (yDistance * i), zz * floorHeight);   
+				testPt.add(normalVector);
+				testPts.push(testPt);
+				meshDict[faceCount][zz] = testPts;
+				testVectors.push(normalVector);
+			}
+		}
+		// console.log(testPts);
+		return [testPts, testVectors, normalVector, meshDict]
+	}
+
+	// generating test points for the wall
+	var faceVectors = [];
+
+	for (var ptCount =0; ptCount < basePts.length; ptCount++){
+		var res = [];
+		var pts =[];
+		var normals = [];
+		meshDict[ptCount] = {}; //add a dictionary for the surface
+		res = generateTestPts(basePts[ptCount%basePts.length], basePts[(ptCount + 1)%basePts.length], gridSize, floorHeight, numOfFloors, meshDict, ptCount);
+		pts = res[0];
+		normals = res[1];
+		faceVectors.push(res[2]);
+		meshDict = res[3];
+		for (var testPtsCount =0; testPtsCount<pts.length; testPtsCount++){
+			// console.log(pts[testPtsCount])
+			allTestPts.push(pts[testPtsCount]);
+			allTestVectors.push(normals[testPtsCount]);
+		}
+	}
+
+	// import sky values
+	// read it from the JSON file (New_York_Central_Prk_Obs_Belv_NY_USA_SKY.json["skyPatchHourlyRadiation"]
+	var skyPatchesRadValues = {0 : {0: 23},
+							   1 : {0: 25}};
+	
+	// read it from the JSON file (New_York_Central_Prk_Obs_Belv_NY_USA_SKY.json["skyPatchVectors"]
+	var skyPatchesVectors = {0: [0, 0, 1], 1: [0, .5, .5]};
+
+	var numOfSkyPatches = Object.keys(skyPatchesVectors).length;
+
+	// run the intersections and generate the intersection matrix
+	function isIntersectionPossible(ptVector, skyVector){
+		// console.log(ptVector);
+		var v2 = new THREE.Vector3(skyVector[0], skyVector[1], skyVector[2]);
+		
+		// console.log(ptVector.angleTo(v2) * (180/Math.PI));
+		
+		if (ptVector.angleTo(v2) < Math.PI/2) {
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+
+
+	function isIntersectionHappen(basePt, ray, context) {
+		// modified from Theo's example
+		return false
+
+	}
+
+	var intersectionMatrix = {};
+	var contextBldgs = []; // should be replaced by theo's THREE.js meshes
+	for (var ptCount =0; ptCount < allTestPts.length; ptCount++) {
+		// place holder
+		intersectionMatrix[ptCount] = [];
+		for (var patchCount = 0; patchCount < numOfSkyPatches; patchCount++){
+			// check the angle
+			if (isIntersectionPossible(allTestVectors[ptCount], skyPatchesVectors[patchCount]) && !isIntersectionHappen(allTestPts[ptCount], allTestVectors[ptCount], contextBldgs)) {
+				//console.log('radiation is here');
+				intersectionMatrix[ptCount].push(1);
+			}
+			else {
+				//console.log('no radiarion here')
+				intersectionMatrix[ptCount].push(0);
+			}
+		}
+	}
+
+	// generate the results for single hour of the year or a range of the year
+	var HOY = ["HOY"]; // calculated based on user input
+	var radiationResults = [];
+
+	for (var h = 0; h< HOY.length; h++){
+		var thisPointRes = 0;
+		for (var ptCount =0; ptCount < allTestPts.length; ptCount++){
+			for (var patchCount = 0; patchCount<numOfSkyPatches; patchCount++){
+				thisPointRes = thisPointRes + intersectionMatrix[ptCount][patchCount] * skyPatchesRadValues[patchCount][h];
+			}
+		radiationResults.push(thisPointRes);	
+		}
+	}
+
+	//console.log(radiationResults);
+	// generate the mesh back for visualization =)
+
+	var geometry = new THREE.Geometry();
+	var duplicatedResults = [];
+
+	function createMeshFace(geometry, meshVertices){
+		geometry.vertices.push(meshVertices[0]);
+		geometry.vertices.push(meshVertices[1]);
+		geometry.vertices.push(meshVertices[2]);
+		geometry.vertices.push(meshVertices[3]);
+		geometry.faces.push( new THREE.Face3( 0, 1, 2) );
+		geometry.faces.push( new THREE.Face3( 2, 1, 3) );
+		return geometry;
+	}
+
+	var meshFaceCount = Object.keys(meshDict).length;
+	var ptNumber = 0;
+	for (var meshFaceNumber = 0; meshFaceNumber<meshFaceCount; meshFaceNumber++){		
+		var rowCount = Object.keys(meshDict[meshFaceNumber]).length;
+		for (var rowNumber = 0; rowNumber<rowCount-1; rowNumber++){
+			
+			// send the vertices to generate mesh surfaces
+			var pointsInThisRow = meshDict[meshFaceNumber][rowNumber];
+			var pointsInNextRow = meshDict[meshFaceNumber][rowNumber + 1];
+
+			for (ptCount=0; ptCount<pointsInThisRow.length - 1; ptCount++){
+				// console.log(ptCount);
+				var vertices = [[pointsInThisRow][ptCount], [pointsInThisRow][ptCount + 1], [pointsInNextRow][ptCount], [pointsInNextRow + 1][ptCount + 1]];
+				// find related results and generate color or append to the list for now
+				var ver0IDRES = radiationResults[ptNumber];
+				var ver1IDRES = radiationResults[ptNumber + 1];
+				var ver2IDRES = radiationResults[ptNumber + pointsInThisRow.length];
+				var ver3IDRES = radiationResults[ptNumber + pointsInThisRow.length + 1];
+				// this is stupid by I don't know who to extend to a list in JS
+				duplicatedResults.push(ver0IDRES);
+				duplicatedResults.push(ver1IDRES);
+				duplicatedResults.push(ver2IDRES);
+				//duplicatedResults.push(ver2IDRES);
+				//duplicatedResults.push(ver1IDRES);
+				duplicatedResults.push(ver3IDRES);				
+				geometry = createMeshFace(geometry, [vertices]);
+				ptNumber += 1;
+			}
+
+		}
+	}
+
+    // console.log(geometry);
+    // console.log(duplicatedResults.length);
+
+</script>
+
+</body>
+

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang=en>
 <head>
-<title>Load NYC CSV ~ make ahape</title>
+<title>Display Manhattan</title>
 <meta charset=utf-8>
 <meta name=author content='Theo Armour'>
 </head>
@@ -37,8 +37,8 @@
 
 		info = document.body.appendChild( document.createElement( 'div' ) );
 		info.style.cssText = 'position: absolute; ' ;
-		info.innerHTML = '<h1>Load NYC CSV ~ make shapes</h1>' +
-			'<a href=JavaScript:loadIt(); >Load NYC</a> <a href=JavaScript:saveIt(); >Save It</a>' +
+		info.innerHTML = '<h1>Display Manhattan</h1>' +
+			'<a href=JavaScript:loadIt(); >Load Manhattan</a> <a href=JavaScript:saveIt(); >Save It</a>' +
 			'<div id=data></div>' +
 		'';		
 		
@@ -52,7 +52,7 @@
 		scene = new THREE.Scene();
 
 		camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 1000000 );
-		camera.position.set( 100, 200, 200 );
+		camera.position.set( 0, 0, 4500 );
 		controls = new THREE.TrackballControls( camera, renderer.domElement );
 
 // Axes
@@ -64,18 +64,12 @@
 */
 
 // Assets
-		material = new THREE.MeshBasicMaterial( {color: Math.random() * 0xffffff } );
-		geometry = new THREE.PlaneGeometry( 600, 300 );
-		geometry.applyMatrix( new THREE.Matrix4().makeRotationX( -0.5 * Math.PI ) );
+		material = new THREE.MeshBasicMaterial( {color: 0xaaaaaa, side: THREE.DoubleSide } );
+		geometry = new THREE.PlaneGeometry( 3000, 3000 );
+		// geometry.applyMatrix( new THREE.Matrix4().makeRotationX( 0.5 * Math.PI ) );
 		mesh = new THREE.Mesh( geometry, material );
-		mesh.position.set( 0, -20, 0 );
-		// scene.add( mesh );
-
-		geometry = new THREE.CubeGeometry( 10, 10, 10 );
-		material = new THREE.MeshNormalMaterial();
-		mesh = new THREE.Mesh( geometry, material );
-		// scene.add( mesh );
-		
+		mesh.position.set( 0, -50, 0 );
+		scene.add( mesh );
 		
 	}
 
@@ -102,32 +96,37 @@
 			dataArr.push( lines[i].split( sep ) );
 		}
 	
+	
+	
 		data.innerHTML = '';
 		var index;
-		// for (var i = 1, ilen = dataArr.length; i < ilen; i++) {
-		for (var i = 1, ilen = dataArr.length; i < ilen; i++) {
-			var poly = dataArr[i].slice(14);
-// console.log( dataArr.length, poly );	
+		for (var i = 16642, ilen = 16643; i < ilen; i++) {
+		// for (var i = 2, ilen = 10000; i < ilen; i++) {
+			var stories = parseInt( dataArr[i][1] );
+			var height = stories * 8;
+			var poly = dataArr[i].slice(16);
+console.log( i, dataArr.length, dataArr[i][0], poly, stories );	
 
-			var pre = '{ "numberFloors": 5, "buildingType": "office", "vertices" : [';
+			var pre = '{ "numberFloors": ' + stories + ', "buildingType": "office", "vertices" : [';
 			var pt = '';
 			pts = [];
 			if ( poly !== null ) {
-				for (var j = 0, jlen = poly.length / 3 - 1; j < jlen; j++) {
+				for (var j = 0, jlen = (poly.length - 1) / 3 - 0; j < jlen; j++) {
 					index = j * 3;
 					pt += '[' + poly[ index ] + ',' + poly[ index + 1] + ',' + poly[ index + 2 ] + '],';
-					pts.push( v2( 0.1 * (parseFloat(poly[ index ]) - 224375.7) , 0.1 * (parseFloat(poly[ index + 2 ]) - 993801.0) ) );
+					pts.push( v2( 0.1 * (parseFloat(poly[ index ]) - 993801.0 ) , 0.1 * (parseFloat(poly[ index + 1 ]) - 224375.7) ) );
 				}
-	// console.log( ilen, jlen, pt, pts );				
-				// data.innerHTML += pre + pt.substr(0, pt.length - 1) + '] }\n' ;		
+				
+// console.log( ilen, jlen, pt, pts );				
+				data.innerHTML += pre + pt.substr(0, pt.length - 1) + '] }\n' ;		
 				if ( pts.length > 2 ) {
 					shape = new THREE.Shape();
 					shape.fromPoints( pts );
 					
-					geometry = shape.extrude( { amount: 2, bevelEnabled: false, steps: 1 } );
-					geometry.applyMatrix( new THREE.Matrix4().makeRotationX( -0.5 * Math.PI ) );
-					// var offset = THREE.GeometryUtils.center( geometry );
-					material = new THREE.MeshNormalMaterial( { wireframe: true } );
+					geometry = shape.extrude( { amount: height, bevelEnabled: false, steps: 1 } );
+					// geometry.applyMatrix( new THREE.Matrix4().makeRotationZ( -0.5 * Math.PI ) );
+					//offset = THREE.GeometryUtils.center( geometry );
+					material = new THREE.MeshNormalMaterial( { wireframe: false } );
 					mesh = new THREE.Mesh( geometry, material );
 					// mesh.scale.set( 0.000001, 0.000001,  0.000001);
 
@@ -150,7 +149,7 @@ console.log( scene.children.length );
 
 	function saveIt() {
 		var blob = new Blob([data.innerHTML], {type: "text/plain;charset=utf-8"});
-		saveAs(blob, 'test.txt');
+		saveAs(blob, '30-rock.json');
 	}
 	
 	function v(x,y,z){ return new THREE.Vector3(x,y,z); } 
