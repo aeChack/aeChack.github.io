@@ -14,24 +14,28 @@ var stories = 10;
 // create each building story
 for (var i=0; i<stories; i++)
 {
+	// create a thermal zone
+	//this['thermalZone' + i] = new openstudio.model.ThermalZone(model);
+	
 	// create story
 	var zCoord = i * floorHeight;
-	var story = new openstudio.model.BuildingStory(model);
-	story.setNominalZCoordinate(zCoord);
-	story.setNominalFloortoFloorHeight(floorHeight);
-        
-	// create floor prints
+	this['story' + i] = new openstudio.model.BuildingStory(model);
+	this['story' + i].setNominalZCoordinate(zCoord);
+	this['story' + i].setNominalFloortoFloorHeight(floorHeight);
+	
+	// create floor print
 	var floorPrint = new openstudio.Point3dVector();
-
-        for (var j = 0; j < polyline.vertices.length; j++)
-        {
-		floorPrint.add(new openstudio.Point3d(polyline.vertices[j][0],polyline.vertices[j][1],polyline.vertices[j][2]));
+	
+	for (var i = 0; i < polyline.vertices.length; i++)
+	{
+		floorPrint.add(new openstudio.Point3d(polyline.vertices[i][0],polyline.vertices[i][1],polyline.vertices[i][2]));
 	}
-        
-        // create spaces	
+
+	// make spaces
 	var thermalZone = new openstudio.model.ThermalZone(model);
-	var space = openstudio.model.Space.fromFloorPrint(floorPrint, floorHeight, model);
-	space.get().setThermalZone(thermalZone);
+	this['space' + i] = openstudio.model.Space.fromFloorPrint(floorPrint, floorHeight, model);
+	this['space' + i].get().setThermalZone(thermalZone);
+	//this['space' + i].get().setBuildingStory(story);
 }
 
 // set file path location and save out model
