@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang=en>
 <head>
-<title>Display Manhattan</title>
+<title>Display Manhattan Address</title>
 <meta charset=utf-8>
 <meta name=author content='Theo Armour'>
 </head>
@@ -36,9 +36,10 @@
 		//'';
 
 		info = document.body.appendChild( document.createElement( 'div' ) );
-		info.style.cssText = 'position: absolute; ' ;
-		info.innerHTML = '<h1>Display Manhattan</h1>' +
-			'<a href=JavaScript:loadIt(); >Load Manhattan</a> <a href=JavaScript:saveIt(); >Save It</a>' +
+		info.style.cssText = 'position: absolute; text-align:center;width:100%;' ;
+		info.innerHTML = '<h1>Display Manhattan Adddress</h1>' +
+		'1. <a href=JavaScript:loadIt(); >Load Manhattan</a> 2. <input type="text" id="inp" placeholder="Enter address here" size=20 /> ' + 
+		'3.<a href=JavaScript:findIt(); >Find It</a> 4. <a href=JavaScript:saveIt(); >Save It</a>' +
 			'<div id=data></div>' +
 		'';		
 		
@@ -96,8 +97,6 @@
 			dataArr.push( lines[i].split( sep ) );
 		}
 	
-	
-	
 		data.innerHTML = '';
 		var index;
 		for (var i = 16642, ilen = 16643; i < ilen; i++) {
@@ -136,6 +135,11 @@ console.log( i, dataArr.length, dataArr[i][0], poly, stories );
 	
 		} 
 console.log( scene.children.length );
+	}
+	
+	function findIt() {
+		var address = inp.value;
+console.log( 'f', address );		
 	}
 	
 	function requestFile( fname ) {
