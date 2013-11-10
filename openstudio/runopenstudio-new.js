@@ -3,7 +3,7 @@ var openstudio = require('OpenStudio.js').openstudio;
 
 function addExampleConstructions(model)
 {
-
+  console.log("Start Constructions");
   var defaultConstructions = new openstudio.model.DefaultConstructionSet(model);
   defaultConstructions.setName("Default Constructions");
   var exteriorSurfaceConstructions = new openstudio.model.DefaultSurfaceConstructions(model);
@@ -22,7 +22,10 @@ function addExampleConstructions(model)
   interiorSubSurfaceConstructions.setName("Interior SubSurface Constructions");
   defaultConstructions.setDefaultInteriorSubSurfaceConstructions(interiorSubSurfaceConstructions);
 
+  console.log("Finished Default Construction Set");
   var opaqueMaterials = new openstudio.model.OpaqueMaterialVector();
+  
+  console.log("Initialized Opaque Materials");
 
   // Exterior Wall
 
@@ -71,12 +74,14 @@ function addExampleConstructions(model)
   g01a_19mm_gypsum_board.setSpecificHeat(1090.0);
 
   opaqueMaterials.add(g01a_19mm_gypsum_board);
-
-  var exteriorWall = new openstudio.model.Construction(opaqueMaterials);
+  
+  var exteriorWall = new openstudio.model.Construction(model);
   exteriorWall.setName("Exterior Wall");
   exteriorWall.setInsulation(i02_50mm_insulation_board);
   exteriorSurfaceConstructions.setWallConstruction(exteriorWall);
   opaqueMaterials.clear();
+  
+  console.log("Finished Exterior Wall Construction");
 
   // Exterior Roof
 
@@ -106,22 +111,26 @@ function addExampleConstructions(model)
 
   opaqueMaterials.add(f16_acoustic_tile);
 
-  var exteriorRoof = new openstudio.model.Construction(opaqueMaterials);
+  var exteriorRoof = new openstudio.model.Construction(model);
   exteriorRoof.setName("Exterior Roof");
   exteriorSurfaceConstructions.setRoofCeilingConstruction(exteriorRoof);
   opaqueMaterials.clear();
 
+  console.log("Finished Exterior Roof Construction");
+  
   // Interior Floor
 
   opaqueMaterials.add(f16_acoustic_tile);
   opaqueMaterials.add(f05_ceiling_air_space_resistance);
   opaqueMaterials.add(m11_100mm_lightweight_concrete);
 
-  var interiorFloor = new openstudio.model.Construction(opaqueMaterials);
+  var interiorFloor = new openstudio.model.Construction(model);
   interiorFloor.setName("Interior Floor");
   interiorSurfaceConstructions.setFloorConstruction(interiorFloor);
   opaqueMaterials.clear();
 
+  console.log("Finished Interior Floor Construction");
+  
   // Air Wall
 
   var airWallMaterial = new openstudio.model.AirWallMaterial(model);
@@ -131,16 +140,20 @@ function addExampleConstructions(model)
   airWall.setName("Air Wall");
   interiorSurfaceConstructions.setWallConstruction(airWall);
 
+  console.log("Finished Air Wall Construction");
+
   // Interior Ceiling
 
   opaqueMaterials.add(m11_100mm_lightweight_concrete);
   opaqueMaterials.add(f05_ceiling_air_space_resistance);
   opaqueMaterials.add(f16_acoustic_tile);
 
-  var interiorCeiling = new openstudio.model.Construction(opaqueMaterials);
+  var interiorCeiling = new openstudio.model.Construction(model);
   interiorCeiling.setName("Interior Ceiling");
   interiorSurfaceConstructions.setRoofCeilingConstruction(interiorCeiling);
   opaqueMaterials.clear();
+
+  console.log("Finished Interior Ceiling Construction");
 
   // Slab
 
@@ -167,12 +180,14 @@ function addExampleConstructions(model)
 
   opaqueMaterials.add(cp02_carpet_pad);
 
-  var slab = new openstudio.model.Construction(opaqueMaterials);
+  var slab = new openstudio.model.Construction(model);
   slab.setName("Slab");
   groundContactSurfaceConstructions.setFloorConstruction(slab);
   opaqueMaterials.clear();
 
   var fenestrationMaterials = new openstudio.model.FenestrationMaterialVector();
+
+  console.log("Finished Slab Construction");
 
   // Exterior Window
 
@@ -202,14 +217,10 @@ function addExampleConstructions(model)
   air_13mm.setGasType("Air");
   air_13mm.setThickness(0.0127);
 
-  //fenestrationMaterials.add(clear_3mm);
-  //fenestrationMaterials.add(air_13mm);
-  //fenestrationMaterials.add(clear_3mm);
-
   // DLM: use simple glazing so we can know window properties without requiring E+ run
   fenestrationMaterials.add(openstudio.model.toFenestrationMaterial(simple_glazing).get());
 
-  var exteriorWindow = new openstudio.model.Construction(fenestrationMaterials);
+  var exteriorWindow = new openstudio.model.Construction(model);
   exteriorWindow.setName("Exterior Window");
   exteriorSubSurfaceConstructions.setFixedWindowConstruction(exteriorWindow);
   exteriorSubSurfaceConstructions.setOperableWindowConstruction(exteriorWindow);
@@ -219,14 +230,14 @@ function addExampleConstructions(model)
   exteriorSubSurfaceConstructions.setTubularDaylightDiffuserConstruction(exteriorWindow);
   fenestrationMaterials.clear();
 
-  // Interior Window
+  console.log("Finished Exterior Window Construction");
 
-  //fenestrationMaterials.add(clear_3mm);
+  // Interior Window
 
   // DLM: use simple glazing so we can know window properties without requiring E+ run
   fenestrationMaterials.add(openstudio.model.toFenestrationMaterial(simple_glazing).get());
 
-  var interiorWindow = new openstudio.model.Construction(fenestrationMaterials);
+  var interiorWindow = new openstudio.model.Construction(model);
   interiorWindow.setName("Interior Window");
   interiorSubSurfaceConstructions.setFixedWindowConstruction(interiorWindow);
   interiorSubSurfaceConstructions.setOperableWindowConstruction(interiorWindow);
@@ -235,6 +246,8 @@ function addExampleConstructions(model)
   interiorSubSurfaceConstructions.setTubularDaylightDomeConstruction(interiorWindow);
   interiorSubSurfaceConstructions.setTubularDaylightDiffuserConstruction(interiorWindow);
   fenestrationMaterials.clear();
+  
+  console.log("Finished Interior Window Construction");
 
   // Interior Door
 
@@ -248,20 +261,25 @@ function addExampleConstructions(model)
 
   opaqueMaterials.add(g05_25mm_wood);
 
-  var interiorDoor = new openstudio.model.Construction(opaqueMaterials);
+  var interiorDoor = new openstudio.model.Construction(model);
   interiorDoor.setName("Interior Door");
   interiorSubSurfaceConstructions.setDoorConstruction(interiorDoor);
   interiorSubSurfaceConstructions.setOverheadDoorConstruction(interiorDoor);
   opaqueMaterials.clear();
 
+  console.log("Finished Interior Door Construction");
+
   // Interior Partition
 
   opaqueMaterials.add(g05_25mm_wood);
 
-  var interiorPartition = new openstudio.model.Construction(opaqueMaterials);
+  var interiorPartition = new openstudio.model.Construction(model);
   interiorPartition.setName("Interior Partition");
   defaultConstructions.setInteriorPartitionConstruction(interiorPartition);
   opaqueMaterials.clear();
+  
+  console.log("Finished Interior Partition Construction");
+
 }
 
 function createGeometry(model)
