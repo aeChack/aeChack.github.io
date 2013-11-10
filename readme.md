@@ -6,6 +6,10 @@ Entry for the AEC Hackathon 2013 held at Facebook HQ, Menlo Park CA
 [aechack.github.io/]( http://aechack.github.io/ )
 
 ## Live demos
+[Hot Spot # ~ 43,000 NYC buildings in 3D ]( http://aeChack.github.io/hot-spot-01/display-manhattan.html )
+
+---
+
 [Warm-Up #8 ~ Read NYC data and create Three.js ]( http://aeChack.github.io/warm-up-07/load-nyc-csv.html )
 
 [Warm-Up #7 ~ Read NYC data and save to JSON]( http://aeChack.github.io/warm-up-07/load-nyc-csv.html )
