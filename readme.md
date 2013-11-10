@@ -6,7 +6,7 @@ Entry for the AEC Hackathon 2013 held at Facebook HQ, Menlo Park CA
 [aechack.github.io/]( http://aechack.github.io/ )
 
 ## Live demos
-[Rund Radiation Analysis]( http://aeChack.github.io/radiance/radianceAnalysisRun.html )
+[Run Radiation Analysis]( http://aeChack.github.io/radiance/radianceAnalysisRun.html )
 
 [Hot Spot #1 ~ 43,000 NYC buildings in 3D ]( http://aeChack.github.io/hot-spot-01/display-manhattan.html )
 
