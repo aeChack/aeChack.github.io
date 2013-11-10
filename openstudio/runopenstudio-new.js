@@ -52,3 +52,4 @@ function createModel()
 	return model 
 }
 
+createModel();
