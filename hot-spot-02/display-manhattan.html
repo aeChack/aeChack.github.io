@@ -16,7 +16,8 @@
 <script>
 
 	var info, renderer, scene, camera, controls, stats, info;
-
+	
+	
 	init();
 	animate();
 
@@ -85,13 +86,14 @@
 // 993801.96 224375.7
 
 	var pts;
+	var dataArr;
 	function loadIt( ) {
 		var text = requestFile( '../NYCbuildingData/ManhattanBldgData.csv' );
 		
 		var lines = text.split(/\r\n|\n/);
 		lines[0] = lines[0].replace(/["']/g, ""); // better to delete in original files
 		var length = lines.length - 1;
-		var dataArr = [];
+		dataArr = [];
 		var sep = ',';
 		for ( var i = 0; i < length; i++ ) {
 			dataArr.push( lines[i].split( sep ) );
@@ -99,8 +101,9 @@
 	
 		data.innerHTML = '';
 		var index;
-		for (var i = 16642, ilen = 16643; i < ilen; i++) {
+		// for (var i = 16642, ilen = 16643; i < ilen; i++) {
 		// for (var i = 2, ilen = 10000; i < ilen; i++) {
+		for (var i = 2, ilen = dataArr.length; i < ilen; i++) {
 			var stories = parseInt( dataArr[i][1] );
 			var height = stories * 8;
 			var poly = dataArr[i].slice(16);
@@ -139,7 +142,14 @@ console.log( scene.children.length );
 	
 	function findIt() {
 		var address = inp.value;
-console.log( 'f', address );		
+console.log( 'f', address );	
+		var add;
+		for (var i = 0, len = dataArr.length; i < len; i++) {
+			add = dataArr[i][0];
+			if (add.indexOf( address.toUpperCase ) > 1 ) {
+console.log( i, add )				
+			}
+		} 
 	}
 	
 	function requestFile( fname ) {
