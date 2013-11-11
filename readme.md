@@ -9,7 +9,8 @@ Team entry for the [AEC Hackathon]( http://www.aechackathon.com/ ) 2013 held at 
 
 [Run Radiation Analysis]( http://aeChack.github.io/radiance/radianceAnalysisRun.html )
 
-* 
+* Using radiance gendaymtx the sky for NYC is generated aeChack calculates the amount of radiation on each surface.
+Right now the analysis won't be visualized back to the preview which will be possible very soon.
 
 [Hot Spot #1 ~ 43,000 NYC buildings in 3D ]( http://aeChack.github.io/hot-spot-01/display-manhattan.html )
 
