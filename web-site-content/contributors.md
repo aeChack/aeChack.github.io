@@ -14,7 +14,11 @@ Theo Armour ~ San Francisco and Paris ~ [GitHub presence]( http://theo-armour.gi
 
 Dave Arandash ~ for introducing Theo to Mostapha and Alan
 
-The Thornton Tomasetti Hackers ~ for providing radiant support and excellent post-event festivities
+Elcin Ertugrul ~ for sharing her information and Grasshopper components to parse NYC OpenData ~ [GitHub presence](https://github.com/eertugrul)
+
+Daniel Macumber and Jason Turner ~ for providing us the access to OpenStudio JavaScript Bindings
+
+The Thornton Tomasetti Hackers : (Ben Howes, Daniel Segraves, Jonatan Schumacher and Kenny Tam) ~ for providing radiant support and excellent post-event festivities
 
 Yohan Baillot ~ Reality augmentation, French method 
 
