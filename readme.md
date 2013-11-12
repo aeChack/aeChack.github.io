@@ -12,12 +12,12 @@ Team entry for the [AEC Hackathon]( http://www.aechackathon.com/ ) 2013 held at 
 * Using radiance gendaymtx the sky for NYC is generated aeChack calculates the amount of radiation on each surface.
 Right now the analysis won't be visualized back to the preview which will be possible very soon.
 
-[Hot Spot #1 ~ 43,000 NYC buildings in 3D ]( http://aeChack.github.io/hot-spot-01/display-manhattan.html )
+[Hot Spot #1 ~ 43,961 NYC buildings in 3D ]( http://aeChack.github.io/hot-spot-01/display-manhattan.html )
 
 * Using data obtained from [NYC OpenData]( https://nycopendata.socrata.com/ ), 
-aeChack prepared a 3D visualization that can zoom, pan and rotate in real-time all 43,96i buildings in Manhattan, NY. 
-The visualiztion runs in any browser that supports WebGL. No plugins are required. The app is entirely FOSS. 
-The team believs this was the first time such a visualization has been accomplished.
+aeChack prepared a 3D visualization that can zoom, pan and rotate in real-time all 43,961 buildings in Manhattan, NY. 
+The visualization runs in any browser that supports WebGL. No plugins are required. The app is entirely FOSS. 
+The team believes this was the first time such a visualization has been accomplished.
 
 ## Demos built while hacking 2013-11-09
 
@@ -26,7 +26,7 @@ The team believs this was the first time such a visualization has been accomplis
 
 [Warm-Up #8 ~ Read NYC data and create Three.js ]( http://aeChack.github.io/warm-up-07/load-nyc-csv.html )
 
-* Read NYC data from file and disply with Three.js. Very slow. Many errors
+* Read NYC data from file and display with Three.js. Very slow. Many errors
 
 [Warm-Up #7 ~ Read NYC data and save to JSON]( http://aeChack.github.io/warm-up-07/load-nyc-csv.html )
 
@@ -65,6 +65,14 @@ Copyright &copy; 2013 aeChack authors ~ All work herein is under the [MIT Licens
 
 
 ## Change Log
+
+2013-11-11 ~ Theo
+
+* Cleaning up contents
+
+2013-11-9/10 ~ All
+
+* Many additions
 
 
 2013-11-08 ~ Theo
