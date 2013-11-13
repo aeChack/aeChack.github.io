@@ -2,15 +2,32 @@ aeChack Read Me
 ===============
 Team entry for the [AEC Hackathon]( http://www.aechackathon.com/ ) 2013 held at Facebook HQ, Menlo Park CA 2013-11-08/10
 
-## Entry Web Site Hosted on GitHub
-[aechack.github.io]( http://aechack.github.io/ )
+## Concept
+aeChack is a free, online and open source platform for running and visualizing environmental analysis using daylighting and energy analysis engines.
 
+## GitHub Presence
+Hosted code: [aechack.github.io]( http://aechack.github.io/ )
+
+Source code: [github.com/aechack]( https://github.com/aechack )
+
+***
+## Ongoing Work
+
+[Run Radiation Analysis #2]( http://aeChack.github.io/radiance-02/radianceAnalysisRun.html )
+
+* 2013-11-13 ~ Limited version. Only loads two external files: New York sun data and user-selected building JSON data. To be used as the basis for further development.
+
+[Hot Spot #2 ~ Export polyline data for any selected Manhattan building ]( http://aeChack.github.io/hot-spot-02/display-manhattan.html )
+
+* 2013-11-13 ~ Load NYC data, type in address, get building data and then save it to building-polylines folder.
+
+***
 ## Live demos used in aeChack Team Presentation
 
 [Run Radiation Analysis]( http://aeChack.github.io/radiance/radianceAnalysisRun.html )
 
-* Using radiance gendaymtx the sky for NYC is generated aeChack calculates the amount of radiation on each surface.
-Right now the analysis won't be visualized back to the preview which will be possible very soon.
+* Using radiance gendaymtx, the sky for NYC is generated. aeChack calculates the amount of radiation on each building surface.
+Currently the analysis does not return visible geometry back to the preview, This shold be be possible very soon.
 
 [Hot Spot #1 ~ 43,961 NYC buildings in 3D ]( http://aeChack.github.io/hot-spot-01/display-manhattan.html )
 
@@ -19,6 +36,7 @@ aeChack prepared a 3D visualization that can zoom, pan and rotate in real-time a
 The visualization runs in any browser that supports WebGL. No plugins are required. The app is entirely FOSS. 
 The team believes this was the first time such a visualization has been accomplished.
 
+***
 ## Demos built while hacking 2013-11-09
 
 [Warm-Up #9 ~ Read typical JSON file and display in Three.js ]( http://aeChack.github.io/warm-up-07/load-json.html )
@@ -65,6 +83,13 @@ Copyright &copy; 2013 aeChack authors ~ All work herein is under the [MIT Licens
 
 
 ## Change Log
+
+2013-11-13 ~ Theo
+
+* photo gallery added
+* 2 new app updates
+* Added text to home page
+
 
 2013-11-11 ~ Theo
 
