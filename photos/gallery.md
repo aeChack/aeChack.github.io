@@ -4,11 +4,11 @@ _Photos taken during the AEC Hackathon, 2013-11-10_
 
 
 ![aec-hackathon-damon-paul-spencer](http://aechack.github.io/photos/aec-hackathon-damon-paul-spencer.jpg)  
-Damon, Paul and Spencer
+Damon, Paul and Spencer ~ AEC Hackathon thanking Facebook
 
 
 ![aec-hackathon-team-1](http://aechack.github.io/photos/aec-hackathon-team-1.jpg)   
-Hackathon Team 1
+Hackathon Team 1 ( not our team ) receiving thanks
 
 
 ![facebook-courtyard]( http://aechack.github.io/photos/facebook-courtyard.jpg)  
