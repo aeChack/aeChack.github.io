@@ -26,8 +26,8 @@ Source code: [github.com/aechack]( https://github.com/aechack )
 
 [Run Radiation Analysis]( http://aeChack.github.io/radiance/radianceAnalysisRun.html )
 
-* Using radiance gendaymtx, the sky for NYC is generated. aeChack calculates the amount of radiation on each building surface.
-Currently the analysis does not return visible geometry back to the preview, This shold be be possible very soon.
+* Using radiance [gendaymtx]( http://www.radiance-online.org/learning/documentation/manual-pages/pdfs/gendaymtx.pdf ), the sky for NYC is generated. aeChack calculates the amount of radiation on each building surface.
+Currently the analysis does not return visible geometry back to the preview. This shold be be possible very soon.
 
 [Hot Spot #1 ~ 43,961 NYC buildings in 3D ]( http://aeChack.github.io/hot-spot-01/display-manhattan.html )
 
