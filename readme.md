@@ -20,9 +20,11 @@ Source code: [github.com/aechack]( https://github.com/aechack )
 
 * 2013-11-13 ~ Limited version. Only loads two external files: New York sun data and user-selected building JSON data. To be used as the basis for further development.
 
-[Hot Spot #2 ~ Export polyline data for any selected Manhattan building ]( http://aeChack.github.io/hot-spot-02/display-manhattan.html )
+[Hot Spot #2 ~ Export polyline data for any selected New York City building ]( http://aeChack.github.io/hot-spot-02/display-manhattan.html )
 
-* 2013-11-13/14 ~ Load NYC data from any of the five boroughs, type in address, get building data, display building in 3D, and then save data to building-polylines folder.
+* 2013-11-13/14 ~ Load NYC data from any of the five boroughs, type in address, get building data, display building in 3D, 
+and then save data to building-polylines folder. Note: you don't need to 'Display Borough'. 
+It's there just because we \*can\* do it, but it takes time and only Manhattan works.
 
 ***
 ## Live demos used in aeChack Team Presentation
