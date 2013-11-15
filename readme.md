@@ -1,6 +1,6 @@
 aeChack Read Me
 ===============
-Team entry for the [AEC Hackathon]( http://www.aechackathon.com/ ) 2013 held at Facebook HQ, Menlo Park CA 2013-11-08/10
+Team entry for the [AEC Hackathon]( http://www.aechackathon.com/ ) 2013-11-08/10 held at Facebook HQ, Menlo Park CA 
 
 ## Concept
 aeChack is a free, online and open source platform for running and visualizing environmental analysis using daylighting and energy analysis engines.
