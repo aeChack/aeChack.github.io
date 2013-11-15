@@ -19,7 +19,7 @@ Source code: [github.com/aechack]( https://github.com/aechack )
 
 [Hot Spot #2 ~ Export polyline data for any selected Manhattan building ]( http://aeChack.github.io/hot-spot-02/display-manhattan.html )
 
-* 2013-11-13 ~ Load NYC data, type in address, get building data and then save it to building-polylines folder.
+* 2013-11-13/14 ~ Load NYC data from any of the five boroughs, type in address, get building data, display building in 3D, and then save data to building-polylines folder.
 
 ***
 ## Live demos used in aeChack Team Presentation
@@ -83,6 +83,12 @@ Copyright &copy; 2013 aeChack authors ~ All work herein is under the [MIT Licens
 
 
 ## Change Log
+
+2013-11-14 ~ Theo
+
+* Added load data from any of the five boroughs using select with options
+* Added When you do a 'Find Address', selected building is displayed in 3D centered on screen. You may need to zoom in to see.
+* Note: 'Display Borough' only works for Mahattan. All other boroughs quit before display finish because of issues with data. Working on this
 
 2013-11-13 ~ Theo
 
