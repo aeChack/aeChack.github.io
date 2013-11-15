@@ -5,6 +5,8 @@ Team entry for the [AEC Hackathon]( http://www.aechackathon.com/ ) 2013 held at 
 ## Concept
 aeChack is a free, online and open source platform for running and visualizing environmental analysis using daylighting and energy analysis engines.
 
+![image](http://i.imgur.com/Y2l8YBx.jpg)
+
 ## GitHub Presence
 Hosted code: [aechack.github.io]( http://aechack.github.io/ )
 
