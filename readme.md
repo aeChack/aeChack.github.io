@@ -6,6 +6,7 @@ Team entry for the [AEC Hackathon]( http://www.aechackathon.com/ ) 2013-11-08/10
 aeChack is a free, online and open source platform for running and visualizing environmental analysis using daylighting and energy analysis engines.
 
 ![image](http://i.imgur.com/Y2l8YBx.jpg)
+All 43,961 buildings in Manhattan, NY in zoomable, pannable 3D
 
 ## GitHub Presence
 Hosted code: [aechack.github.io]( http://aechack.github.io/ )
