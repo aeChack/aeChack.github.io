@@ -89,6 +89,17 @@ Copyright &copy; 2013 aeChack authors ~ All work herein is under the [MIT Licens
 
 ## Change Log
 
+2013-11-16 ~ Theo
+
+* Added Hot Spot #3, cleaned code. No more 'Display Borough' - memory hog, will move to separte app. 
+* Ranamed app to 'touchBuilding' 
+* Input box now operates when you hit `Enter`
+* Variable set for wireframe display
+* Manhattan & '30 ro' set as defaults for speedy testing
+* Three.js planes generated for each face and displayed 'underground, data output to console
+* Added light, shading and shadows from an arbitrary point
+ 
+
 2013-11-14 ~ Theo
 
 * Added load data from any of the five boroughs using select with options
