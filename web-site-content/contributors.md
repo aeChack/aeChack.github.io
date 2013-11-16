@@ -12,7 +12,7 @@ Theo Armour ~ San Francisco and Paris ~ [GitHub presence]( http://theo-armour.gi
 
 ## Kool Kids
 
-Dave Arandash ~ for introducing Theo to Mostapha and Alan
+Dave Arandash ~ for warmly introducing Theo to Mostapha and Alan
 
 Elcin Ertugrul ~ for sharing her information and Grasshopper components to parse NYC OpenData ~ [GitHub presence](https://github.com/eertugrul)
 
@@ -20,21 +20,21 @@ Daniel Macumber and Jason Turner ~ for providing us the access to OpenStudio Jav
 
 The Thornton Tomasetti Hackers : (Ben Howes, Daniel Segraves, Jonatan Schumacher and Kenny Tam) ~ for providing radiant support and excellent post-event festivities
 
-Yohan Baillot ~ Reality augmentation, French method 
+Yohan Baillot ~ for heated reality augmentation, using the French method 
 
-## Calorific Colleages
+## Calorific Colleagues
 
-Damon Hernandez & Paul Doherty ~  For creating AEC Hackathon
+Damon Hernandez & Paul Doherty ~  For creating AEC Hackathon nd making it a hot item
 
-Spencer ~ for the Facebook HQ venue
+Spencer ~ for providing the Facebook HQ venue and keeping it warm
 
-Mel Hidayat ~ for warmth
+Mel Hidayat ~ for environmental warmth
 
-Dushan Boshnyak ~ for warmth
+Dushan Boshnyak ~ for 'shader' warmth - if that's possible
 
-Rene ~ for warmth
+Rene ~ for everyday warmth
 
-Kevin Albert > for chauffering
+Kevin Albert > for chauffeuring << 'chauffeur' derives from the word 'heat'
 
 
 
