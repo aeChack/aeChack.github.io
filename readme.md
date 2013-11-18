@@ -5,6 +5,9 @@ Team entry for the [AEC Hackathon]( http://www.aechackathon.com/ ) 2013-11-08/10
 ## Concept
 aeChack is a free, online and open source platform for running and visualizing environmental analysis using daylighting and energy analysis engines.
 
+![30 Rock & neighbors](photos/2013-11-17-30-rock.png)
+30 Rock aand ita neighbors
+
 ![image](http://i.imgur.com/Y2l8YBx.jpg)  
 All 43,961 buildings in Manhattan, NY in zoomable, pannable 3D
 
@@ -22,7 +25,8 @@ Source code: [github.com/aechack]( https://github.com/aechack )
 
 [Hot Spot #3 ~ new title: 'touchBuilding' ]( http://aeChack.github.io/hot-spot-03/touch-building.html )
 
-* 2013-11-16 ~ See 'Change Log'. Display just one building. Adds face planes with vertices plus shading and shadows.
+* 2013-11-17 ~ See 'Change Log' below. Display nearby buildinga as well. Adds manic replay sun position toggle. Note: best to reload page between each each building. 
+* 2013-11-16 ~ See 'Change Log' below. Display just one building. Adds face planes with vertices plus shading and shadows.
 
 [Hot Spot #2 ~ Export polyline data for any selected New York City building ]( http://aeChack.github.io/hot-spot-02/display-manhattan.html )
 
@@ -92,6 +96,17 @@ Copyright &copy; 2013 aeChack authors ~ All work herein is under the [MIT Licens
 
 
 ## Change Log
+
+2013-11-17 ~ Theo
+
+* Accessing the revised smaller CSV files
+* Source code objectified and name-spaced in simple manner
+* Possible errors in CSV files stepped around
+* Nearby buildings are identified and displayed. All have shading and shadows.
+* You can change the search radius for nearby buildings.
+* The gound plane is circular and updates with change in search radius.
+* Clicking a checkbox allows you to replay the sun's position for the 8760 hours in a year
+ 
 
 2013-11-16 ~ Theo
 

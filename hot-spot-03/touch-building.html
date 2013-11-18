@@ -16,29 +16,30 @@
 
 	var wireframe = false;
 	
-	var info, renderer, scene, camera, controls, stats, info;
+	var info, renderer, scene, camera, controls, stats, info, light;
 	var buildingPoints;
 	var buildingObj;
 	var buildings;
 	var BLDG = {};
 	var base;
+	var hour = 1, sunPositions;
 	
 	init();
 	animate();
 
 	function init() {
-		var css, light, geometry, material, mesh;
+		var css, geometry, material, mesh;
 
 		css = document.body.appendChild( document.createElement('style') );
-		css.innerHTML = 'body { font: 600 12pt monospace; overflow: hidden;  text-align: center; }';
+		css.innerHTML = 'body { font: 600 12pt monospace; margin: 0; overflow: hidden; text-align: center; }';
 
 		info = document.body.appendChild( document.createElement( 'div' ) );
 		info.style.cssText = 'left: 0; margin: 0 auto; position: absolute; right: 0; width:80%;' ;
-		info.innerHTML = '<h1>Touch Building</h1>' +	
+		info.innerHTML = '<h1>Touch Building ~ 2013-11-17</h1>' +	
 			'1. Load data: ' + 
 			'<select onchange=loadCSV(this.value); title="select the CSV data file to load" >' +
-				'<option>BronxBldgData.csv</option>' +
-				'<option>BrooklynBldgData.csv</option>' +
+				'<option>Bronx_minBldgData.csv</option>' +
+				'<option>Brooklyn_minBldgData.csv</option>' +
 				'<option selected>Manhattan_minBldgData.csv</option>' +
 				'<option>QueensBldgData.csv</option>' +
 				'<option>StateIslandBldgData.csv</option>' +
@@ -47,8 +48,8 @@
 			'2. <input type="text" id="inp" placeholder="Enter the address here" size=30 onchange=findAddress(); value="30 ro" /> ' + 
 			'3. <a href=JavaScript:dataDisplay.innerHTML="loading...";findAddress(); >Find Address</a><br>' +
 			'Radius of nearby: <input type="text" id="rad" title="Enter radius of nearby buildings to display" size=10 onchange="var r=this.value;base.scale.set(r,r,r);" value="1600" /> ' + 
+			'<input type=checkbox id=play defaultChecked=false> playSun ~ ' +
 			'4. <a href=JavaScript:saveIt(); >Save It</a>' +
-			
 			'<div id=dataDisplay></div>' +
 		'';		
 		
@@ -226,15 +227,45 @@ console.log( 'dis:', dis.toFixed(1), 'pos:', pos.toFixed(1), 'plane:', mesh );
 		saveAs(blob, address + '.json');
 	}
 	
+	function updateLight( hour ) {
+		if ( !sunPositions ) {
+			var positions = requestFile( '../annualSunPositions/NYCSunPosition.csv' ); 
+			var lines = positions.split(/\r\n|\n/);
+			var length = lines.length - 1;
+			var sep = ',';
+			sunPositions = [];
+			for ( var i = 0; i < length; i++ ) {
+				sunPositions.push( lines[i].split( sep ) );
+			}
+		}
+	
+		var theta = sunPositions[hour][0];
+		var phi = sunPositions[hour][1]
+
+		dataDisplay.innerHTML = 'Hour: ' + hour;
+		light.position.x = 1500 * cos( theta ) * sin( phi );
+		light.position.y = 1500 * sin( theta );
+		light.position.z = 1500 * cos( theta ) * cos( phi );	
+	}
+	
 	function animate() {
 		requestAnimationFrame( animate );
 		controls.update();
 		stats.update();
 		renderer.render( scene, camera );
+
+		if ( play.checked ) {
+			hour++;
+			if ( hour > 8760 ) { hour = 1; }		
+			updateLight( hour );
+		}		
+		
 	}	
 	
 	function v(x,y,z){ return new THREE.Vector3(x,y,z); } 
 	function v2( x, y ){ return new THREE.Vector2( x, y ); }	
+	function cos(a) {return Math.cos(a);}
+	function sin(a) {return Math.sin(a);}
 </script>
 </body>
 </html>
