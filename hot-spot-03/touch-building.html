@@ -20,6 +20,8 @@
 	var buildingPoints;
 	var buildingObj;
 	var buildings;
+	var BLDG = {};
+	var base;
 	
 	init();
 	animate();
@@ -28,22 +30,23 @@
 		var css, light, geometry, material, mesh;
 
 		css = document.body.appendChild( document.createElement('style') );
-		css.innerHTML = 'body { font: 600 12pt monospace; margin: 0; overflow: hidden; text-align: center; }';
+		css.innerHTML = 'body { font: 600 12pt monospace; overflow: hidden;  text-align: center; }';
 
 		info = document.body.appendChild( document.createElement( 'div' ) );
-		info.style.cssText = 'position: absolute; text-align:center; width:100%;' ;
+		info.style.cssText = 'left: 0; margin: 0 auto; position: absolute; right: 0; width:80%;' ;
 		info.innerHTML = '<h1>Touch Building</h1>' +	
 			'1. Load data: ' + 
 			'<select onchange=loadCSV(this.value); title="select the CSV data file to load" >' +
 				'<option>BronxBldgData.csv</option>' +
 				'<option>BrooklynBldgData.csv</option>' +
-				'<option selected>ManhattanBldgData.csv</option>' +
+				'<option selected>Manhattan_minBldgData.csv</option>' +
 				'<option>QueensBldgData.csv</option>' +
 				'<option>StateIslandBldgData.csv</option>' +
 			'</select> ' +
 			
 			'2. <input type="text" id="inp" placeholder="Enter the address here" size=30 onchange=findAddress(); value="30 ro" /> ' + 
-			'3. <a href=JavaScript:dataDisplay.innerHTML="loading...";findAddress(); >Find Address</a> ' +
+			'3. <a href=JavaScript:dataDisplay.innerHTML="loading...";findAddress(); >Find Address</a><br>' +
+			'Radius of nearby: <input type="text" id="rad" title="Enter radius of nearby buildings to display" size=10 onchange="var r=this.value;base.scale.set(r,r,r);" value="1600" /> ' + 
 			'4. <a href=JavaScript:saveIt(); >Save It</a>' +
 			
 			'<div id=dataDisplay></div>' +
@@ -67,19 +70,7 @@
 		light = new THREE.AmbientLight( 0xffffff );
 		light.color.setHSL( 0.1, 0.5, 0.5 );
 		scene.add( light );
-/*				
-		light = new THREE.DirectionalLight( 0xffffff, 0.75 );
-		light.position.set( 1000, -1000, -1000 );
-		light.castShadow = true;
-//		light.shadowCameraVisible = true;
-		//scene.add( light );
 
-		light = new THREE.DirectionalLight( 0xffffff, 0.75 );
-		light.position.set( -1000, 1000, 1000 );
-		light.castShadow = true;
-		light.shadowCameraVisible = true;
-		scene.add( light );
-*/
  		light = new THREE.DirectionalLight( 0xffffff, 1 );
 		light.position.set( -1000, -1000, 1000 );
 		light.castShadow = true;
@@ -96,29 +87,24 @@
 		light.shadowCameraVisible = true;
 		scene.add( light );				
 
-
 // Assets
 		material = new THREE.MeshBasicMaterial( {color: 0xaaaaaa, side: THREE.DoubleSide } );
-		geometry = new THREE.PlaneGeometry( 1600, 1600 );
+		geometry = new THREE.CircleGeometry( 1, 30 );
 		// geometry.applyMatrix( new THREE.Matrix4().makeRotationX( 0.5 * Math.PI ) );
-		mesh = new THREE.Mesh( geometry, material );
-		// mesh.position.set( 0, -2, 0 );
-		mesh.castShadow = true;
-		mesh.receiveShadow = true;		
-		scene.add( mesh );
+		base = new THREE.Mesh( geometry, material );
+		base.scale.set( rad.value, rad.value, rad.value );
+		base.castShadow = true;
+		base.receiveShadow = true;		
+		scene.add( base );
 		
-		loadCSV ( 'ManhattanBldgData.csv' );
+		loadCSV ( 'Manhattan_minBldgData.csv' );
 	}
 
-// 993801.96 224375.7 central park coordinates - center of??
-
 	function loadCSV ( fname ) {
-		var text = requestFile( '../NYCbuildingData/' + fname);
-		
-		var lines = text.split(/\r\n|\n/);
-		// lines[0] = lines[0].replace(/["']/g, "");
-		var length = lines.length - 1;
 		buildings = [];
+		var text = requestFile( '../NYCbuildingData/' + fname);
+		var lines = text.split(/\r\n|\n/);
+		var length = lines.length - 1;
 		var sep = ',';
 		for ( var i = 1; i < length; i++ ) {
 			buildings.push( lines[i].split( sep ) );
@@ -129,58 +115,83 @@ console.log( 'Number of buildings: ', buildings.length );
 
 	function findAddress() {
 		if ( !buildings ) { alert('Please "load data" first...'); return; }
-		var add2find;
+		
+		BLDG = {};
 		var tmpAddress;
-		// dataDisplay.innerHTML = 'Loading...';
-		add2find = inp.value.toUpperCase();
+		var add2find = inp.value.toUpperCase();
 console.log( 'Address to find', add2find );	
 		
 		for (var i = 0, len = buildings.length; i < len; i++) {
 			tmpAddress = buildings[i][0];
 			if ( tmpAddress.indexOf( add2find ) > -1 ) {
-console.log( 'Found #: ', i, 'Address: ', tmpAddress )	
-				var address = tmpAddress;
-				var stories = parseInt( buildings[i][1] );
-				// if ( stories < 1 ) { stories = 1; }
-				var X = parseInt( buildings[i][2] ); 
-				var Y = parseInt( buildings[i][3] );
-				var height = ( stories > 0 ) ? stories * 8 : 0.5;
-				var poly = buildings[i].slice(16);				
-				var pre = '{ "address": "' + address + '", "numberFloors": ' + stories + ', "vertices" : [';
-				var verts = '', index;
-				buildingPoints = [];
-				for ( var j = 0, jlen = ( poly.length - 1 ) / 3; j < jlen; j++) {  // note: data comes in with traiiing comma
-					index = j * 3;
-					verts += '[' + poly[ index ] + ',' + poly[ index + 1] + ',' + poly[ index + 2 ] + '],';
-					buildingPoints.push( v2( (parseFloat(poly[ index ]) - X ) , (parseFloat(poly[ index + 1 ]) - Y ) ) );
-				}				
-				dataDisplay.innerHTML = pre + verts.substr(0, verts.length - 1) + '] }\n' ;	
-				buildingObj = JSON.parse( dataDisplay.innerHTML );
-console.log( buildingObj );
-			
-				shape = new THREE.Shape();
-				shape.fromPoints( buildingPoints );
-				geometry = shape.extrude( { amount: height, bevelEnabled: false, steps: 1 } );
-				// material = new THREE.MeshNormalMaterial( { wireframe: wireframe } );
-				material = new THREE.MeshPhongMaterial( { color: 0x888888, ambient: 0x888888, opacity: 0.8, specular: 0x888888, shininess: 20, transparent: true } )
-				mesh = new THREE.Mesh( geometry, material );
-				mesh.castShadow = true;
-				mesh.receiveShadow = true;
-				scene.add( mesh );	
+console.log( 'Found #: ', i, 'Address: ', tmpAddress );
+				BLDG.id = i;
+				BLDG.address = tmpAddress;
+				BLDG.stories = parseInt( buildings[i][1] );
+				BLDG.X = parseInt( buildings[i][2] ); 
+				BLDG.Y = parseInt( buildings[i][3] );
+				BLDG.height = ( BLDG.stories > 0 ) ? BLDG.stories * 8 : 0.5;			
+				var pre = '{ "address": "' + BLDG.address + '", "numberFloors": ' + BLDG.stories + ', "vertices" : [';
 				
+				material = new THREE.MeshPhongMaterial( { color: 0x888888, ambient: 0x888888, opacity: 0.8, specular: 0x888888, shininess: 20, transparent: true } )
+				drawBuilding( BLDG, material );		
 				drawBuildingFaces ();
+				findNearby ();
+				
+				var jsonText = JSON.stringify( BLDG );
+				dataDisplay.innerHTML = jsonText;
+console.log( BLDG );				
+			}
+		}
+	}
+
+	function findNearby () {
+		var tmpBuilding = {};
+		var X, Y;
+		var pos = v2( BLDG.X, BLDG.Y );
+		var dis;
+		for (var i = 0, len = buildings.length; i < len; i++) {
+			tmpBuilding.X = parseInt( buildings[i][2] ); 
+			tmpBuilding.Y = parseInt( buildings[i][3] );
+			dis = pos.distanceTo( v2( tmpBuilding.X, tmpBuilding.Y) );
+			
+			if ( dis < rad.value && BLDG.id !== i && buildings[i][13] < 9000000 ) {
+// console.log( buildings[i] )
+				tmpBuilding.id = i;
+				tmpBuilding.stories = parseInt( buildings[i][1] );
+				tmpBuilding.height = ( tmpBuilding.stories > 0 ) ? tmpBuilding.stories * 8 : 0.5;	
+				var material = new THREE.MeshNormalMaterial( { opacity: 0.5, transparent: true } );
+				drawBuilding( tmpBuilding, material );
 			}
 		}
 	}
 	
-
+	function drawBuilding( building, material ) {
+		var poly = buildings[ building.id ].slice(13);
+		var verts = '', index;
+		building.buildingPoints = [];
+		for ( var j = 0, jlen = ( poly.length) / 2; j < jlen; j++) {  // note: data comes in with traiiing comma
+			index = j * 2;
+			verts += '[' + poly[ index ] + ',' + poly[ index + 1] + '],';
+			building.buildingPoints.push( v2( (parseFloat(poly[ index ]) - BLDG.X ) , (parseFloat(poly[ index + 1 ]) - BLDG.Y ) ) );
+		}		
 	
+		var shape = new THREE.Shape();
+		shape.fromPoints( building.buildingPoints );
+		geometry = shape.extrude( { amount: building.height, bevelEnabled: false, steps: 1 } );
+		mesh = new THREE.Mesh( geometry, material );
+		mesh.castShadow = true;
+		mesh.receiveShadow = true;
+//		building.mesh = mesh;
+		scene.add( mesh );		
+	}
+
 	function drawBuildingFaces () {
-		var bo = buildingObj;
-		var ps = buildingPoints;
-		var fs = bo.numberFloors;
+		var bo = BLDG;
+		var ps = BLDG.buildingPoints;
+		var fs = BLDG.stories;
 		var dis;
-		var pos = 0;
+		var pos = 500;
 		material = new THREE.MeshBasicMaterial( { color: 0x000000, wireframe: true } );
 		for (var i = 0, len = ps.length - 1; i < len; i++) {
 			dis = ps[i].distanceTo( ps[i + 1] );
@@ -195,10 +206,10 @@ console.log( buildingObj );
 			geometry = new THREE.PlaneGeometry( dis, ht, Math.floor( dis / 8), fs );
 			mesh = new THREE.Mesh( geometry, material );
 			pos += 0.5 * dis;			
-			mesh.position.set( pos, 0, -200 );
+			mesh.position.set( pos, 0, -500 );
 			scene.add( mesh );
 			pos +=  0.5 * dis + 50;	
-console.log( 'dis:',dis.toFixed(1), 'pos:', pos.toFixed(1), 'plane:', mesh );				
+console.log( 'dis:', dis.toFixed(1), 'pos:', pos.toFixed(1), 'plane:', mesh );				
 			return pos;
 	}
 	
