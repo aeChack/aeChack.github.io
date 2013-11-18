@@ -104,7 +104,7 @@ Copyright &copy; 2013 aeChack authors ~ All work herein is under the [MIT Licens
 * Possible errors in CSV files stepped around
 * Nearby buildings are identified and displayed. All have shading and shadows.
 * You can change the search radius for nearby buildings.
-* The gound plane is circular and updates with change in search radius.
+* The ground plane is circular and updates with change in search radius.
 * Clicking a checkbox allows you to replay the sun's position for the 8760 hours in a year
  
 
